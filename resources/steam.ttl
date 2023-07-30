@@ -47,7 +47,7 @@ steam:Features a owl:Class ;
   rdfs:label "Features" ;
   rdfs:comment "A tag used to describe the features of a game on Steam" .
 
-steam:Players a owl:Class ;
+steam:Players a owl:Class, schema:GamePlayMode ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Players" ;
   rdfs:comment "A tag used to describe the player options of a game on Steam" .
@@ -863,13 +863,13 @@ steam:RealTimeTactics a owl:Class, steam:SubGenre ;
 steam:Roguelite a owl:Class, steam:SubGenre ;
   rdfs:label "Roguelite" ;
   rdfs:comment "Roguelite games feature procedurally generated levels, permadeath, and other elements of roguelikes. They are characterized by their difficulty and replayability." ;
-  rdfs:subClassOf steam:Rougelike ;
+  rdfs:subClassOf steam:Roguelike ;
   schema:url <https://store.steampowered.com/tags/en/Roguelite/> .
 
 steam:Roguevania a owl:Class, steam:SubGenre ;
   rdfs:label "Roguevania" ;
   rdfs:comment "Roguevania games are a sub-genre of action-adventure games that combine elements of roguelike and metroidvania games." ;
-  rdfs:subClassOf [ a owl:Class ; owl:intersectionOf ( steam:Rougelike steam:Metroidvania ) ] ;
+  rdfs:subClassOf [ a owl:Class ; owl:intersectionOf ( steam:Roguelike steam:Metroidvania ) ] ;
   schema:url <https://store.steampowered.com/tags/en/Roguevania/> .
 
 steam:Runner a owl:Class, steam:SubGenre ;
@@ -2089,3 +2089,70 @@ steam:IntentionallyAwkwardControls a owl:Class, steam:Features ;
   rdfs:comment "Intentionally Awkward Controls is a feature that involves game controls that are deliberately difficult to use. This can be a key part of many comedy and challenge-focused games, and often involves a focus on skill and adaptability." ;
   rdfs:seeAlso <http://dbpedia.org/resource/QWOP> ;
   schema:url <https://store.steampowered.com/tags/en/Intentionally%20Awkward%20Controls/> .
+
+# Players tags
+
+steam:FourPlayerLocal a owl:Class, steam:Players ;
+  rdfs:label "4 Player Local" ;
+  rdfs:comment "4 Player Local represents games that offer the option for up to four players to play simultaneously on the same device. This feature is often found in party and multiplayer games, fostering cooperation and competition among players." ;
+  rdfs:subClassOf steam:LocalMultiplayer ;
+  schema:url <https://store.steampowered.com/tags/en/4%20Player%20Local/> .
+
+steam:AsynchronousMultiplayer a owl:Class, steam:Players ;
+  rdfs:label "Asynchronous Multiplayer" ;
+  rdfs:comment "Asynchronous Multiplayer represents games that offer the option for players to participate without all being active at the same time. This feature is often found in strategy and role-playing games, allowing for thoughtful planning and strategy." ;
+  rdfs:subClassOf steam:Multiplayer ;
+  schema:url <https://store.steampowered.com/tags/en/Asynchronous%20Multiplayer/> .
+
+steam:Coop a owl:Class, steam:Players ;
+  rdfs:label "Co-op" ;
+  rdfs:comment "Co-op represents games that offer the option for players to work together cooperatively. This feature is often found in action and role-playing games, promoting teamwork and cooperation among players." ;
+  rdfs:subClassOf schema:CoOp ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cooperative_gameplay> ;
+  schema:url <https://store.steampowered.com/tags/en/Co-op/> .
+
+steam:CoopCampaign a owl:Class, steam:Players ;
+  rdfs:label "Co-op Campaign" ;
+  rdfs:comment "Co-op Campaign represents games that offer the option for players to play through the game's campaign or story mode cooperatively. This feature is often found in action and role-playing games, fostering teamwork and shared narrative experiences." ;
+  rdfs:subClassOf steam:Coop ;
+  schema:url <https://store.steampowered.com/tags/en/Co-op%20Campaign/> .
+
+steam:LocalCoop a owl:Class, steam:Players ;
+  rdfs:label "Local Co-Op" ;
+  rdfs:comment "Local Co-Op represents games that offer the option for players to play cooperatively on the same device. This feature is often found in action and party games, promoting cooperation and shared experiences." ;
+  rdfs:subClassOf steam:Coop ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cooperative_gameplay> ;
+  schema:url <https://store.steampowered.com/tags/en/Local%20Co-Op/> .
+
+steam:LocalMultiplayer a owl:Class, steam:Players ;
+  rdfs:label "Local Multiplayer" ;
+  rdfs:comment "Local Multiplayer represents games that offer the option for multiple players to play on the same device. This feature is often found in party and multiplayer games, fostering competition and shared experiences." ;
+  rdfs:subClassOf steam:Multiplayer ;
+  schema:url <https://store.steampowered.com/tags/en/Local%20Multiplayer/> .
+
+steam:MassivelyMultiplayer a owl:Class, steam:Players ;
+  rdfs:label "Massively Multiplayer" ;
+  rdfs:comment "Massively Multiplayer represents games that offer the option to support large numbers of players within the same game world. This feature is often found in online role-playing games, promoting social interaction and cooperation among a large number of players." ;
+  rdfs:subClassOf steam:Multiplayer ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Massively_multiplayer_online_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Massively%20Multiplayer/> .
+
+steam:Multiplayer a owl:Class, steam:Players ;
+  rdfs:label "Multiplayer" ;
+  rdfs:comment "Multiplayer represents games that offer the option for multiple players to play together. This feature is often found in action and strategy games, fostering competition and cooperation among players." ;
+  rdfs:subClassOf schema:MultiPlayer ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Multiplayer_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Multiplayer/> .
+
+steam:OnlineCoop a owl:Class, steam:Players ;
+  rdfs:label "Online Co-Op" ;
+  rdfs:comment "Online Co-Op represents games that offer the option for players to play cooperatively over the internet. This feature is often found in action and role-playing games, promoting teamwork and social interaction among players." ;
+  rdfs:subClassOf steam:Coop ;
+  schema:url <https://store.steampowered.com/tags/en/Online%20Co-Op/> .
+
+steam:Singleplayer a owl:Class, steam:Players ;
+  rdfs:label "Singleplayer" ;
+  rdfs:comment "Singleplayer represents games that offer the option for a single player to play alone. This feature is often found in action, adventure, and role-playing games, fostering narrative and character development." ;
+  rdfs:subClassOf schema:SinglePlayer ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Single-player_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Singleplayer/> .
