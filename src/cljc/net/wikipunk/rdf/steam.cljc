@@ -16,10 +16,20 @@
    :rdfs/seeAlso [{:rdfa/uri "https://partner.steamgames.com/doc/store/tags"}
                   {:rdfa/uri "https://partner.steamgames.com/doc/home"}]})
 
+(def Abstract
+  "Abstract refers to a visual style that does not attempt to represent an accurate depiction of visual reality. It uses shapes, colors, forms and gestural marks to achieve its effect."
+  {:db/ident :steam/Abstract,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Abstract refers to a visual style that does not attempt to represent an accurate depiction of visual reality. It uses shapes, colors, forms and gestural marks to achieve its effect.",
+   :rdfs/label "Abstract",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Abstract_art"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Abstract/"}})
+
 (def Action
   "Action games emphasize physical challenges that require hand-eye coordination and motor skill to overcome. They center around the player controlling a character in a world where they must navigate obstacles and fight enemies to succeed."
   {:db/ident :steam/Action,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Action games emphasize physical challenges that require hand-eye coordination and motor skill to overcome. They center around the player controlling a character in a world where they must navigate obstacles and fight enemies to succeed.",
    :rdfs/label "Action",
@@ -29,7 +39,7 @@
 (def ActionAdventure
   "Action-Adventure games blend elements of action games with elements of adventure games, typically featuring an emphasis on combat along with puzzle-solving and item-gathering."
   {:db/ident :steam/ActionAdventure,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Action-Adventure games blend elements of action games with elements of adventure games, typically featuring an emphasis on combat along with puzzle-solving and item-gathering.",
    :rdfs/label "Action-Adventure",
@@ -41,7 +51,7 @@
 (def ActionRPG
   "Action RPG games combine elements of action games with elements of role-playing games, typically featuring real-time combat where the player has direct control over characters, as opposed to turn-based or menu-based combat."
   {:db/ident :steam/ActionRPG,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Action RPG games combine elements of action games with elements of role-playing games, typically featuring real-time combat where the player has direct control over characters, as opposed to turn-based or menu-based combat.",
    :rdfs/label "Action RPG",
@@ -64,17 +74,27 @@
 (def Adventure
   "Adventure games focus on puzzle solving within a narrative framework, generally with few or no action elements. These games encourage players to explore, interact with different objects, and solve complex puzzles to progress the story."
   {:db/ident :steam/Adventure,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Adventure games focus on puzzle solving within a narrative framework, generally with few or no action elements. These games encourage players to explore, interact with different objects, and solve complex puzzles to progress the story.",
    :rdfs/label "Adventure",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Adventure_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Adventure/"}})
 
+(def Anime
+  "Anime is a style of animation originating from Japan, characterized by colorful artwork, fantastical themes, and vibrant characters."
+  {:db/ident :steam/Anime,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Anime is a style of animation originating from Japan, characterized by colorful artwork, fantastical themes, and vibrant characters.",
+   :rdfs/label "Anime",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Anime"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Anime/"}})
+
 (def Arcade
   "Arcade games are focused on short, simple gameplay offering immediate satisfaction but also challenge and replayability. They often mimic games found in real-world arcades, like racing, shooting, or sports games."
   {:db/ident :steam/Arcade,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Arcade games are focused on short, simple gameplay offering immediate satisfaction but also challenge and replayability. They often mimic games found in real-world arcades, like racing, shooting, or sports games.",
    :rdfs/label "Arcade",
@@ -104,7 +124,7 @@
 (def AutoBattler
   "Auto Battler games, also known as auto chess, involve automatic battles between characters controlled by the game rather than the player. Players typically focus on strategy, such as character placement and upgrades."
   {:db/ident :steam/AutoBattler,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Auto Battler games, also known as auto chess, involve automatic battles between characters controlled by the game rather than the player. Players typically focus on strategy, such as character placement and upgrades.",
    :rdfs/label "Auto Battler",
@@ -114,7 +134,7 @@
 (def AutomobileSim
   "Automobile Sim games simulate the experience of driving or racing cars. They often focus on realistic physics and vehicle handling, as well as potentially managing aspects of the car's performance such as fuel usage or mechanical wear."
   {:db/ident :steam/AutomobileSim,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Automobile Sim games simulate the experience of driving or racing cars. They often focus on realistic physics and vehicle handling, as well as potentially managing aspects of the car's performance such as fuel usage or mechanical wear.",
    :rdfs/label "Automobile Sim",
@@ -125,7 +145,7 @@
 (def BMX
   "BMX games simulate the sport of BMX biking, allowing players to perform tricks, compete in races, or explore environments on a BMX bike."
   {:db/ident :steam/BMX,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "BMX games simulate the sport of BMX biking, allowing players to perform tricks, compete in races, or explore environments on a BMX bike.",
    :rdfs/label "BMX",
@@ -136,7 +156,7 @@
 (def BaseBuilding
   "Base Building games focus on the construction and management of a home base or headquarters for the player. This often involves gathering resources, managing infrastructure, and defending against attacks."
   {:db/ident :steam/BaseBuilding,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Base Building games focus on the construction and management of a home base or headquarters for the player. This often involves gathering resources, managing infrastructure, and defending against attacks.",
    :rdfs/label "Base Building",
@@ -146,7 +166,7 @@
 (def Baseball
   "Baseball games simulate the sport of baseball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Baseball,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Baseball games simulate the sport of baseball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Baseball",
@@ -157,7 +177,7 @@
 (def Basketball
   "Basketball games simulate the sport of basketball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Basketball,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Basketball games simulate the sport of basketball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Basketball",
@@ -169,7 +189,7 @@
 (def BattleRoyale
   "Battle Royale games involve numerous players that compete to be the last person or team standing. These games often involve a shrinking play area to bring players closer together over time."
   {:db/ident :steam/BattleRoyale,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Battle Royale games involve numerous players that compete to be the last person or team standing. These games often involve a shrinking play area to bring players closer together over time.",
    :rdfs/label "Battle Royale",
@@ -194,7 +214,7 @@
 (def BoardGame
   "Board Game genre includes games that are digital adaptations of traditional or modern board games. They often involve strategic decision making, and can be played solo or multiplayer."
   {:db/ident :steam/BoardGame,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Board Game genre includes games that are digital adaptations of traditional or modern board games. They often involve strategic decision making, and can be played solo or multiplayer.",
    :rdfs/label "Board Game",
@@ -206,7 +226,7 @@
 (def Bowling
   "Bowling games simulate the sport of bowling, allowing players to compete in games or tournaments. They often focus on realistic physics and gameplay."
   {:db/ident :steam/Bowling,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Bowling games simulate the sport of bowling, allowing players to compete in games or tournaments. They often focus on realistic physics and gameplay.",
    :rdfs/label "Bowling",
@@ -217,7 +237,7 @@
 (def Building
   "Building games focus on the construction of structures or environments. They often involve gathering resources, planning and designing buildings, and managing infrastructure."
   {:db/ident :steam/Building,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Building games focus on the construction of structures or environments. They often involve gathering resources, planning and designing buildings, and managing infrastructure.",
    :rdfs/label "Building",
@@ -262,7 +282,7 @@
 (def CardGame
   "Card games are digital adaptations of traditional or modern card games. They often involve strategic decision making, and can be played solo or multiplayer."
   {:db/ident :steam/CardGame,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Card games are digital adaptations of traditional or modern card games. They often involve strategic decision making, and can be played solo or multiplayer.",
    :rdfs/label "Card Game",
@@ -271,10 +291,29 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Card%20Game/"}})
 
+(def Cartoon
+  "Cartoon is a style of drawing that is typically non-realistic or semi-realistic artistic style, often used in animations and graphic novels."
+  {:db/ident :steam/Cartoon,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Cartoon is a style of drawing that is typically non-realistic or semi-realistic artistic style, often used in animations and graphic novels.",
+   :rdfs/label "Cartoon",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Cartoon"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cartoon/"}})
+
+(def Cartoony
+  "Cartoony is a visual style that resembles traditional cartoon aesthetics, often characterized by exaggerated features, bright colors, and a lack of realistic details."
+  {:db/ident :steam/Cartoony,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Cartoony is a visual style that resembles traditional cartoon aesthetics, often characterized by exaggerated features, bright colors, and a lack of realistic details.",
+   :rdfs/label "Cartoony",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cartoony/"}})
+
 (def Casual
   "Casual games are designed to be easily picked up and put down again, allowing for potentially short bursts of play. They often have simpler rules, shorter sessions, and less learned skill than hardcore games."
   {:db/ident :steam/Casual,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Casual games are designed to be easily picked up and put down again, allowing for potentially short bursts of play. They often have simpler rules, shorter sessions, and less learned skill than hardcore games.",
    :rdfs/label "Casual",
@@ -284,7 +323,7 @@
 (def CharacterActionGame
   "Character Action Games are action games that allow players to control a single, or sometimes multiple, characters. These games often feature combat and exploration."
   {:db/ident :steam/CharacterActionGame,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Character Action Games are action games that allow players to control a single, or sometimes multiple, characters. These games often feature combat and exploration.",
    :rdfs/label "Character Action Game",
@@ -296,7 +335,7 @@
 (def Chess
   "Chess games are digital adaptations of the traditional board game of chess. They often allow for play against AI or human opponents, and may offer additional features like tutorials or puzzles."
   {:db/ident :steam/Chess,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Chess games are digital adaptations of the traditional board game of chess. They often allow for play against AI or human opponents, and may offer additional features like tutorials or puzzles.",
    :rdfs/label "Chess",
@@ -317,6 +356,16 @@
    {:rdfa/uri
     "https://store.steampowered.com/tags/en/Choose%20Your%20Own%20Adventure/"}})
 
+(def Cinematic
+  "Cinematic refers to a visual style that resembles the aesthetics of movies, often characterized by high-quality graphics, dramatic lighting, and camera angles."
+  {:db/ident :steam/Cinematic,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Cinematic refers to a visual style that resembles the aesthetics of movies, often characterized by high-quality graphics, dramatic lighting, and camera angles.",
+   :rdfs/label "Cinematic",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Cinematic_techniques"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cinematic/"}})
+
 (def CityBuilder
   "City Builder games are a type of simulation game where players build, expand and manage fictional communities or projects with limited resources."
   {:db/ident :steam/CityBuilder,
@@ -332,7 +381,7 @@
 (def Clicker
   "Clicker games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades."
   {:db/ident :steam/Clicker,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Clicker games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades.",
    :rdfs/label "Clicker",
@@ -362,6 +411,15 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Colony%20Sim/"}})
 
+(def Colorful
+  "Colorful refers to a visual style that uses a wide range of colors, often in a vibrant and eye-catching manner."
+  {:db/ident :steam/Colorful,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Colorful refers to a visual style that uses a wide range of colors, often in a vibrant and eye-catching manner.",
+   :rdfs/label "Colorful",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Colorful/"}})
+
 (def CombatRacing
   "Combat Racing games are racing games that feature combat elements, such as weapons or aggressive driving maneuvers."
   {:db/ident :steam/CombatRacing,
@@ -375,10 +433,30 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Combat%20Racing/"}})
 
+(def ComicBook
+  "Comic Book is a visual style that resembles the aesthetics of comic books, often characterized by bold outlines, bright colors, and stylized visuals."
+  {:db/ident :steam/ComicBook,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Comic Book is a visual style that resembles the aesthetics of comic books, often characterized by bold outlines, bright colors, and stylized visuals.",
+   :rdfs/label "Comic Book",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Comics"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Comic%20Book/"}})
+
+(def Cute
+  "Cute is a visual style that is designed to be adorable and charming, often characterized by soft colors, round shapes, and endearing characters."
+  {:db/ident :steam/Cute,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Cute is a visual style that is designed to be adorable and charming, often characterized by soft colors, round shapes, and endearing characters.",
+   :rdfs/label "Cute",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cute/"}})
+
 (def Cycling
   "Cycling games simulate the sport of cycling, allowing players to compete in races or explore environments on a bike."
   {:db/ident :steam/Cycling,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Cycling games simulate the sport of cycling, allowing players to compete in races or explore environments on a bike.",
    :rdfs/label "Cycling",
@@ -400,7 +478,7 @@
 (def Diplomacy
   "Diplomacy games involve negotiation, strategy, and social interaction. Players often need to form alliances, make deals, or negotiate with other players to achieve their goals."
   {:db/ident :steam/Diplomacy,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Diplomacy games involve negotiation, strategy, and social interaction. Players often need to form alliances, make deals, or negotiate with other players to achieve their goals.",
    :rdfs/label "Diplomacy",
@@ -432,7 +510,7 @@
 (def Esports
   "Esports games are competitive games that are often played in professional competitions. They often require high levels of skill and strategy, and have large online communities."
   {:db/ident :steam/Esports,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Esports games are competitive games that are often played in professional competitions. They often require high levels of skill and strategy, and have large online communities.",
    :rdfs/label "eSports",
@@ -444,7 +522,7 @@
   "Experimental games are those that challenge the status quo of gaming and offer a unique, sometimes strange, gaming experience. These games often explore new game mechanics, storytelling methods, and art styles."
   {:db/ident :steam/Experimental,
    :rdf/type
-   [:steam/Genre :steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   [:steam/Genre :steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Experimental games are those that challenge the status quo of gaming and offer a unique, sometimes strange, gaming experience. These games often explore new game mechanics, storytelling methods, and art styles.",
    :rdfs/label "Experimental",
@@ -455,12 +533,22 @@
 (def Exploration
   "Exploration games focus on the act of exploring an environment. They often feature open-world settings, and encourage players to explore and discover new areas, items, or storylines."
   {:db/ident :steam/Exploration,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Exploration games focus on the act of exploring an environment. They often feature open-world settings, and encourage players to explore and discover new areas, items, or storylines.",
    :rdfs/label "Exploration",
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Exploration/"}})
+
+(def FMV
+  "FMV, or Full Motion Video, refers to a technique used in video games that features pre-recorded video files (rather than sprites, vectors, or 3D models) to display action."
+  {:db/ident :steam/FMV,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "FMV, or Full Motion Video, refers to a technique used in video games that features pre-recorded video files (rather than sprites, vectors, or 3D models) to display action.",
+   :rdfs/label "FMV",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Full_motion_video"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/FMV/"}})
 
 (def FPS
   "FPS (First-Person Shooter) games are a type of 3D shooter games played from a first-person perspective, where the player experiences the action through the eyes of the protagonist."
@@ -476,7 +564,7 @@
 (def FarmingSim
   "Farming Sim games simulate the experience of farming, including the cultivation of crops, raising of livestock, and management of a farm. They often involve elements of strategy and resource management."
   {:db/ident :steam/FarmingSim,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Farming Sim games simulate the experience of farming, including the cultivation of crops, raising of livestock, and management of a farm. They often involve elements of strategy and resource management.",
    :rdfs/label "Farming Sim",
@@ -495,13 +583,25 @@
 (def Fighting
   "Fighting games are characterized by close combat between two fighters or groups of fighters, often set in arenas. Players must master techniques, combos, and strategy to overcome their opponents."
   {:db/ident :steam/Fighting,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Fighting games are characterized by close combat between two fighters or groups of fighters, often set in arenas. Players must master techniques, combos, and strategy to overcome their opponents.",
    :rdfs/label "Fighting",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Fighting_game"},
    :rdfs/subClassOf :steam/Action,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Fighting/"}})
+
+(def FirstPerson
+  "First-Person refers to a perspective in which the audience experiences the world directly through the eyes of the character."
+  {:db/ident :steam/FirstPerson,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "First-Person refers to a perspective in which the audience experiences the world directly through the eyes of the character.",
+   :rdfs/label "First-Person",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/First-person_(video_games)"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/First-Person/"}})
 
 (def Flight
   "Flight games are games that involve piloting a vehicle, often an aircraft, through the sky."
@@ -517,7 +617,7 @@
 (def Football
   "Football games simulate the sport of football, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Football,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Football games simulate the sport of football, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Football",
@@ -544,7 +644,7 @@
 (def GodGame
   "God games are a type of game where players control a character with divine powers. They often involve elements of creation, terraforming, and control over nature."
   {:db/ident :steam/GodGame,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "God games are a type of game where players control a character with divine powers. They often involve elements of creation, terraforming, and control over nature.",
    :rdfs/label "God Game",
@@ -556,7 +656,7 @@
 (def Golf
   "Golf games simulate the sport of golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay."
   {:db/ident :steam/Golf,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Golf games simulate the sport of golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay.",
    :rdfs/label "Golf",
@@ -592,11 +692,21 @@
 (def Hacking
   "Hacking games involve elements of computer hacking. They often require players to solve puzzles, exploit systems, or engage in simulated computer hacking tasks."
   {:db/ident :steam/Hacking,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Hacking games involve elements of computer hacking. They often require players to solve puzzles, exploit systems, or engage in simulated computer hacking tasks.",
    :rdfs/label "Hacking",
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Hacking/"}})
+
+(def HandDrawn
+  "Hand-drawn refers to a visual style that appears to have been created by hand, often characterized by unique textures, lines, and colors that resemble traditional art mediums."
+  {:db/ident :steam/HandDrawn,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Hand-drawn refers to a visual style that appears to have been created by hand, often characterized by unique textures, lines, and colors that resemble traditional art mediums.",
+   :rdfs/label "Hand-drawn",
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Hand-drawn/"}})
 
 (def HardwareInput
   "A tag used to categorize the hardware input of a game on Steam"
@@ -633,7 +743,7 @@
 (def HiddenObject
   "Hidden Object games require players to find specific items from a list that are hidden within a picture or scene."
   {:db/ident :steam/HiddenObject,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Hidden Object games require players to find specific items from a list that are hidden within a picture or scene.",
    :rdfs/label "Hidden Object",
@@ -645,7 +755,7 @@
 (def Hockey
   "Hockey games simulate the sport of hockey, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Hockey,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Hockey games simulate the sport of hockey, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Hockey",
@@ -666,7 +776,7 @@
 (def Idler
   "Idler games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades."
   {:db/ident :steam/Idler,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Idler games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades.",
    :rdfs/label "Idler",
@@ -690,7 +800,7 @@
 (def InteractiveFiction
   "Interactive Fiction games are games that emphasize narrative and player choice. They often involve complex branching narratives and multiple endings."
   {:db/ident :steam/InteractiveFiction,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Interactive Fiction games are games that emphasize narrative and player choice. They often involve complex branching narratives and multiple endings.",
    :rdfs/label "Interactive Fiction",
@@ -708,6 +818,17 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Detective_fiction"},
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Investigation/"}})
+
+(def Isometric
+  "Isometric refers to a method of drawing a three-dimensional object in two dimensions, where the three coordinate axes appear equally foreshortened."
+  {:db/ident :steam/Isometric,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Isometric refers to a method of drawing a three-dimensional object in two dimensions, where the three coordinate axes appear equally foreshortened.",
+   :rdfs/label "Isometric",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Isometric_video_game_graphics"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Isometric/"}})
 
 (def JRPG
   "JRPG (Japanese Role-Playing Games) are a type of role-playing video game that originated in Japan and have a distinct art style and narrative structure."
@@ -748,7 +869,7 @@
 (def MMORPG
   "MMORPGs (Massively Multiplayer Online Role-Playing Games) are games that involve large numbers of players interacting in a virtual world. They often involve character development, quests, and multiplayer cooperation or competition."
   {:db/ident :steam/MMORPG,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "MMORPGs (Massively Multiplayer Online Role-Playing Games) are games that involve large numbers of players interacting in a virtual world. They often involve character development, quests, and multiplayer cooperation or competition.",
    :rdfs/label "MMORPG",
@@ -764,7 +885,7 @@
 (def MOBA
   "MOBA (Multiplayer Online Battle Arena) games involve teams of players competing against each other in an arena. They often require strategic decision-making, teamwork, and player skill."
   {:db/ident :steam/MOBA,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "MOBA (Multiplayer Online Battle Arena) games involve teams of players competing against each other in an arena. They often require strategic decision-making, teamwork, and player skill.",
    :rdfs/label "MOBA",
@@ -779,7 +900,7 @@
 (def Management
   "Management games involve managing resources and making strategic decisions. They often require players to manage businesses, cities, or other entities."
   {:db/ident :steam/Management,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Management games involve managing resources and making strategic decisions. They often require players to manage businesses, cities, or other entities.",
    :rdfs/label "Management",
@@ -793,7 +914,7 @@
 (def Match3
   "Match 3 games require players to match three or more items of the same type to achieve a goal. They often involve puzzle-solving and strategic thinking."
   {:db/ident :steam/Match3,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Match 3 games require players to match three or more items of the same type to achieve a goal. They often involve puzzle-solving and strategic thinking.",
    :rdfs/label "Match 3",
@@ -805,7 +926,7 @@
 (def MedicalSim
   "Medical Sim games simulate medical scenarios or procedures. They often require players to diagnose and treat patients, manage a medical facility, or perform simulated surgeries."
   {:db/ident :steam/MedicalSim,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Medical Sim games simulate medical scenarios or procedures. They often require players to diagnose and treat patients, manage a medical facility, or perform simulated surgeries.",
    :rdfs/label "Medical Sim",
@@ -829,7 +950,7 @@
 (def MiniGolf
   "Mini Golf games simulate the sport of mini golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay."
   {:db/ident :steam/MiniGolf,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Mini Golf games simulate the sport of mini golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay.",
    :rdfs/label "Mini Golf",
@@ -838,10 +959,21 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Mini%20Golf/"}})
 
+(def Minimalist
+  "Minimalist refers to a visual style that is stripped down to its essential elements, often characterized by simplicity and the use of minimal colors, shapes, and textures."
+  {:db/ident :steam/Minimalist,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Minimalist refers to a visual style that is stripped down to its essential elements, often characterized by simplicity and the use of minimal colors, shapes, and textures.",
+   :rdfs/label "Minimalist",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Minimalism"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Minimalist/"}})
+
 (def Mining
   "Mining games involve the extraction of valuable minerals or other geological materials from the earth. They often require players to manage resources, explore environments, and develop mining operations."
   {:db/ident :steam/Mining,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Mining games involve the extraction of valuable minerals or other geological materials from the earth. They often require players to manage resources, explore environments, and develop mining operations.",
    :rdfs/label "Mining",
@@ -850,7 +982,7 @@
 (def Motocross
   "Motocross games simulate the sport of motocross, allowing players to compete in races or perform stunts on a motocross bike."
   {:db/ident :steam/Motocross,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Motocross games simulate the sport of motocross, allowing players to compete in races or perform stunts on a motocross bike.",
    :rdfs/label "Motocross",
@@ -871,6 +1003,16 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Mystery%20Dungeon/"}})
 
+(def Noir
+  "Noir is a visual style that is characterized by cynicism, fatalism, and moral ambiguity. It often uses a black-and-white aesthetic with high contrast and dramatic shadows."
+  {:db/ident :steam/Noir,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Noir is a visual style that is characterized by cynicism, fatalism, and moral ambiguity. It often uses a black-and-white aesthetic with high contrast and dramatic shadows.",
+   :rdfs/label "Noir",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Film_noir"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Noir/"}})
+
 (def OnRailsShooter
   "On-Rails Shooter games are a type of shooter game where the player's movement is automatically guided along a fixed path, or 'on rails'."
   {:db/ident :steam/OnRailsShooter,
@@ -885,7 +1027,7 @@
 (def OpenWorld
   "Open World games provide a large, open environment for players to explore and interact with. They often allow players to choose their own objectives and play at their own pace."
   {:db/ident :steam/OpenWorld,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Open World games provide a large, open environment for players to explore and interact with. They often allow players to choose their own objectives and play at their own pace.",
    :rdfs/label "Open World",
@@ -916,7 +1058,7 @@
 (def OutbreakSim
   "Outbreak Sim games simulate the spread of diseases or other outbreaks and often involve strategy and management elements."
   {:db/ident :steam/OutbreakSim,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Outbreak Sim games simulate the spread of diseases or other outbreaks and often involve strategy and management elements.",
    :rdfs/label "Outbreak Sim",
@@ -927,7 +1069,7 @@
 (def PartyBasedRPG
   "Party-Based RPGs are role-playing games where players control a group of characters, often with different abilities and roles, and must use teamwork and strategy to succeed."
   {:db/ident :steam/PartyBasedRPG,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Party-Based RPGs are role-playing games where players control a group of characters, often with different abilities and roles, and must use teamwork and strategy to succeed.",
    :rdfs/label "Party-Based RPG",
@@ -938,7 +1080,7 @@
 (def Pinball
   "Pinball games simulate the classic arcade game of pinball, where players use flippers to hit a ball and score points."
   {:db/ident :steam/Pinball,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Pinball games simulate the classic arcade game of pinball, where players use flippers to hit a ball and score points.",
    :rdfs/label "Pinball",
@@ -946,10 +1088,21 @@
    :rdfs/subClassOf :steam/Arcade,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Pinball/"}})
 
+(def PixelGraphics
+  "Pixel Graphics refers to a visual style that uses pixel art, where images are created on the pixel level. This style is often associated with early video games."
+  {:db/ident :steam/PixelGraphics,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Pixel Graphics refers to a visual style that uses pixel art, where images are created on the pixel level. This style is often associated with early video games.",
+   :rdfs/label "Pixel Graphics",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Pixel_art"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Pixel%20Graphics/"}})
+
 (def Platformer
   "Platformer games involve guiding a character through levels and overcoming obstacles, often by jumping onto platforms at different heights."
   {:db/ident :steam/Platformer,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Platformer games involve guiding a character through levels and overcoming obstacles, often by jumping onto platforms at different heights.",
    :rdfs/label "Platformer",
@@ -968,7 +1121,7 @@
 (def PointAndClick
   "Point & Click games involve interacting with the environment and solving puzzles through a point-and-click interface."
   {:db/ident :steam/PointAndClick,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Point & Click games involve interacting with the environment and solving puzzles through a point-and-click interface.",
    :rdfs/label "Point & Click",
@@ -1012,10 +1165,21 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Programming/"}})
 
+(def Psychedelic
+  "Psychedelic is a visual style that is characterized by the distortion of reality, vibrant colors, and complex, often surreal imagery."
+  {:db/ident :steam/Psychedelic,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Psychedelic is a visual style that is characterized by the distortion of reality, vibrant colors, and complex, often surreal imagery.",
+   :rdfs/label "Psychedelic",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Psychedelia"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Psychedelic/"}})
+
 (def Puzzle
   "Puzzle games focus on problem solving and logical thinking. They challenge the player to solve head-scratching puzzles and often offer a slower paced, more relaxing gaming experience."
   {:db/ident :steam/Puzzle,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Puzzle games focus on problem solving and logical thinking. They challenge the player to solve head-scratching puzzles and often offer a slower paced, more relaxing gaming experience.",
    :rdfs/label "Puzzle",
@@ -1025,7 +1189,7 @@
 (def RPG
   "Role-playing games (RPGs) often involve story-telling and narrative elements, character development, complexity, as well as replayability and immersion. The player controls a character in a world where they undertake quests and challenges."
   {:db/ident :steam/RPG,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Role-playing games (RPGs) often involve story-telling and narrative elements, character development, complexity, as well as replayability and immersion. The player controls a character in a world where they undertake quests and challenges.",
    :rdfs/label "RPG",
@@ -1036,7 +1200,7 @@
 (def RTS
   "Real-Time Strategy (RTS) games require strategic decision making in real time, often involving resource management and direct control over units."
   {:db/ident :steam/RTS,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Real-Time Strategy (RTS) games require strategic decision making in real time, often involving resource management and direct control over units.",
    :rdfs/label "RTS",
@@ -1047,7 +1211,7 @@
 (def Racing
   "Racing games simulate the competition of racing, where the player controls a vehicle or other transport. They often have a time limit, and can include obstacles and competitors to beat."
   {:db/ident :steam/Racing,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Racing games simulate the competition of racing, where the player controls a vehicle or other transport. They often have a time limit, and can include obstacles and competitors to beat.",
    :rdfs/label "Racing",
@@ -1074,10 +1238,19 @@
    :schema/url
    {:rdfa/uri "https://store.steampowered.com/tags/en/Real%20Time%20Tactics/"}})
 
+(def Realistic
+  "Realistic refers to a visual style that attempts to represent the physical world in a realistic manner. It often features detailed textures, accurate lighting, and complex models."
+  {:db/ident :steam/Realistic,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Realistic refers to a visual style that attempts to represent the physical world in a realistic manner. It often features detailed textures, accurate lighting, and complex models.",
+   :rdfs/label "Realistic",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Realistic/"}})
+
 (def Rhythm
   "Rhythm games challenge players to follow the beat or rhythm of music tracks."
   {:db/ident :steam/Rhythm,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Rhythm games challenge players to follow the beat or rhythm of music tracks.",
    :rdfs/label "Rhythm",
@@ -1087,7 +1260,7 @@
 (def Roguelike
   "Roguelike games feature procedurally generated levels and permadeath, often with RPG elements."
   {:db/ident :steam/Roguelike,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Roguelike games feature procedurally generated levels and permadeath, often with RPG elements.",
    :rdfs/label "Roguelike",
@@ -1131,7 +1304,7 @@
 (def Sandbox
   "Sandbox games allow players to explore, create, and manipulate their environment with few imposed goals or restrictions."
   {:db/ident :steam/Sandbox,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Sandbox games allow players to explore, create, and manipulate their environment with few imposed goals or restrictions.",
    :rdfs/label "Sandbox",
@@ -1153,7 +1326,7 @@
 (def Shooter
   "Shooter games focus on combat involving projectile weapons, such as guns and missiles."
   {:db/ident :steam/Shooter,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Shooter games focus on combat involving projectile weapons, such as guns and missiles.",
    :rdfs/label "Shooter",
@@ -1176,7 +1349,7 @@
 (def Simulation
   "Simulation games are designed to accurately simulate real-world activities. They can cover a variety of activities, including driving vehicles, managing a business, or living a life."
   {:db/ident :steam/Simulation,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Simulation games are designed to accurately simulate real-world activities. They can cover a variety of activities, including driving vehicles, managing a business, or living a life.",
    :rdfs/label "Simulation",
@@ -1188,7 +1361,7 @@
 (def Skateboarding
   "Skateboarding games simulate skateboarding activities, often with a focus on performing tricks and stunts."
   {:db/ident :steam/Skateboarding,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Skateboarding games simulate skateboarding activities, often with a focus on performing tricks and stunts.",
    :rdfs/label "Skateboarding",
@@ -1200,7 +1373,7 @@
 (def Skating
   "Skating games simulate skating activities, often with a focus on performing tricks and stunts."
   {:db/ident :steam/Skating,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Skating games simulate skating activities, often with a focus on performing tricks and stunts.",
    :rdfs/label "Skating",
@@ -1211,7 +1384,7 @@
 (def Skiing
   "Skiing games simulate skiing activities, often with a focus on racing or performing tricks."
   {:db/ident :steam/Skiing,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Skiing games simulate skiing activities, often with a focus on racing or performing tricks.",
    :rdfs/label "Skiing",
@@ -1222,7 +1395,7 @@
 (def Snowboarding
   "Snowboarding games simulate snowboarding activities, often with a focus on racing or performing tricks."
   {:db/ident :steam/Snowboarding,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Snowboarding games simulate snowboarding activities, often with a focus on racing or performing tricks.",
    :rdfs/label "Snowboarding",
@@ -1234,7 +1407,7 @@
 (def Soccer
   "Soccer games simulate the sport of soccer, often with a focus on controlling a team and competing in matches."
   {:db/ident :steam/Soccer,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Soccer games simulate the sport of soccer, often with a focus on controlling a team and competing in matches.",
    :rdfs/label "Soccer",
@@ -1291,7 +1464,7 @@
 (def SpaceSim
   "Space Sim games simulate space exploration or combat in a space setting."
   {:db/ident :steam/SpaceSim,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Space Sim games simulate space exploration or combat in a space setting.",
    :rdfs/label "Space Sim",
@@ -1322,10 +1495,22 @@
    :rdfs/subClassOf :steam/Education,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Spelling/"}})
 
+(def SplitScreen
+  "Split Screen refers to a display technique that divides the screen into two or more parts to show multiple perspectives or players simultaneously."
+  {:db/ident :steam/SplitScreen,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Split Screen refers to a display technique that divides the screen into two or more parts to show multiple perspectives or players simultaneously.",
+   :rdfs/label "Split Screen",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Split_screen_(computing)"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Split%20Screen/"}})
+
 (def Sports
   "Sports games simulate the practice of traditional physical sports. This can be team sports such as soccer, basketball, or individual activities like golf, fishing, skateboarding."
   {:db/ident :steam/Sports,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Sports games simulate the practice of traditional physical sports. This can be team sports such as soccer, basketball, or individual activities like golf, fishing, skateboarding.",
    :rdfs/label "Sports",
@@ -1335,7 +1520,7 @@
 (def Stealth
   "Stealth games challenge players to avoid detection, often by sneaking past enemies or obstacles."
   {:db/ident :steam/Stealth,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Stealth games challenge players to avoid detection, often by sneaking past enemies or obstacles.",
    :rdfs/label "Stealth",
@@ -1345,7 +1530,7 @@
 (def Strategy
   "Strategy games require strategic, tactical, and sometimes logistical challenges. Many games also offer economic challenges and exploration."
   {:db/ident :steam/Strategy,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Strategy games require strategic, tactical, and sometimes logistical challenges. Many games also offer economic challenges and exploration.",
    :rdfs/label "Strategy",
@@ -1355,7 +1540,7 @@
 (def StrategyRPG
   "Strategy RPGs combine strategic gameplay with role-playing elements, often involving character development and tactical combat."
   {:db/ident :steam/StrategyRPG,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Strategy RPGs combine strategic gameplay with role-playing elements, often involving character development and tactical combat.",
    :rdfs/label "Strategy RPG",
@@ -1364,6 +1549,15 @@
    :rdfs/subClassOf [:steam/Strategy :steam/RPG],
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Strategy%20RPG/"}})
+
+(def Stylized
+  "Stylized refers to a visual style that distorts or exaggerates certain elements for expressive or artistic effect."
+  {:db/ident :steam/Stylized,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Stylized refers to a visual style that distorts or exaggerates certain elements for expressive or artistic effect.",
+   :rdfs/label "Stylized",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Stylized/"}})
 
 (def SubGenre
   "A sub-genre used to categorize a game on Steam"
@@ -1376,7 +1570,7 @@
 (def Survival
   "Survival games challenge players to survive in a hostile environment, often by gathering resources, crafting tools, and building shelters."
   {:db/ident :steam/Survival,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Survival games challenge players to survive in a hostile environment, often by gathering resources, crafting tools, and building shelters.",
    :rdfs/label "Survival",
@@ -1399,7 +1593,7 @@
 (def Tabletop
   "Tabletop games are those that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames, tile-based games and role-playing games. In the digital context, these games are often adaptations of traditional tabletop games."
   {:db/ident :steam/Tabletop,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Tabletop games are those that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames, tile-based games and role-playing games. In the digital context, these games are often adaptations of traditional tabletop games.",
    :rdfs/label "Tabletop",
@@ -1431,13 +1625,24 @@
 (def Tennis
   "Tennis games simulate the sport of tennis, often with a focus on controlling a player and competing in matches."
   {:db/ident :steam/Tennis,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Tennis games simulate the sport of tennis, often with a focus on controlling a player and competing in matches.",
    :rdfs/label "Tennis",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Tennis"},
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Tennis/"}})
+
+(def TextBased
+  "Text-Based refers to a style of game where the visuals are primarily composed of text. These games often rely heavily on narrative and allow for extensive player imagination."
+  {:db/ident :steam/TextBased,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Text-Based refers to a style of game where the visuals are primarily composed of text. These games often rely heavily on narrative and allow for extensive player imagination.",
+   :rdfs/label "Text-Based",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Text-based_game"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Text-Based/"}})
 
 (def ThemesAndMoods
   "A tag used to describe the themes and moods of a game on Steam"
@@ -1447,6 +1652,16 @@
    "A tag used to describe the themes and moods of a game on Steam",
    :rdfs/label "Themes and Moods",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
+
+(def ThirdPerson
+  "Third Person refers to a perspective in which the player views the game world from over the shoulder or behind the main character."
+  {:db/ident :steam/ThirdPerson,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Third Person refers to a perspective in which the player views the game world from over the shoulder or behind the main character.",
+   :rdfs/label "Third Person",
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Third%20Person/"}})
 
 (def ThirdPersonShooter
   "Third-Person Shooter games are a sub-genre of shooter games where the player views the game from a third-person perspective, usually behind the character they are controlling."
@@ -1472,6 +1687,16 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Time%20Management/"}})
 
+(def TopDown
+  "Top-Down refers to a perspective in which the player views the game world from above, often used in strategy and simulation games."
+  {:db/ident :steam/TopDown,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Top-Down refers to a perspective in which the player views the game world from above, often used in strategy and simulation games.",
+   :rdfs/label "Top-Down",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Top-down_perspective"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Top-Down/"}})
+
 (def TopDownShooter
   "Top-Down Shooter games are a sub-genre of shooter games where the player views the game from a top-down perspective, shooting enemies and avoiding obstacles from this viewpoint."
   {:db/ident :steam/TopDownShooter,
@@ -1494,7 +1719,7 @@
 (def TowerDefense
   "Tower Defense games challenge players to defend a location by placing defensive structures along the path of incoming enemies."
   {:db/ident :steam/TowerDefense,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Tower Defense games challenge players to defend a location by placing defensive structures along the path of incoming enemies.",
    :rdfs/label "Tower Defense",
@@ -1540,7 +1765,7 @@
 (def Trivia
   "Trivia games test players' knowledge of various topics, often in a quiz format."
   {:db/ident :steam/Trivia,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Trivia games test players' knowledge of various topics, often in a quiz format.",
    :rdfs/label "Trivia",
@@ -1551,7 +1776,7 @@
 (def TurnBasedStrategy
   "Turn-Based Strategy games involve strategic gameplay where players take turns when playing."
   {:db/ident :steam/TurnBasedStrategy,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Turn-Based Strategy games involve strategic gameplay where players take turns when playing.",
    :rdfs/label "Turn-Based Strategy",
@@ -1594,10 +1819,20 @@
    :rdfs/subClassOf :steam/Education,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Typing/"}})
 
+(def VR
+  "VR, or Virtual Reality, refers to a technology that allows players to experience a game in a three-dimensional, interactive environment."
+  {:db/ident :steam/VR,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "VR, or Virtual Reality, refers to a technology that allows players to experience a game in a three-dimensional, interactive environment.",
+   :rdfs/label "VR",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Virtual_reality"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/VR/"}})
+
 (def VisualNovel
   "Visual Novels are a narrative genre of game, featuring mostly static graphics, most often using anime-style art or occasionally live-action stills."
   {:db/ident :steam/VisualNovel,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Visual Novels are a narrative genre of game, featuring mostly static graphics, most often using anime-style art or occasionally live-action stills.",
    :rdfs/label "Visual Novel",
@@ -1614,10 +1849,20 @@
    :rdfs/label "Visuals and Viewpoint",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
 
+(def Voxel
+  "Voxel refers to a visual style that uses volumetric pixels (voxels) to create the game world. This style is often associated with 3D games that have a blocky or cubic aesthetic."
+  {:db/ident :steam/Voxel,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "Voxel refers to a visual style that uses volumetric pixels (voxels) to create the game world. This style is often associated with 3D games that have a blocky or cubic aesthetic.",
+   :rdfs/label "Voxel",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Voxel"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Voxel/"}})
+
 (def WalkingSimulator
   "Walking Simulator games focus on exploration and narrative over gameplay, often involving walking through an environment to uncover the story."
   {:db/ident :steam/WalkingSimulator,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Walking Simulator games focus on exploration and narrative over gameplay, often involving walking through an environment to uncover the story.",
    :rdfs/label "Walking Simulator",
@@ -1639,7 +1884,7 @@
 (def WordGame
   "Word games involve the creation or solving of words, often in a puzzle format."
   {:db/ident :steam/WordGame,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Word games involve the creation or solving of words, often in a puzzle format.",
    :rdfs/label "Word Game",
@@ -1651,7 +1896,7 @@
 (def Wrestling
   "Wrestling games simulate the sport of wrestling, often with a focus on controlling a wrestler and competing in matches."
   {:db/ident :steam/Wrestling,
-   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
    :rdfs/comment
    "Wrestling games simulate the sport of wrestling, often with a focus on controlling a wrestler and competing in matches.",
    :rdfs/label "Wrestling",
@@ -1659,6 +1904,16 @@
                   "http://dbpedia.org/resource/Professional_wrestling"},
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Wrestling/"}})
+
+(def |2_5D|
+  "2.5D is a visual style that combines 2D graphics with a 3D perspective. This is often done to create depth or to achieve certain visual effects."
+  {:db/ident :steam/|2.5D|,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "2.5D is a visual style that combines 2D graphics with a 3D perspective. This is often done to create depth or to achieve certain visual effects.",
+   :rdfs/label "2.5D",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/2.5D"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/2.5D/"}})
 
 (def |2DFighter|
   "2D Fighter games are fighting games with a gameplay in a two-dimensional environment."
@@ -1682,6 +1937,27 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/2D%20Platformer/"}})
 
+(def |2D|
+  "2D is a visual style that uses two-dimensional graphics. This often includes side-scrolling elements, platformers, and top-down perspectives."
+  {:db/ident :steam/|2D|,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "2D is a visual style that uses two-dimensional graphics. This often includes side-scrolling elements, platformers, and top-down perspectives.",
+   :rdfs/label "2D",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/2D_computer_graphics"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/2D/"}})
+
+(def |360Video|
+  "360 Video is a type of media that features 360-degree videos, allowing the viewer to look in any direction. This is often used in virtual reality experiences."
+  {:db/ident :steam/|360Video|,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "360 Video is a type of media that features 360-degree videos, allowing the viewer to look in any direction. This is often used in virtual reality experiences.",
+   :rdfs/label "360 Video",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/360-degree_video"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/360%20Video/"}})
+
 (def |3DFighter|
   "3D Fighter games are fighting games with a gameplay in a three-dimensional environment."
   {:db/ident :steam/|3DFighter|,
@@ -1703,6 +1979,27 @@
    :rdfs/subClassOf :steam/Platformer,
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/3D%20Platformer/"}})
+
+(def |3DVision|
+  "3D Vision is a technology that supports Nvidia's 3D Vision technology, which allows for stereoscopic viewing on 3D monitors and TVs."
+  {:db/ident :steam/|3DVision|,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "3D Vision is a technology that supports Nvidia's 3D Vision technology, which allows for stereoscopic viewing on 3D monitors and TVs.",
+   :rdfs/label "3D Vision",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Nvidia_3D_Vision"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/3D%20Vision/"}})
+
+(def |3D|
+  "3D is a visual style that uses three-dimensional graphics. This can include a wide variety of media, from games to movies, and is used to create a sense of depth and realism."
+  {:db/ident :steam/|3D|,
+   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdfs/comment
+   "3D is a visual style that uses three-dimensional graphics. This can include a wide variety of media, from games to movies, and is used to create a sense of depth and realism.",
+   :rdfs/label "3D",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/3D_computer_graphics"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/3D/"}})
 
 (def |4X|
   "4X games are a genre of strategy video game in which players control an empire and 'eXplore, eXpand, eXploit, and eXterminate'."

@@ -1005,3 +1005,172 @@ steam:Wargame a owl:Class, steam:SubGenre ;
   rdfs:subClassOf steam:Strategy ;
   rdfs:seeAlso <http://dbpedia.org/resource/Computer_wargame> ;
   schema:url <https://store.steampowered.com/tags/en/Wargame/> .
+
+# Visuals and Viewpoint tag classes
+
+steam:2.5D a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "2.5D" ;
+  rdfs:comment "2.5D is a visual style that combines 2D graphics with a 3D perspective. This is often done to create depth or to achieve certain visual effects." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/2.5D> ;
+  schema:url <https://store.steampowered.com/tags/en/2.5D/> .
+
+steam:2D a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "2D" ;
+  rdfs:comment "2D is a visual style that uses two-dimensional graphics. This often includes side-scrolling elements, platformers, and top-down perspectives." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/2D_computer_graphics> ;
+  schema:url <https://store.steampowered.com/tags/en/2D/> .
+
+steam:360Video a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "360 Video" ;
+  rdfs:comment "360 Video is a type of media that features 360-degree videos, allowing the viewer to look in any direction. This is often used in virtual reality experiences." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/360-degree_video> ;
+  schema:url <https://store.steampowered.com/tags/en/360%20Video/> .
+
+steam:3D a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "3D" ;
+  rdfs:comment "3D is a visual style that uses three-dimensional graphics. This can include a wide variety of media, from games to movies, and is used to create a sense of depth and realism." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/3D_computer_graphics> ;
+  schema:url <https://store.steampowered.com/tags/en/3D/> .
+
+steam:3DVision a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "3D Vision" ;
+  rdfs:comment "3D Vision is a technology that supports Nvidia's 3D Vision technology, which allows for stereoscopic viewing on 3D monitors and TVs." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Nvidia_3D_Vision> ;
+  schema:url <https://store.steampowered.com/tags/en/3D%20Vision/> .
+
+steam:Abstract a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Abstract" ;
+  rdfs:comment "Abstract refers to a visual style that does not attempt to represent an accurate depiction of visual reality. It uses shapes, colors, forms and gestural marks to achieve its effect." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Abstract_art> ;
+  schema:url <https://store.steampowered.com/tags/en/Abstract/> .
+
+steam:Anime a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Anime" ;
+  rdfs:comment "Anime is a style of animation originating from Japan, characterized by colorful artwork, fantastical themes, and vibrant characters." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Anime> ;
+  schema:url <https://store.steampowered.com/tags/en/Anime/> .
+
+steam:Cartoon a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Cartoon" ;
+  rdfs:comment "Cartoon is a style of drawing that is typically non-realistic or semi-realistic artistic style, often used in animations and graphic novels." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cartoon> ;
+  schema:url <https://store.steampowered.com/tags/en/Cartoon/> .
+
+steam:Cartoony a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Cartoony" ;
+  rdfs:comment "Cartoony is a visual style that resembles traditional cartoon aesthetics, often characterized by exaggerated features, bright colors, and a lack of realistic details." ;
+  schema:url <https://store.steampowered.com/tags/en/Cartoony/> .
+
+steam:Cinematic a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Cinematic" ;
+  rdfs:comment "Cinematic refers to a visual style that resembles the aesthetics of movies, often characterized by high-quality graphics, dramatic lighting, and camera angles." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cinematic_techniques> ;
+  schema:url <https://store.steampowered.com/tags/en/Cinematic/> .
+
+steam:Colorful a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Colorful" ;
+  rdfs:comment "Colorful refers to a visual style that uses a wide range of colors, often in a vibrant and eye-catching manner." ;
+  schema:url <https://store.steampowered.com/tags/en/Colorful/> .
+
+steam:ComicBook a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Comic Book" ;
+  rdfs:comment "Comic Book is a visual style that resembles the aesthetics of comic books, often characterized by bold outlines, bright colors, and stylized visuals." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Comics> ;
+  schema:url <https://store.steampowered.com/tags/en/Comic%20Book/> .
+
+steam:Cute a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Cute" ;
+  rdfs:comment "Cute is a visual style that is designed to be adorable and charming, often characterized by soft colors, round shapes, and endearing characters." ;
+  schema:url <https://store.steampowered.com/tags/en/Cute/> .
+
+steam:FirstPerson a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "First-Person" ;
+  rdfs:comment "First-Person refers to a perspective in which the audience experiences the world directly through the eyes of the character." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/First-person_(video_games)> ;
+  schema:url <https://store.steampowered.com/tags/en/First-Person/> .
+
+steam:FMV a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "FMV" ;
+  rdfs:comment "FMV, or Full Motion Video, refers to a technique used in video games that features pre-recorded video files (rather than sprites, vectors, or 3D models) to display action." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Full_motion_video> ;
+  schema:url <https://store.steampowered.com/tags/en/FMV/> .
+
+steam:HandDrawn a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Hand-drawn" ;
+  rdfs:comment "Hand-drawn refers to a visual style that appears to have been created by hand, often characterized by unique textures, lines, and colors that resemble traditional art mediums." ;
+  schema:url <https://store.steampowered.com/tags/en/Hand-drawn/> .
+
+steam:Isometric a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Isometric" ;
+  rdfs:comment "Isometric refers to a method of drawing a three-dimensional object in two dimensions, where the three coordinate axes appear equally foreshortened." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Isometric_video_game_graphics> ;
+  schema:url <https://store.steampowered.com/tags/en/Isometric/> .
+
+steam:Minimalist a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Minimalist" ;
+  rdfs:comment "Minimalist refers to a visual style that is stripped down to its essential elements, often characterized by simplicity and the use of minimal colors, shapes, and textures." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Minimalism> ;
+  schema:url <https://store.steampowered.com/tags/en/Minimalist/> .
+
+steam:Noir a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Noir" ;
+  rdfs:comment "Noir is a visual style that is characterized by cynicism, fatalism, and moral ambiguity. It often uses a black-and-white aesthetic with high contrast and dramatic shadows." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Film_noir> ;
+  schema:url <https://store.steampowered.com/tags/en/Noir/> .
+
+steam:PixelGraphics a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Pixel Graphics" ;
+  rdfs:comment "Pixel Graphics refers to a visual style that uses pixel art, where images are created on the pixel level. This style is often associated with early video games." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Pixel_art> ;
+  schema:url <https://store.steampowered.com/tags/en/Pixel%20Graphics/> .
+
+steam:Psychedelic a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Psychedelic" ;
+  rdfs:comment "Psychedelic is a visual style that is characterized by the distortion of reality, vibrant colors, and complex, often surreal imagery." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Psychedelia> ;
+  schema:url <https://store.steampowered.com/tags/en/Psychedelic/> .
+
+steam:Realistic a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Realistic" ;
+  rdfs:comment "Realistic refers to a visual style that attempts to represent the physical world in a realistic manner. It often features detailed textures, accurate lighting, and complex models." ;
+  schema:url <https://store.steampowered.com/tags/en/Realistic/> .
+
+steam:SplitScreen a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Split Screen" ;
+  rdfs:comment "Split Screen refers to a display technique that divides the screen into two or more parts to show multiple perspectives or players simultaneously." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Split_screen_(computing)> ;
+  schema:url <https://store.steampowered.com/tags/en/Split%20Screen/> .
+
+steam:Stylized a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Stylized" ;
+  rdfs:comment "Stylized refers to a visual style that distorts or exaggerates certain elements for expressive or artistic effect." ;
+  schema:url <https://store.steampowered.com/tags/en/Stylized/> .
+
+steam:TextBased a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Text-Based" ;
+  rdfs:comment "Text-Based refers to a style of game where the visuals are primarily composed of text. These games often rely heavily on narrative and allow for extensive player imagination." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Text-based_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Text-Based/> .
+
+steam:ThirdPerson a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Third Person" ;
+  rdfs:comment "Third Person refers to a perspective in which the player views the game world from over the shoulder or behind the main character." ;
+  schema:url <https://store.steampowered.com/tags/en/Third%20Person/> .
+
+steam:TopDown a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Top-Down" ;
+  rdfs:comment "Top-Down refers to a perspective in which the player views the game world from above, often used in strategy and simulation games." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Top-down_perspective> ;
+  schema:url <https://store.steampowered.com/tags/en/Top-Down/> .
+
+steam:Voxel a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "Voxel" ;
+  rdfs:comment "Voxel refers to a visual style that uses volumetric pixels (voxels) to create the game world. This style is often associated with 3D games that have a blocky or cubic aesthetic." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Voxel> ;
+  schema:url <https://store.steampowered.com/tags/en/Voxel/> .
+
+steam:VR a owl:Class, steam:VisualsAndViewpoint ;
+  rdfs:label "VR" ;
+  rdfs:comment "VR, or Virtual Reality, refers to a technology that allows players to experience a game in a three-dimensional, interactive environment." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Virtual_reality> ;
+  schema:url <https://store.steampowered.com/tags/en/VR/> .
