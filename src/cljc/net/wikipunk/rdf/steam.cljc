@@ -39,7 +39,7 @@
 (def ActionAdventure
   "Action-Adventure games blend elements of action games with elements of adventure games, typically featuring an emphasis on combat along with puzzle-solving and item-gathering."
   {:db/ident :steam/ActionAdventure,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Action-Adventure games blend elements of action games with elements of adventure games, typically featuring an emphasis on combat along with puzzle-solving and item-gathering.",
    :rdfs/label "Action-Adventure",
@@ -51,7 +51,7 @@
 (def ActionRPG
   "Action RPG games combine elements of action games with elements of role-playing games, typically featuring real-time combat where the player has direct control over characters, as opposed to turn-based or menu-based combat."
   {:db/ident :steam/ActionRPG,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Action RPG games combine elements of action games with elements of role-playing games, typically featuring real-time combat where the player has direct control over characters, as opposed to turn-based or menu-based combat.",
    :rdfs/label "Action RPG",
@@ -81,6 +81,49 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Adventure_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Adventure/"}})
 
+(def Agriculture
+  "The Agriculture tag is used for games that allow players to cultivate and manage their own farms, gardens, or vineyards. These games often emphasize patience, planning, and a connection with the land."
+  {:db/ident :steam/Agriculture,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Agriculture tag is used for games that allow players to cultivate and manage their own farms, gardens, or vineyards. These games often emphasize patience, planning, and a connection with the land.",
+   :rdfs/label "Agriculture",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Agriculture"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Agriculture/"}})
+
+(def Aliens
+  "The Aliens tag is used for games that feature extraterrestrial life. These games often explore themes of exploration, discovery, and sometimes conflict with unknown life forms."
+  {:db/ident :steam/Aliens,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Aliens tag is used for games that feature extraterrestrial life. These games often explore themes of exploration, discovery, and sometimes conflict with unknown life forms.",
+   :rdfs/label "Aliens",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Extraterrestrial_life"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Aliens/"}})
+
+(def AlternateHistory
+  "The Alternate History tag is used for games that re-imagine history. These games explore 'what if' scenarios, providing a unique twist on historical events or periods."
+  {:db/ident :steam/AlternateHistory,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Alternate History tag is used for games that re-imagine history. These games explore 'what if' scenarios, providing a unique twist on historical events or periods.",
+   :rdfs/label "Alternate History",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Alternate_history"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Alternate%20History/"}})
+
+(def America
+  "The America tag is used for games that explore aspects of American life, history, or culture. These games might feature iconic American landscapes, historical events, or cultural touchstones."
+  {:db/ident :steam/America,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The America tag is used for games that explore aspects of American life, history, or culture. These games might feature iconic American landscapes, historical events, or cultural touchstones.",
+   :rdfs/label "America",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/United_States"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/America/"}})
+
 (def Anime
   "Anime is a style of animation originating from Japan, characterized by colorful artwork, fantastical themes, and vibrant characters."
   {:db/ident :steam/Anime,
@@ -94,7 +137,7 @@
 (def Arcade
   "Arcade games are focused on short, simple gameplay offering immediate satisfaction but also challenge and replayability. They often mimic games found in real-world arcades, like racing, shooting, or sports games."
   {:db/ident :steam/Arcade,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Arcade games are focused on short, simple gameplay offering immediate satisfaction but also challenge and replayability. They often mimic games found in real-world arcades, like racing, shooting, or sports games.",
    :rdfs/label "Arcade",
@@ -113,6 +156,15 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Arena%20Shooter/"}})
 
+(def Assassin
+  "The Assassin tag is used for games that place the player in the role of an assassin. These games often involve stealth, strategy, and sometimes moral ambiguity as players navigate the shadowy world of their profession."
+  {:db/ident :steam/Assassin,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Assassin tag is used for games that place the player in the role of an assassin. These games often involve stealth, strategy, and sometimes moral ambiguity as players navigate the shadowy world of their profession.",
+   :rdfs/label "Assassin",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Assassin/"}})
+
 (def Assessments
   "A tag used to categorize the assessments of a game on Steam"
   {:db/ident :steam/Assessments,
@@ -121,10 +173,20 @@
    :rdfs/label "Assessments",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
 
+(def Atmospheric
+  "The Atmospheric tag is used for games that place a strong emphasis on creating a specific mood or feeling. These games often use detailed environments, sound design, and visual aesthetics to draw players into their world."
+  {:db/ident :steam/Atmospheric,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Atmospheric tag is used for games that place a strong emphasis on creating a specific mood or feeling. These games often use detailed environments, sound design, and visual aesthetics to draw players into their world.",
+   :rdfs/label "Atmospheric",
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Atmospheric/"}})
+
 (def AutoBattler
   "Auto Battler games, also known as auto chess, involve automatic battles between characters controlled by the game rather than the player. Players typically focus on strategy, such as character placement and upgrades."
   {:db/ident :steam/AutoBattler,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Auto Battler games, also known as auto chess, involve automatic battles between characters controlled by the game rather than the player. Players typically focus on strategy, such as character placement and upgrades.",
    :rdfs/label "Auto Battler",
@@ -134,7 +196,7 @@
 (def AutomobileSim
   "Automobile Sim games simulate the experience of driving or racing cars. They often focus on realistic physics and vehicle handling, as well as potentially managing aspects of the car's performance such as fuel usage or mechanical wear."
   {:db/ident :steam/AutomobileSim,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Automobile Sim games simulate the experience of driving or racing cars. They often focus on realistic physics and vehicle handling, as well as potentially managing aspects of the car's performance such as fuel usage or mechanical wear.",
    :rdfs/label "Automobile Sim",
@@ -145,7 +207,7 @@
 (def BMX
   "BMX games simulate the sport of BMX biking, allowing players to perform tricks, compete in races, or explore environments on a BMX bike."
   {:db/ident :steam/BMX,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "BMX games simulate the sport of BMX biking, allowing players to perform tricks, compete in races, or explore environments on a BMX bike.",
    :rdfs/label "BMX",
@@ -156,7 +218,7 @@
 (def BaseBuilding
   "Base Building games focus on the construction and management of a home base or headquarters for the player. This often involves gathering resources, managing infrastructure, and defending against attacks."
   {:db/ident :steam/BaseBuilding,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Base Building games focus on the construction and management of a home base or headquarters for the player. This often involves gathering resources, managing infrastructure, and defending against attacks.",
    :rdfs/label "Base Building",
@@ -166,7 +228,7 @@
 (def Baseball
   "Baseball games simulate the sport of baseball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Baseball,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Baseball games simulate the sport of baseball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Baseball",
@@ -177,7 +239,7 @@
 (def Basketball
   "Basketball games simulate the sport of basketball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Basketball,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Basketball games simulate the sport of basketball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Basketball",
@@ -189,7 +251,7 @@
 (def BattleRoyale
   "Battle Royale games involve numerous players that compete to be the last person or team standing. These games often involve a shrinking play area to bring players closer together over time."
   {:db/ident :steam/BattleRoyale,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Battle Royale games involve numerous players that compete to be the last person or team standing. These games often involve a shrinking play area to bring players closer together over time.",
    :rdfs/label "Battle Royale",
@@ -211,10 +273,19 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Beat%20'Em%20Up/"}})
 
+(def Bikes
+  "The Bikes tag is used for games that feature bicycles or motorcycles as a significant element. These games might involve racing, stunts, or simply the joy of exploring on two wheels."
+  {:db/ident :steam/Bikes,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Bikes tag is used for games that feature bicycles or motorcycles as a significant element. These games might involve racing, stunts, or simply the joy of exploring on two wheels.",
+   :rdfs/label "Bikes",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Bikes/"}})
+
 (def BoardGame
   "Board Game genre includes games that are digital adaptations of traditional or modern board games. They often involve strategic decision making, and can be played solo or multiplayer."
   {:db/ident :steam/BoardGame,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Board Game genre includes games that are digital adaptations of traditional or modern board games. They often involve strategic decision making, and can be played solo or multiplayer.",
    :rdfs/label "Board Game",
@@ -226,7 +297,7 @@
 (def Bowling
   "Bowling games simulate the sport of bowling, allowing players to compete in games or tournaments. They often focus on realistic physics and gameplay."
   {:db/ident :steam/Bowling,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Bowling games simulate the sport of bowling, allowing players to compete in games or tournaments. They often focus on realistic physics and gameplay.",
    :rdfs/label "Bowling",
@@ -237,7 +308,7 @@
 (def Building
   "Building games focus on the construction of structures or environments. They often involve gathering resources, planning and designing buildings, and managing infrastructure."
   {:db/ident :steam/Building,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Building games focus on the construction of structures or environments. They often involve gathering resources, planning and designing buildings, and managing infrastructure.",
    :rdfs/label "Building",
@@ -254,7 +325,7 @@
    :rdfs/comment
    "Bullet Hell games are shooting games that feature overwhelming numbers of enemy projectiles, often in visually impressive patterns.",
    :rdfs/label "Bullet Hell",
-   :rdfs/subClassOf [:steam/ShootEmUp :steam/Shooter :steam/Action],
+   :rdfs/subClassOf [:steam/ShootEmUp :steam/Action :steam/Shooter],
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Bullet%20Hell/"}})
 
@@ -267,6 +338,17 @@
    :rdfs/label "CRPG",
    :rdfs/subClassOf :steam/RPG,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/CRPG/"}})
+
+(def Capitalism
+  "The Capitalism tag is used for games that explore themes of free-market economics. These games might involve running a business, trading stocks, or navigating the complex world of finance."
+  {:db/ident :steam/Capitalism,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Capitalism tag is used for games that explore themes of free-market economics. These games might involve running a business, trading stocks, or navigating the complex world of finance.",
+   :rdfs/label "Capitalism",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Capitalism"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Capitalism/"}})
 
 (def CardBattler
   "Card Battler games are games that use cards as a primary element to let players strategize and compete against each other."
@@ -282,7 +364,7 @@
 (def CardGame
   "Card games are digital adaptations of traditional or modern card games. They often involve strategic decision making, and can be played solo or multiplayer."
   {:db/ident :steam/CardGame,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Card games are digital adaptations of traditional or modern card games. They often involve strategic decision making, and can be played solo or multiplayer.",
    :rdfs/label "Card Game",
@@ -320,10 +402,20 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Casual_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Casual/"}})
 
+(def Cats
+  "The Cats tag is used for games that feature cats as a significant element. These games might involve caring for cats, playing as a cat, or simply feature cats as part of the game's world."
+  {:db/ident :steam/Cats,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Cats tag is used for games that feature cats as a significant element. These games might involve caring for cats, playing as a cat, or simply feature cats as part of the game's world.",
+   :rdfs/label "Cats",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Cat"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cats/"}})
+
 (def CharacterActionGame
   "Character Action Games are action games that allow players to control a single, or sometimes multiple, characters. These games often feature combat and exploration."
   {:db/ident :steam/CharacterActionGame,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Character Action Games are action games that allow players to control a single, or sometimes multiple, characters. These games often feature combat and exploration.",
    :rdfs/label "Character Action Game",
@@ -335,7 +427,7 @@
 (def Chess
   "Chess games are digital adaptations of the traditional board game of chess. They often allow for play against AI or human opponents, and may offer additional features like tutorials or puzzles."
   {:db/ident :steam/Chess,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Chess games are digital adaptations of the traditional board game of chess. They often allow for play against AI or human opponents, and may offer additional features like tutorials or puzzles.",
    :rdfs/label "Chess",
@@ -381,7 +473,7 @@
 (def Clicker
   "Clicker games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades."
   {:db/ident :steam/Clicker,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Clicker games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades.",
    :rdfs/label "Clicker",
@@ -389,6 +481,17 @@
    :rdfs/subClassOf :steam/Casual,
    :schema/sameAs :steam/Idler,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Clicker/"}})
+
+(def ColdWar
+  "The Cold War tag is used for games that explore the tense geopolitical period from 1947 to 1991. These games might involve espionage, nuclear brinkmanship, or the ideological clash between capitalism and communism."
+  {:db/ident :steam/ColdWar,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Cold War tag is used for games that explore the tense geopolitical period from 1947 to 1991. These games might involve espionage, nuclear brinkmanship, or the ideological clash between capitalism and communism.",
+   :rdfs/label "Cold War",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Cold_War"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Cold%20War/"}})
 
 (def Collectathon
   "Collectathon games are games that feature collecting a large number of items as a core mechanic."
@@ -434,15 +537,40 @@
                 "https://store.steampowered.com/tags/en/Combat%20Racing/"}})
 
 (def ComicBook
-  "Comic Book is a visual style that resembles the aesthetics of comic books, often characterized by bold outlines, bright colors, and stylized visuals."
+  "The Comic Book tag is used for games that draw inspiration from the world of comic books. These games might feature bold, colorful art styles, larger-than-life characters, or narrative structures inspired by comic book storytelling."
   {:db/ident :steam/ComicBook,
-   :rdf/type [:steam/VisualsAndViewpoint :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/ThemesAndMoods
+              :steam/VisualsAndViewpoint
+              :owl/Class
+              :steam/Tag
+              :schema/Thing],
    :rdfs/comment
-   "Comic Book is a visual style that resembles the aesthetics of comic books, often characterized by bold outlines, bright colors, and stylized visuals.",
+   "The Comic Book tag is used for games that draw inspiration from the world of comic books. These games might feature bold, colorful art styles, larger-than-life characters, or narrative structures inspired by comic book storytelling.",
    :rdfs/label "Comic Book",
-   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Comics"},
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Comic_book"},
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Comic%20Book/"}})
+
+(def Conspiracy
+  "The Conspiracy tag is used for games that delve into the world of secret plots and hidden agendas. These games might involve unraveling complex mysteries, navigating shadowy organizations, or uncovering hidden truths."
+  {:db/ident :steam/Conspiracy,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Conspiracy tag is used for games that delve into the world of secret plots and hidden agendas. These games might involve unraveling complex mysteries, navigating shadowy organizations, or uncovering hidden truths.",
+   :rdfs/label "Conspiracy",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Conspiracy_theory"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Conspiracy/"}})
+
+(def Crime
+  "The Crime tag is used for games that involve the world of crime as a significant element. These games might involve playing as a criminal, solving crimes, or exploring the impact of crime on individuals and societies."
+  {:db/ident :steam/Crime,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Crime tag is used for games that involve the world of crime as a significant element. These games might involve playing as a criminal, solving crimes, or exploring the impact of crime on individuals and societies.",
+   :rdfs/label "Crime",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Crime"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Crime/"}})
 
 (def Cute
   "Cute is a visual style that is designed to be adorable and charming, often characterized by soft colors, round shapes, and endearing characters."
@@ -453,15 +581,45 @@
    :rdfs/label "Cute",
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cute/"}})
 
+(def Cyberpunk
+  "The Cyberpunk tag is used for games that explore themes of a dystopian future dominated by advanced technology, corporate power, and social inequality. These games often feature neon-lit cityscapes, rogue AI, and anti-hero protagonists."
+  {:db/ident :steam/Cyberpunk,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Cyberpunk tag is used for games that explore themes of a dystopian future dominated by advanced technology, corporate power, and social inequality. These games often feature neon-lit cityscapes, rogue AI, and anti-hero protagonists.",
+   :rdfs/label "Cyberpunk",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Cyberpunk"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cyberpunk/"}})
+
 (def Cycling
   "Cycling games simulate the sport of cycling, allowing players to compete in races or explore environments on a bike."
   {:db/ident :steam/Cycling,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Cycling games simulate the sport of cycling, allowing players to compete in races or explore environments on a bike.",
    :rdfs/label "Cycling",
    :rdfs/subClassOf [:steam/Racing :steam/Sports],
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cycling/"}})
+
+(def Dark
+  "The Dark tag is used for games that feature a dark, often unsettling atmosphere. These games might involve horror elements, mature themes, or a sense of dread and unease."
+  {:db/ident :steam/Dark,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Dark tag is used for games that feature a dark, often unsettling atmosphere. These games might involve horror elements, mature themes, or a sense of dread and unease.",
+   :rdfs/label "Dark",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Dark/"}})
+
+(def DarkFantasy
+  "The Dark Fantasy tag is used for games that blend the fantastical elements of fantasy with darker, more horrifying themes. These games often feature grim settings, morally ambiguous characters, and a sense of impending doom."
+  {:db/ident :steam/DarkFantasy,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Dark Fantasy tag is used for games that blend the fantastical elements of fantasy with darker, more horrifying themes. These games often feature grim settings, morally ambiguous characters, and a sense of impending doom.",
+   :rdfs/label "Dark Fantasy",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Dark_fantasy"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Dark%20Fantasy/"}})
 
 (def DatingSim
   "Dating Sim games are a type of simulation game where players simulate romantic or sexual relationships. They often involve dialogues and character development."
@@ -475,15 +633,77 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Dating%20Sim/"}})
 
+(def Demons
+  "The Demons tag is used for games that feature demons and might involve battling demons, playing as a demon, or exploring a world where demons exist."
+  {:db/ident :steam/Demons,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Demons tag is used for games that feature demons and might involve battling demons, playing as a demon, or exploring a world where demons exist.",
+   :rdfs/label "Demons",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Demon"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Demons/"}})
+
+(def Destruction
+  "The Destruction tag is used for games that might involve destroying environments, buildings, or other structures as part of the gameplay."
+  {:db/ident :steam/Destruction,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Destruction tag is used for games that might involve destroying environments, buildings, or other structures as part of the gameplay.",
+   :rdfs/label "Destruction",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Destruction"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Destruction/"}})
+
+(def Detective
+  "The Detective tag is used for games that involve detective work and may involve solving mysteries, investigating crimes, or playing as a detective character."
+  {:db/ident :steam/Detective,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Detective tag is used for games that involve detective work and may involve solving mysteries, investigating crimes, or playing as a detective character.",
+   :rdfs/label "Detective",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Detective"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Detective/"}})
+
+(def Dinosaurs
+  "The Dinosaurs tag is used for games that feature dinosaurs and may involve interacting with dinosaurs, playing as a dinosaur, or exploring a world where dinosaurs exist."
+  {:db/ident :steam/Dinosaurs,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Dinosaurs tag is used for games that feature dinosaurs and may involve interacting with dinosaurs, playing as a dinosaur, or exploring a world where dinosaurs exist.",
+   :rdfs/label "Dinosaurs",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Dinosaur"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Dinosaurs/"}})
+
 (def Diplomacy
   "Diplomacy games involve negotiation, strategy, and social interaction. Players often need to form alliances, make deals, or negotiate with other players to achieve their goals."
   {:db/ident :steam/Diplomacy,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Diplomacy games involve negotiation, strategy, and social interaction. Players often need to form alliances, make deals, or negotiate with other players to achieve their goals.",
    :rdfs/label "Diplomacy",
    :rdfs/subClassOf :steam/Strategy,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Diplomacy/"}})
+
+(def Dog
+  "The Dog tag is used for games that feature dogs. These games might involve caring for dogs, playing as a dog, or simply feature dogs as part of the game's world."
+  {:db/ident :steam/Dog,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Dog tag is used for games that feature dogs. These games might involve caring for dogs, playing as a dog, or simply feature dogs as part of the game's world.",
+   :rdfs/label "Dog",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Dog"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Dog/"}})
+
+(def Dragons
+  "The Dragons tag is used for games that may involve battling dragons, playing as a dragon, or exploring a world where dragons exist."
+  {:db/ident :steam/Dragons,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Dragons tag is used for games that may involve battling dragons, playing as a dragon, or exploring a world where dragons exist.",
+   :rdfs/label "Dragons",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Dragon"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Dragons/"}})
 
 (def DungeonCrawler
   "Dungeon Crawler games are a type of adventure games where players navigate a labyrinth environment, battling various monsters, and looting any treasure they may find."
@@ -497,10 +717,31 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Dungeon%20Crawler/"}})
 
+(def DynamicNarration
+  "The Dynamic Narration tag is used for games that feature a narrative that changes based on player actions. These games often offer a high degree of player agency and multiple branching story paths."
+  {:db/ident :steam/DynamicNarration,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Dynamic Narration tag is used for games that feature a narrative that changes based on player actions. These games often offer a high degree of player agency and multiple branching story paths.",
+   :rdfs/label "Dynamic Narration",
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Dynamic%20Narration/"}})
+
+(def Economy
+  "The Economy tag is used for games that involve economic systems. These games might involve trading, resource management, or running a business."
+  {:db/ident :steam/Economy,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Economy tag is used for games that involve economic systems. These games might involve trading, resource management, or running a business.",
+   :rdfs/label "Economy",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Economy"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Economy/"}})
+
 (def Education
   "Education games are designed to teach people about certain subjects, expand concepts, reinforce development, or assist them in learning a skill as they play."
   {:db/ident :steam/Education,
-   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Education games are designed to teach people about certain subjects, expand concepts, reinforce development, or assist them in learning a skill as they play.",
    :rdfs/label "Education",
@@ -510,7 +751,7 @@
 (def Esports
   "Esports games are competitive games that are often played in professional competitions. They often require high levels of skill and strategy, and have large online communities."
   {:db/ident :steam/Esports,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Esports games are competitive games that are often played in professional competitions. They often require high levels of skill and strategy, and have large online communities.",
    :rdfs/label "eSports",
@@ -522,7 +763,7 @@
   "Experimental games are those that challenge the status quo of gaming and offer a unique, sometimes strange, gaming experience. These games often explore new game mechanics, storytelling methods, and art styles."
   {:db/ident :steam/Experimental,
    :rdf/type
-   [:steam/Genre :steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   [:steam/Genre :steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Experimental games are those that challenge the status quo of gaming and offer a unique, sometimes strange, gaming experience. These games often explore new game mechanics, storytelling methods, and art styles.",
    :rdfs/label "Experimental",
@@ -533,7 +774,7 @@
 (def Exploration
   "Exploration games focus on the act of exploring an environment. They often feature open-world settings, and encourage players to explore and discover new areas, items, or storylines."
   {:db/ident :steam/Exploration,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Exploration games focus on the act of exploring an environment. They often feature open-world settings, and encourage players to explore and discover new areas, items, or storylines.",
    :rdfs/label "Exploration",
@@ -561,10 +802,40 @@
    :rdfs/subClassOf [:steam/Shooter :steam/Action],
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/FPS/"}})
 
+(def Faith
+  "The Faith tag is used for games that explore themes of faith, religion, or spirituality. These games might involve exploring religious beliefs, engaging with spiritual practices, or navigating the complexities of faith."
+  {:db/ident :steam/Faith,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Faith tag is used for games that explore themes of faith, religion, or spirituality. These games might involve exploring religious beliefs, engaging with spiritual practices, or navigating the complexities of faith.",
+   :rdfs/label "Faith",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Faith"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Faith/"}})
+
+(def FamilyFriendly
+  "The Family Friendly tag is used for games that are suitable for players of all ages. These games often avoid explicit content, focus on positive themes, and are designed to be accessible and enjoyable for a wide audience."
+  {:db/ident :steam/FamilyFriendly,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Family Friendly tag is used for games that are suitable for players of all ages. These games often avoid explicit content, focus on positive themes, and are designed to be accessible and enjoyable for a wide audience.",
+   :rdfs/label "Family Friendly",
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Family%20Friendly/"}})
+
+(def Fantasy
+  "The Fantasy tag is used for games that feature elements of fantasy, such as magic, mythical creatures, or fantastical settings. These games often involve quests, epic narratives, and exploration of magical worlds."
+  {:db/ident :steam/Fantasy,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Fantasy tag is used for games that feature elements of fantasy, such as magic, mythical creatures, or fantastical settings. These games often involve quests, epic narratives, and exploration of magical worlds.",
+   :rdfs/label "Fantasy",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Fantasy"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Fantasy/"}})
+
 (def FarmingSim
   "Farming Sim games simulate the experience of farming, including the cultivation of crops, raising of livestock, and management of a farm. They often involve elements of strategy and resource management."
   {:db/ident :steam/FarmingSim,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Farming Sim games simulate the experience of farming, including the cultivation of crops, raising of livestock, and management of a farm. They often involve elements of strategy and resource management.",
    :rdfs/label "Farming Sim",
@@ -583,7 +854,7 @@
 (def Fighting
   "Fighting games are characterized by close combat between two fighters or groups of fighters, often set in arenas. Players must master techniques, combos, and strategy to overcome their opponents."
   {:db/ident :steam/Fighting,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Fighting games are characterized by close combat between two fighters or groups of fighters, often set in arenas. Players must master techniques, combos, and strategy to overcome their opponents.",
    :rdfs/label "Fighting",
@@ -617,13 +888,22 @@
 (def Football
   "Football games simulate the sport of football, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Football,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Football games simulate the sport of football, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Football",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Football_game"},
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Football/"}})
+
+(def Foreign
+  "The Foreign tag is used for games that originate from or are set in countries outside of the player's own. These games often offer insights into different cultures, languages, and perspectives."
+  {:db/ident :steam/Foreign,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Foreign tag is used for games that originate from or are set in countries outside of the player's own. These games often offer insights into different cultures, languages, and perspectives.",
+   :rdfs/label "Foreign",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Foreign/"}})
 
 (def Funding
   "A tag used to categorize the funding of a game on Steam"
@@ -632,6 +912,39 @@
    :rdfs/comment    "A tag used to categorize the funding of a game on Steam",
    :rdfs/label      "Funding",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
+
+(def Futuristic
+  "The Futuristic tag is used for games that are set in or draw inspiration from visions of the future. These games often feature advanced technology, futuristic settings, and themes of exploration and innovation."
+  {:db/ident :steam/Futuristic,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Futuristic tag is used for games that are set in or draw inspiration from visions of the future. These games often feature advanced technology, futuristic settings, and themes of exploration and innovation.",
+   :rdfs/label "Futuristic",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Future"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Futuristic/"}})
+
+(def Gambling
+  "The Gambling tag is used for games that involve playing casino games, betting on outcomes, or other forms of wagering."
+  {:db/ident :steam/Gambling,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Gambling tag is used for games that involve playing casino games, betting on outcomes, or other forms of wagering.",
+   :rdfs/label "Gambling",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Gambling"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Gambling/"}})
+
+(def GameDevelopment
+  "The Game Development tag is used for games that might involve creating your own games, managing a game development studio, or exploring the process of game development."
+  {:db/ident :steam/GameDevelopment,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Game Development tag is used for games that might involve creating your own games, managing a game development studio, or exploring the process of game development.",
+   :rdfs/label "Game Development",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Video_game_development"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Game%20Development/"}})
 
 (def Genre
   "A genre used to categorize a game on Steam"
@@ -644,7 +957,7 @@
 (def GodGame
   "God games are a type of game where players control a character with divine powers. They often involve elements of creation, terraforming, and control over nature."
   {:db/ident :steam/GodGame,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "God games are a type of game where players control a character with divine powers. They often involve elements of creation, terraforming, and control over nature.",
    :rdfs/label "God Game",
@@ -656,13 +969,23 @@
 (def Golf
   "Golf games simulate the sport of golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay."
   {:db/ident :steam/Golf,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Golf games simulate the sport of golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay.",
    :rdfs/label "Golf",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Golf_game"},
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Golf/"}})
+
+(def Gothic
+  "The Gothic tag is used for games that feature gothic themes or aesthetics. These games might involve dark and atmospheric settings, supernatural elements, or a focus on horror and mystery."
+  {:db/ident :steam/Gothic,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Gothic tag is used for games that feature gothic themes or aesthetics. These games might involve dark and atmospheric settings, supernatural elements, or a focus on horror and mystery.",
+   :rdfs/label "Gothic",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Gothic_fiction"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Gothic/"}})
 
 (def GrandStrategy
   "Grand Strategy games are a type of strategy game that includes aspects of military, economic, and political development. Players control a nation or faction and make long-term strategic decisions."
@@ -692,7 +1015,7 @@
 (def Hacking
   "Hacking games involve elements of computer hacking. They often require players to solve puzzles, exploit systems, or engage in simulated computer hacking tasks."
   {:db/ident :steam/Hacking,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Hacking games involve elements of computer hacking. They often require players to solve puzzles, exploit systems, or engage in simulated computer hacking tasks.",
    :rdfs/label "Hacking",
@@ -720,7 +1043,8 @@
 (def Heist
   "Heist games are games that involve a plot to commit a burglary or theft of some kind."
   {:db/ident :steam/Heist,
-   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Heist games are games that involve a plot to commit a burglary or theft of some kind.",
    :rdfs/label "Heist",
@@ -743,7 +1067,7 @@
 (def HiddenObject
   "Hidden Object games require players to find specific items from a list that are hidden within a picture or scene."
   {:db/ident :steam/HiddenObject,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Hidden Object games require players to find specific items from a list that are hidden within a picture or scene.",
    :rdfs/label "Hidden Object",
@@ -752,10 +1076,21 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Hidden%20Object/"}})
 
+(def Historical
+  "The Historical tag is used for games that are set in or draw inspiration from real historical periods. These games often involve exploring historical events, interacting with historical figures, or recreating historical settings."
+  {:db/ident :steam/Historical,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Historical tag is used for games that are set in or draw inspiration from real historical periods. These games often involve exploring historical events, interacting with historical figures, or recreating historical settings.",
+   :rdfs/label "Historical",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/History"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Historical/"}})
+
 (def Hockey
   "Hockey games simulate the sport of hockey, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics."
   {:db/ident :steam/Hockey,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Hockey games simulate the sport of hockey, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics.",
    :rdfs/label "Hockey",
@@ -773,10 +1108,20 @@
                   "http://dbpedia.org/resource/Category:Horror_video_games"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Horror/"}})
 
+(def Horses
+  "The Horses tag is used for games that feature horses. These games might involve riding horses, caring for horses, or exploring a world where horses play a significant role."
+  {:db/ident :steam/Horses,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Horses tag is used for games that feature horses. These games might involve riding horses, caring for horses, or exploring a world where horses play a significant role.",
+   :rdfs/label "Horses",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Horse"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Horses/"}})
+
 (def Idler
   "Idler games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades."
   {:db/ident :steam/Idler,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Idler games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades.",
    :rdfs/label "Idler",
@@ -784,6 +1129,17 @@
    :rdfs/subClassOf :steam/Casual,
    :schema/sameAs :steam/Clicker,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Idler/"}})
+
+(def Illuminati
+  "The Illuminati tag is used for games that involve the Illuminati or similar secret societies as a significant element. These games might involve uncovering conspiracies, battling secret societies, or exploring the influence of all-powerful organizations."
+  {:db/ident :steam/Illuminati,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Illuminati tag is used for games that involve the Illuminati or similar secret societies as a significant element. These games might involve uncovering conspiracies, battling secret societies, or exploring the influence of all-powerful organizations.",
+   :rdfs/label "Illuminati",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Illuminati"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Illuminati/"}})
 
 (def ImmersiveSim
   "Immersive Sim games are a type of video game that emphasizes player choice. Their key defining features are a blend of multiple gameplay genres, and a highly interactive world."
@@ -800,7 +1156,7 @@
 (def InteractiveFiction
   "Interactive Fiction games are games that emphasize narrative and player choice. They often involve complex branching narratives and multiple endings."
   {:db/ident :steam/InteractiveFiction,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Interactive Fiction games are games that emphasize narrative and player choice. They often involve complex branching narratives and multiple endings.",
    :rdfs/label "Interactive Fiction",
@@ -809,11 +1165,12 @@
    {:rdfa/uri "https://store.steampowered.com/tags/en/Interactive%20Fiction/"}})
 
 (def Investigation
-  "Investigation games are games that involve players solving a mystery or crime by gathering clues and evidence."
+  "The Investigation tag is used for games that might involve solving mysteries, uncovering clues, or playing as a detective or investigator."
   {:db/ident :steam/Investigation,
-   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
-   "Investigation games are games that involve players solving a mystery or crime by gathering clues and evidence.",
+   "The Investigation tag is used for games that might involve solving mysteries, uncovering clues, or playing as a detective or investigator.",
    :rdfs/label "Investigation",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Detective_fiction"},
    :schema/url {:rdfa/uri
@@ -843,6 +1200,37 @@
    :rdfs/subClassOf :steam/RPG,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/JRPG/"}})
 
+(def Jet
+  "The Jet tag is used for games that feature jets or jet-powered vehicles. These games might involve flying jets, participating in jet combat, or exploring a world where jets play a significant role."
+  {:db/ident :steam/Jet,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Jet tag is used for games that feature jets or jet-powered vehicles. These games might involve flying jets, participating in jet combat, or exploring a world where jets play a significant role.",
+   :rdfs/label "Jet",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Jet_aircraft"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Jet/"}})
+
+(def LGBTQPlus
+  "The LGBTQ+ tag is used for games that feature LGBTQ+ themes or characters as a significant element. These games might involve exploring LGBTQ+ identities, relationships, or issues, or feature LGBTQ+ characters in prominent roles."
+  {:db/ident :steam/LGBTQPlus,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The LGBTQ+ tag is used for games that feature LGBTQ+ themes or characters as a significant element. These games might involve exploring LGBTQ+ identities, relationships, or issues, or feature LGBTQ+ characters in prominent roles.",
+   :rdfs/label "LGBTQ+",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/LGBT"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/LGBTQ%2B/"}})
+
+(def Lemmings
+  "The Lemmings tag is used for games that feature gameplay mechanics similar to the classic game Lemmings. These games often involve guiding a group of characters through a series of obstacles to reach a goal."
+  {:db/ident :steam/Lemmings,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Lemmings tag is used for games that feature gameplay mechanics similar to the classic game Lemmings. These games often involve guiding a group of characters through a series of obstacles to reach a goal.",
+   :rdfs/label "Lemmings",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Lemmings_(video_game)"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Lemmings/"}})
+
 (def LifeSim
   "Life Sim games are a type of simulation game where players simulate living or controlling one or more artificial lives."
   {:db/ident :steam/LifeSim,
@@ -855,6 +1243,26 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Life%20Sim/"}})
 
+(def Logic
+  "The Logic tag is used for games that involve logic puzzles. These games might involve solving puzzles, deducing solutions, or applying logical reasoning to overcome challenges."
+  {:db/ident :steam/Logic,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Logic tag is used for games that involve logic puzzles. These games might involve solving puzzles, deducing solutions, or applying logical reasoning to overcome challenges.",
+   :rdfs/label "Logic",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Logic"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Logic/"}})
+
+(def Loot
+  "The Loot tag is used for games that feature loot or item collection as a significant element. These games might involve finding and collecting items and upgrading equipment."
+  {:db/ident :steam/Loot,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Loot tag is used for games that feature loot or item collection as a significant element. These games might involve finding and collecting items and upgrading equipment.",
+   :rdfs/label "Loot",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Loot"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Loot/"}})
+
 (def LooterShooter
   "Looter Shooter games are a sub-genre of shooter games that include elements of looting, shooting, and often role-playing."
   {:db/ident :steam/LooterShooter,
@@ -866,10 +1274,21 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Looter%20Shooter/"}})
 
+(def Lovecraftian
+  "The Lovecraftian tag is used for games that feature themes, settings, or elements inspired by the works of H.P. Lovecraft. These games often involve cosmic horror, ancient gods, or a sense of dread and the unknown."
+  {:db/ident :steam/Lovecraftian,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Lovecraftian tag is used for games that feature themes, settings, or elements inspired by the works of H.P. Lovecraft. These games often involve cosmic horror, ancient gods, or a sense of dread and the unknown.",
+   :rdfs/label "Lovecraftian",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Lovecraftian_horror"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Lovecraftian/"}})
+
 (def MMORPG
   "MMORPGs (Massively Multiplayer Online Role-Playing Games) are games that involve large numbers of players interacting in a virtual world. They often involve character development, quests, and multiplayer cooperation or competition."
   {:db/ident :steam/MMORPG,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "MMORPGs (Massively Multiplayer Online Role-Playing Games) are games that involve large numbers of players interacting in a virtual world. They often involve character development, quests, and multiplayer cooperation or competition.",
    :rdfs/label "MMORPG",
@@ -885,7 +1304,7 @@
 (def MOBA
   "MOBA (Multiplayer Online Battle Arena) games involve teams of players competing against each other in an arena. They often require strategic decision-making, teamwork, and player skill."
   {:db/ident :steam/MOBA,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "MOBA (Multiplayer Online Battle Arena) games involve teams of players competing against each other in an arena. They often require strategic decision-making, teamwork, and player skill.",
    :rdfs/label "MOBA",
@@ -897,10 +1316,21 @@
                      :steam/Strategy],
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/MOBA/"}})
 
+(def Magic
+  "The Magic tag is used for games that feature magic or magical elements as a significant aspect. These games might involve casting spells, exploring magical worlds, or interacting with magical creatures."
+  {:db/ident :steam/Magic,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Magic tag is used for games that feature magic or magical elements as a significant aspect. These games might involve casting spells, exploring magical worlds, or interacting with magical creatures.",
+   :rdfs/label "Magic",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Magic_(supernatural)"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Magic/"}})
+
 (def Management
   "Management games involve managing resources and making strategic decisions. They often require players to manage businesses, cities, or other entities."
   {:db/ident :steam/Management,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Management games involve managing resources and making strategic decisions. They often require players to manage businesses, cities, or other entities.",
    :rdfs/label "Management",
@@ -911,10 +1341,20 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Management/"}})
 
+(def Mars
+  "The Mars tag is used for games that feature Mars or Martian elements. These games might involve exploring Mars, interacting with Martian life, or surviving in a Martian environment."
+  {:db/ident :steam/Mars,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Mars tag is used for games that feature Mars or Martian elements. These games might involve exploring Mars, interacting with Martian life, or surviving in a Martian environment.",
+   :rdfs/label "Mars",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Mars"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Mars/"}})
+
 (def Match3
   "Match 3 games require players to match three or more items of the same type to achieve a goal. They often involve puzzle-solving and strategic thinking."
   {:db/ident :steam/Match3,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Match 3 games require players to match three or more items of the same type to achieve a goal. They often involve puzzle-solving and strategic thinking.",
    :rdfs/label "Match 3",
@@ -923,10 +1363,20 @@
    :rdfs/subClassOf :steam/Puzzle,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Match%203/"}})
 
+(def Mechs
+  "The Mechs tag is used for games that feature mechs or mech combat. These games might involve piloting mechs, battling with mechs, or exploring a world where mechs play a significant role."
+  {:db/ident :steam/Mechs,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Mechs tag is used for games that feature mechs or mech combat. These games might involve piloting mechs, battling with mechs, or exploring a world where mechs play a significant role.",
+   :rdfs/label "Mechs",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Mecha"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Mechs/"}})
+
 (def MedicalSim
   "Medical Sim games simulate medical scenarios or procedures. They often require players to diagnose and treat patients, manage a medical facility, or perform simulated surgeries."
   {:db/ident :steam/MedicalSim,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Medical Sim games simulate medical scenarios or procedures. They often require players to diagnose and treat patients, manage a medical facility, or perform simulated surgeries.",
    :rdfs/label "Medical Sim",
@@ -934,6 +1384,25 @@
    :rdfs/subClassOf :steam/Simulation,
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Medical%20Sim/"}})
+
+(def Medieval
+  "The Medieval tag is used for games that are set in or draw inspiration from the medieval period. These games often involve exploring medieval settings, interacting with medieval characters, or recreating medieval life."
+  {:db/ident :steam/Medieval,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Medieval tag is used for games that are set in or draw inspiration from the medieval period. These games often involve exploring medieval settings, interacting with medieval characters, or recreating medieval life.",
+   :rdfs/label "Medieval",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Medieval/"}})
+
+(def Memes
+  "The Memes tag is used for games that feature memes or meme culture."
+  {:db/ident :steam/Memes,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Memes tag is used for games that feature memes or meme culture.",
+   :rdfs/label "Memes",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Internet_meme"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Memes/"}})
 
 (def Metroidvania
   "Metroidvania games are a sub-genre of action-adventure games that includes elements of exploration, backtracking, and item gathering."
@@ -947,10 +1416,20 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Metroidvania/"}})
 
+(def Military
+  "The Military tag is used for games that may involve participating in military operations, exploring military history, or interacting with military equipment and personnel."
+  {:db/ident :steam/Military,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Military tag is used for games that may involve participating in military operations, exploring military history, or interacting with military equipment and personnel.",
+   :rdfs/label "Military",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Military"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Military/"}})
+
 (def MiniGolf
   "Mini Golf games simulate the sport of mini golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay."
   {:db/ident :steam/MiniGolf,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Mini Golf games simulate the sport of mini golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay.",
    :rdfs/label "Mini Golf",
@@ -973,22 +1452,51 @@
 (def Mining
   "Mining games involve the extraction of valuable minerals or other geological materials from the earth. They often require players to manage resources, explore environments, and develop mining operations."
   {:db/ident :steam/Mining,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Mining games involve the extraction of valuable minerals or other geological materials from the earth. They often require players to manage resources, explore environments, and develop mining operations.",
    :rdfs/label "Mining",
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Mining/"}})
 
+(def Modern
+  "The Modern tag is used for games that are set in or draw inspiration from the modern period or dealing with modern issues and themes."
+  {:db/ident :steam/Modern,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Modern tag is used for games that are set in or draw inspiration from the modern period or dealing with modern issues and themes.",
+   :rdfs/label "Modern",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Modern/"}})
+
 (def Motocross
   "Motocross games simulate the sport of motocross, allowing players to compete in races or perform stunts on a motocross bike."
   {:db/ident :steam/Motocross,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Motocross games simulate the sport of motocross, allowing players to compete in races or perform stunts on a motocross bike.",
    :rdfs/label "Motocross",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Motocross_video_game"},
    :rdfs/subClassOf [:steam/Sports :steam/Racing],
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Motocross/"}})
+
+(def Motorbike
+  "The Motorbike tag is used for games that feature motorbikes or motorbike racing."
+  {:db/ident :steam/Motorbike,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Motorbike tag is used for games that feature motorbikes or motorbike racing.",
+   :rdfs/label "Motorbike",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Motorcycle"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Motorbike/"}})
+
+(def Mystery
+  "The Mystery tag is used for games that feature mystery or suspense. These games might involve solving mysteries and uncovering secrets."
+  {:db/ident :steam/Mystery,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Mystery tag is used for games that feature mystery or suspense. These games might involve solving mysteries and uncovering secrets.",
+   :rdfs/label "Mystery",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Mystery_fiction"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Mystery/"}})
 
 (def MysteryDungeon
   "Mystery Dungeon games are a sub-genre of role-playing games that feature randomly generated dungeons and turn-based combat."
@@ -1003,6 +1511,45 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Mystery%20Dungeon/"}})
 
+(def Mythology
+  "The Mythology tag is used for games that feature mythology and may involve exploring mythological worlds, interacting with mythological creatures, or delving into mythological lore."
+  {:db/ident :steam/Mythology,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Mythology tag is used for games that feature mythology and may involve exploring mythological worlds, interacting with mythological creatures, or delving into mythological lore.",
+   :rdfs/label "Mythology",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Mythology"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Mythology/"}})
+
+(def Nature
+  "The Nature tag is used for games that feature nature or natural environments and may involve exploring natural landscapes and interacting with wildlife."
+  {:db/ident :steam/Nature,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Nature tag is used for games that feature nature or natural environments and may involve exploring natural landscapes and interacting with wildlife.",
+   :rdfs/label "Nature",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Nature"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Nature/"}})
+
+(def Naval
+  "The Naval tag is used for games that feature naval or maritime elements as a significant aspect. These games might involve commanding naval vessels, engaging in naval combat, or exploring maritime environments."
+  {:db/ident :steam/Naval,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Naval tag is used for games that feature naval or maritime elements as a significant aspect. These games might involve commanding naval vessels, engaging in naval combat, or exploring maritime environments.",
+   :rdfs/label "Naval",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Naval/"}})
+
+(def Ninja
+  "The Ninja tag is used for games that feature ninjas or ninja-themed elements as a significant aspect. These games might involve playing as a ninja, using ninja tactics, or exploring a world influenced by ninja culture."
+  {:db/ident :steam/Ninja,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Ninja tag is used for games that feature ninjas or ninja-themed elements as a significant aspect. These games might involve playing as a ninja, using ninja tactics, or exploring a world influenced by ninja culture.",
+   :rdfs/label "Ninja",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Ninja"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Ninja/"}})
+
 (def Noir
   "Noir is a visual style that is characterized by cynicism, fatalism, and moral ambiguity. It often uses a black-and-white aesthetic with high contrast and dramatic shadows."
   {:db/ident :steam/Noir,
@@ -1012,6 +1559,27 @@
    :rdfs/label "Noir",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Film_noir"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Noir/"}})
+
+(def Offroad
+  "The Offroad tag is used for games that might involve driving offroad vehicles, navigating challenging terrains, or exploring remote environments."
+  {:db/ident :steam/Offroad,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Offroad tag is used for games that might involve driving offroad vehicles, navigating challenging terrains, or exploring remote environments.",
+   :rdfs/label "Offroad",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Off-roading"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Offroad/"}})
+
+(def OldSchool
+  "The Old School tag is used for games that feature old school or retro elements as a significant aspect. These games might involve classic gameplay mechanics, retro graphics, or nostalgic themes."
+  {:db/ident :steam/OldSchool,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Old School tag is used for games that feature old school or retro elements as a significant aspect. These games might involve classic gameplay mechanics, retro graphics, or nostalgic themes.",
+   :rdfs/label "Old School",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Retrogaming"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Old%20School/"}})
 
 (def OnRailsShooter
   "On-Rails Shooter games are a type of shooter game where the player's movement is automatically guided along a fixed path, or 'on rails'."
@@ -1027,7 +1595,7 @@
 (def OpenWorld
   "Open World games provide a large, open environment for players to explore and interact with. They often allow players to choose their own objectives and play at their own pace."
   {:db/ident :steam/OpenWorld,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Open World games provide a large, open environment for players to explore and interact with. They often allow players to choose their own objectives and play at their own pace.",
    :rdfs/label "Open World",
@@ -1055,10 +1623,20 @@
    :rdfs/label      "Other",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
 
+(def Otome
+  "The Otome tag is used for games that are designed with the typical preferences of women in mind, and one of the main goals, besides the plot goal, is to develop a romantic relationship between the female player character and one of several male or female characters. This genre is most established in Japan, and is mostly made up of visual novels and simulation games."
+  {:db/ident :steam/Otome,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Otome tag is used for games that are designed with the typical preferences of women in mind, and one of the main goals, besides the plot goal, is to develop a romantic relationship between the female player character and one of several male or female characters. This genre is most established in Japan, and is mostly made up of visual novels and simulation games.",
+   :rdfs/label "Otome",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Otome_game"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Otome/"}})
+
 (def OutbreakSim
   "Outbreak Sim games simulate the spread of diseases or other outbreaks and often involve strategy and management elements."
   {:db/ident :steam/OutbreakSim,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Outbreak Sim games simulate the spread of diseases or other outbreaks and often involve strategy and management elements.",
    :rdfs/label "Outbreak Sim",
@@ -1066,10 +1644,20 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Outbreak%20Sim/"}})
 
+(def Parkour
+  "The Parkour tag is used for games that feature parkour or free-running elements as a significant aspect."
+  {:db/ident :steam/Parkour,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Parkour tag is used for games that feature parkour or free-running elements as a significant aspect.",
+   :rdfs/label "Parkour",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Parkour"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Parkour/"}})
+
 (def PartyBasedRPG
   "Party-Based RPGs are role-playing games where players control a group of characters, often with different abilities and roles, and must use teamwork and strategy to succeed."
   {:db/ident :steam/PartyBasedRPG,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Party-Based RPGs are role-playing games where players control a group of characters, often with different abilities and roles, and must use teamwork and strategy to succeed.",
    :rdfs/label "Party-Based RPG",
@@ -1077,16 +1665,37 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Party-Based%20RPG/"}})
 
+(def Philosophical
+  "The Philosophical tag is used for games that feature philosophical themes or thought-provoking elements."
+  {:db/ident :steam/Philosophical,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Philosophical tag is used for games that feature philosophical themes or thought-provoking elements.",
+   :rdfs/label "Philosophical",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Philosophy"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Philosophical/"}})
+
 (def Pinball
   "Pinball games simulate the classic arcade game of pinball, where players use flippers to hit a ball and score points."
   {:db/ident :steam/Pinball,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Pinball games simulate the classic arcade game of pinball, where players use flippers to hit a ball and score points.",
    :rdfs/label "Pinball",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Pinball"},
    :rdfs/subClassOf :steam/Arcade,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Pinball/"}})
+
+(def Pirates
+  "The Pirates tag is used for games that feature pirates or piracy elements that might involve sailing pirate ships, engaging in pirate combat, or exploring a world influenced by pirate culture."
+  {:db/ident :steam/Pirates,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Pirates tag is used for games that feature pirates or piracy elements that might involve sailing pirate ships, engaging in pirate combat, or exploring a world influenced by pirate culture.",
+   :rdfs/label "Pirates",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Piracy"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Pirates/"}})
 
 (def PixelGraphics
   "Pixel Graphics refers to a visual style that uses pixel art, where images are created on the pixel level. This style is often associated with early video games."
@@ -1102,7 +1711,7 @@
 (def Platformer
   "Platformer games involve guiding a character through levels and overcoming obstacles, often by jumping onto platforms at different heights."
   {:db/ident :steam/Platformer,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Platformer games involve guiding a character through levels and overcoming obstacles, often by jumping onto platforms at different heights.",
    :rdfs/label "Platformer",
@@ -1121,12 +1730,22 @@
 (def PointAndClick
   "Point & Click games involve interacting with the environment and solving puzzles through a point-and-click interface."
   {:db/ident :steam/PointAndClick,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Point & Click games involve interacting with the environment and solving puzzles through a point-and-click interface.",
    :rdfs/label "Point & Click",
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Point%20&%20Click/"}})
+
+(def Political
+  "The Political tag is often associated with games that deal with political science concepts. This could include the theoretical analysis of political systems, their origins, underlying values, and goals."
+  {:db/ident :steam/Political,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Political tag is often associated with games that deal with political science concepts. This could include the theoretical analysis of political systems, their origins, underlying values, and goals.",
+   :rdfs/label "Political",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Politics"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Political/"}})
 
 (def PoliticalSim
   "Political Sim games are a type of simulation game where players simulate the politics and government of a nation or civilization."
@@ -1140,6 +1759,37 @@
    :rdfs/subClassOf :steam/Simulation,
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Political%20Sim/"}})
+
+(def Politics
+  "The Politics tag generally refers to games that involve activities related to governance or influencing the way a country or organization is governed. This could include decision-making processes, implementation of laws and norms within a game's universe, or strategies aimed at improving the lives of the game's characters."
+  {:db/ident :steam/Politics,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Politics tag generally refers to games that involve activities related to governance or influencing the way a country or organization is governed. This could include decision-making processes, implementation of laws and norms within a game's universe, or strategies aimed at improving the lives of the game's characters.",
+   :rdfs/label "Politics",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Politics"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Politics/"}})
+
+(def Pool
+  "The Pool tag is used for games that feature pool or billiards elements."
+  {:db/ident :steam/Pool,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Pool tag is used for games that feature pool or billiards elements.",
+   :rdfs/label "Pool",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Cue_sports"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Pool/"}})
+
+(def PostApocalyptic
+  "The Post-apocalyptic tag is used for games that feature post-apocalyptic themes."
+  {:db/ident :steam/PostApocalyptic,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Post-apocalyptic tag is used for games that feature post-apocalyptic themes.",
+   :rdfs/label "Post-apocalyptic",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Post-apocalyptic"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Post-apocalyptic/"}})
 
 (def PrecisionPlatformer
   "Precision Platformer games are a sub-genre of platformer games that require precise control and timing."
@@ -1156,7 +1806,8 @@
 (def Programming
   "Programming games are games where the player has limited direct control over the game characters, and completes levels or achieves goals by programming game elements."
   {:db/ident :steam/Programming,
-   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Programming games are games where the player has limited direct control over the game characters, and completes levels or achieves goals by programming game elements.",
    :rdfs/label "Programming",
@@ -1200,7 +1851,7 @@
 (def RTS
   "Real-Time Strategy (RTS) games require strategic decision making in real time, often involving resource management and direct control over units."
   {:db/ident :steam/RTS,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Real-Time Strategy (RTS) games require strategic decision making in real time, often involving resource management and direct control over units.",
    :rdfs/label "RTS",
@@ -1247,20 +1898,40 @@
    :rdfs/label "Realistic",
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Realistic/"}})
 
+(def Retro
+  "The Retro tag is used for games that feature retro or vintage elements as a significant aspect. These games might involve retro graphics, vintage soundtracks, or gameplay mechanics reminiscent of older games."
+  {:db/ident :steam/Retro,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Retro tag is used for games that feature retro or vintage elements as a significant aspect. These games might involve retro graphics, vintage soundtracks, or gameplay mechanics reminiscent of older games.",
+   :rdfs/label "Retro",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Retrogaming"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Retro/"}})
+
 (def Rhythm
   "Rhythm games challenge players to follow the beat or rhythm of music tracks."
   {:db/ident :steam/Rhythm,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Rhythm games challenge players to follow the beat or rhythm of music tracks.",
    :rdfs/label "Rhythm",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Rhythm_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Rhythm/"}})
 
+(def Robots
+  "The Robots tag is used for games that feature robots or robotics elements."
+  {:db/ident :steam/Robots,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Robots tag is used for games that feature robots or robotics elements.",
+   :rdfs/label "Robots",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Robot"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Robots/"}})
+
 (def Roguelike
   "Roguelike games feature procedurally generated levels and permadeath, often with RPG elements."
   {:db/ident :steam/Roguelike,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Roguelike games feature procedurally generated levels and permadeath, often with RPG elements.",
    :rdfs/label "Roguelike",
@@ -1289,6 +1960,26 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Roguevania/"}})
 
+(def Romance
+  "The Romance tag is used for games that feature romance or romantic elements."
+  {:db/ident :steam/Romance,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Romance tag is used for games that feature romance or romantic elements.",
+   :rdfs/label "Romance",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Romance_(love)"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Romance/"}})
+
+(def Rome
+  "The Rome tag is used for games that feature Rome or Roman elements and may involve Roman history or Roman mythology."
+  {:db/ident :steam/Rome,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Rome tag is used for games that feature Rome or Roman elements and may involve Roman history or Roman mythology.",
+   :rdfs/label "Rome",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Ancient_Rome"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Rome/"}})
+
 (def Rougelike {:db/ident :steam/Rougelike})
 
 (def Runner
@@ -1304,12 +1995,42 @@
 (def Sandbox
   "Sandbox games allow players to explore, create, and manipulate their environment with few imposed goals or restrictions."
   {:db/ident :steam/Sandbox,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Sandbox games allow players to explore, create, and manipulate their environment with few imposed goals or restrictions.",
    :rdfs/label "Sandbox",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Sandbox_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Sandbox/"}})
+
+(def Satire
+  "The Satire tag is used for games that feature satirical humor, satirical commentary, or satirical themes."
+  {:db/ident :steam/Satire,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Satire tag is used for games that feature satirical humor, satirical commentary, or satirical themes.",
+   :rdfs/label "Satire",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Satire"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Satire/"}})
+
+(def SciFi
+  "The Sci-fi tag is used for games that feature science fiction or sci-fi elements as a significant aspect. These games might involve futuristic technology, alien worlds, or themes common in science fiction."
+  {:db/ident :steam/SciFi,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Sci-fi tag is used for games that feature science fiction or sci-fi elements as a significant aspect. These games might involve futuristic technology, alien worlds, or themes common in science fiction.",
+   :rdfs/label "Sci-fi",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Science_fiction"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Sci-fi/"}})
+
+(def Science
+  "The Science tag is used for games may involve scientific concepts, scientific exploration, or settings based on scientific theories."
+  {:db/ident :steam/Science,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Science tag is used for games may involve scientific concepts, scientific exploration, or settings based on scientific theories.",
+   :rdfs/label "Science",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Science"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Science/"}})
 
 (def ShootEmUp
   "Shoot 'Em Up games are a sub-genre of shooter games where the player controls a character or vehicle and fights large numbers of enemies using shooting."
@@ -1326,7 +2047,7 @@
 (def Shooter
   "Shooter games focus on combat involving projectile weapons, such as guns and missiles."
   {:db/ident :steam/Shooter,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Shooter games focus on combat involving projectile weapons, such as guns and missiles.",
    :rdfs/label "Shooter",
@@ -1361,7 +2082,7 @@
 (def Skateboarding
   "Skateboarding games simulate skateboarding activities, often with a focus on performing tricks and stunts."
   {:db/ident :steam/Skateboarding,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Skateboarding games simulate skateboarding activities, often with a focus on performing tricks and stunts.",
    :rdfs/label "Skateboarding",
@@ -1373,7 +2094,7 @@
 (def Skating
   "Skating games simulate skating activities, often with a focus on performing tricks and stunts."
   {:db/ident :steam/Skating,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Skating games simulate skating activities, often with a focus on performing tricks and stunts.",
    :rdfs/label "Skating",
@@ -1384,7 +2105,7 @@
 (def Skiing
   "Skiing games simulate skiing activities, often with a focus on racing or performing tricks."
   {:db/ident :steam/Skiing,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Skiing games simulate skiing activities, often with a focus on racing or performing tricks.",
    :rdfs/label "Skiing",
@@ -1392,10 +2113,30 @@
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Skiing/"}})
 
+(def Sniper
+  "The Sniper tag is used for games that feature sniper or sniping elements. These games might involve sniper rifles, sniper missions, or gameplay mechanics focused on precision and patience."
+  {:db/ident :steam/Sniper,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Sniper tag is used for games that feature sniper or sniping elements. These games might involve sniper rifles, sniper missions, or gameplay mechanics focused on precision and patience.",
+   :rdfs/label "Sniper",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Sniper"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Sniper/"}})
+
+(def Snow
+  "The Snow tag is used for games that feature snow or snowy environments. These games might involve snow landscapes or snow sports."
+  {:db/ident :steam/Snow,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Snow tag is used for games that feature snow or snowy environments. These games might involve snow landscapes or snow sports.",
+   :rdfs/label "Snow",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Snow"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Snow/"}})
+
 (def Snowboarding
   "Snowboarding games simulate snowboarding activities, often with a focus on racing or performing tricks."
   {:db/ident :steam/Snowboarding,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Snowboarding games simulate snowboarding activities, often with a focus on racing or performing tricks.",
    :rdfs/label "Snowboarding",
@@ -1407,7 +2148,7 @@
 (def Soccer
   "Soccer games simulate the sport of soccer, often with a focus on controlling a team and competing in matches."
   {:db/ident :steam/Soccer,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Soccer games simulate the sport of soccer, often with a focus on controlling a team and competing in matches.",
    :rdfs/label "Soccer",
@@ -1461,10 +2202,20 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Souls-like/"}})
 
+(def Space
+  "The Space tag is used for games that feature space or space exploration as a significant aspect. These games might involve space travel, alien planets, or settings in outer space."
+  {:db/ident :steam/Space,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Space tag is used for games that feature space or space exploration as a significant aspect. These games might involve space travel, alien planets, or settings in outer space.",
+   :rdfs/label "Space",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Outer_space"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Space/"}})
+
 (def SpaceSim
   "Space Sim games simulate space exploration or combat in a space setting."
   {:db/ident :steam/SpaceSim,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Space Sim games simulate space exploration or combat in a space setting.",
    :rdfs/label "Space Sim",
@@ -1520,12 +2271,23 @@
 (def Stealth
   "Stealth games challenge players to avoid detection, often by sneaking past enemies or obstacles."
   {:db/ident :steam/Stealth,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Stealth games challenge players to avoid detection, often by sneaking past enemies or obstacles.",
    :rdfs/label "Stealth",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Stealth_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Stealth/"}})
+
+(def Steampunk
+  "A subgenre of science fiction characterized by the setting of an alternate history—typically Victorian era or American 'Wild West'—where steam power remains a primary technology. It combines retro futuristic technology and aesthetics, often inspired by 19th-century industrial steam-powered machinery."
+  {:db/ident :steam/Steampunk,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "A subgenre of science fiction characterized by the setting of an alternate history—typically Victorian era or American 'Wild West'—where steam power remains a primary technology. It combines retro futuristic technology and aesthetics, often inspired by 19th-century industrial steam-powered machinery.",
+   :rdfs/label "Steampunk",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Steampunk"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Steampunk/"}})
 
 (def Strategy
   "Strategy games require strategic, tactical, and sometimes logistical challenges. Many games also offer economic challenges and exploration."
@@ -1540,7 +2302,7 @@
 (def StrategyRPG
   "Strategy RPGs combine strategic gameplay with role-playing elements, often involving character development and tactical combat."
   {:db/ident :steam/StrategyRPG,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Strategy RPGs combine strategic gameplay with role-playing elements, often involving character development and tactical combat.",
    :rdfs/label "Strategy RPG",
@@ -1567,10 +2329,52 @@
    :rdfs/label      "Sub-Genre",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
 
+(def Submarine
+  "The Submarine tag is used for games that feature submarines or submarine-based gameplay."
+  {:db/ident :steam/Submarine,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Submarine tag is used for games that feature submarines or submarine-based gameplay.",
+   :rdfs/label "Submarine",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Submarine"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Submarine/"}})
+
+(def Superhero
+  "The Superhero tag is used for games that feature superhero themes."
+  {:db/ident :steam/Superhero,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Superhero tag is used for games that feature superhero themes.",
+   :rdfs/label "Superhero",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Superhero"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Superhero/"}})
+
+(def Supernatural
+  "The Supernatural tag is used for games that feature supernatural themes."
+  {:db/ident :steam/Supernatural,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Supernatural tag is used for games that feature supernatural themes.",
+   :rdfs/label "Supernatural",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Supernatural"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Supernatural/"}})
+
+(def Surreal
+  "The Surreal tag is used for games that feature surreal or surrealistic elements as a significant aspect. These games might involve dream-like landscapes, bizarre characters, or gameplay mechanics that defy reality."
+  {:db/ident :steam/Surreal,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Surreal tag is used for games that feature surreal or surrealistic elements as a significant aspect. These games might involve dream-like landscapes, bizarre characters, or gameplay mechanics that defy reality.",
+   :rdfs/label "Surreal",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Surrealism"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Surreal/"}})
+
 (def Survival
   "Survival games challenge players to survive in a hostile environment, often by gathering resources, crafting tools, and building shelters."
   {:db/ident :steam/Survival,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type
+   [:steam/ThemesAndMoods :steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Survival games challenge players to survive in a hostile environment, often by gathering resources, crafting tools, and building shelters.",
    :rdfs/label "Survival",
@@ -1590,6 +2394,16 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Survival%20Horror/"}})
 
+(def Swordplay
+  "The Swordplay tag is used for games that feature sword fights, historical fencing, or gameplay mechanics focused on swordplay."
+  {:db/ident :steam/Swordplay,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Swordplay tag is used for games that feature sword fights, historical fencing, or gameplay mechanics focused on swordplay.",
+   :rdfs/label "Swordplay",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Swordsmanship"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Swordplay/"}})
+
 (def Tabletop
   "Tabletop games are those that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames, tile-based games and role-playing games. In the digital context, these games are often adaptations of traditional tabletop games."
   {:db/ident :steam/Tabletop,
@@ -1599,6 +2413,15 @@
    :rdfs/label "Tabletop",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Tabletop_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Tabletop/"}})
+
+(def Tactical
+  "The Tactical tag is used for games that feature tactical or strategy-based gameplay as a significant aspect. These games might involve tactical combat, strategic planning, or gameplay mechanics focused on tactics."
+  {:db/ident :steam/Tactical,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Tactical tag is used for games that feature tactical or strategy-based gameplay as a significant aspect. These games might involve tactical combat, strategic planning, or gameplay mechanics focused on tactics.",
+   :rdfs/label "Tactical",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Tactical/"}})
 
 (def TacticalRPG
   "Tactical RPG games are a sub-genre of role-playing games that focus on tactical and strategic battles, often using turn-based combat."
@@ -1622,10 +2445,20 @@
    :rdfs/label      "Tag",
    :rdfs/subClassOf :schema/Thing})
 
+(def Tanks
+  "The Tanks tag is used for games that feature tanks or tank-based combat."
+  {:db/ident :steam/Tanks,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Tanks tag is used for games that feature tanks or tank-based combat.",
+   :rdfs/label "Tanks",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Tank"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Tanks/"}})
+
 (def Tennis
   "Tennis games simulate the sport of tennis, often with a focus on controlling a player and competing in matches."
   {:db/ident :steam/Tennis,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Tennis games simulate the sport of tennis, often with a focus on controlling a player and competing in matches.",
    :rdfs/label "Tennis",
@@ -1676,6 +2509,16 @@
    {:rdfa/uri
     "https://store.steampowered.com/tags/en/Third-Person%20Shooter/"}})
 
+(def Thriller
+  "The Thriller tag is used for games that feature suspenseful narratives, thrilling scenarios, or gameplay mechanics focused on creating tension."
+  {:db/ident :steam/Thriller,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Thriller tag is used for games that feature suspenseful narratives, thrilling scenarios, or gameplay mechanics focused on creating tension.",
+   :rdfs/label "Thriller",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Thriller_(genre)"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Thriller/"}})
+
 (def TimeManagement
   "Time Management games are a sub-genre of strategy games that require the player to complete specific tasks within a certain timeframe to succeed."
   {:db/ident :steam/TimeManagement,
@@ -1686,6 +2529,17 @@
    :rdfs/subClassOf :steam/Strategy,
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Time%20Management/"}})
+
+(def TimeTravel
+  "The Time Travel tag is used for games that feature traveling through time, changing history, or gameplay mechanics focused on time manipulation."
+  {:db/ident :steam/TimeTravel,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Time Travel tag is used for games that feature traveling through time, changing history, or gameplay mechanics focused on time manipulation.",
+   :rdfs/label "Time Travel",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Time_travel"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Time%20Travel/"}})
 
 (def TopDown
   "Top-Down refers to a perspective in which the player views the game world from above, often used in strategy and simulation games."
@@ -1719,7 +2573,7 @@
 (def TowerDefense
   "Tower Defense games challenge players to defend a location by placing defensive structures along the path of incoming enemies."
   {:db/ident :steam/TowerDefense,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Tower Defense games challenge players to defend a location by placing defensive structures along the path of incoming enemies.",
    :rdfs/label "Tower Defense",
@@ -1762,10 +2616,42 @@
    {:rdfa/uri
     "https://store.steampowered.com/tags/en/Traditional%20Roguelike/"}})
 
+(def Trains
+  "The Trains tag is used for games that feature trains and might involve controlling a train, managing a railway, etc."
+  {:db/ident :steam/Trains,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Trains tag is used for games that feature trains and might involve controlling a train, managing a railway, etc.",
+   :rdfs/label "Trains",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Train"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Trains/"}})
+
+(def Transhumanism
+  "The Transhumanism tag is used for games that feature transhumanism and might involve cybernetic enhancements, artificial intelligence, or themes related to the post-human condition."
+  {:db/ident :steam/Transhumanism,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Transhumanism tag is used for games that feature transhumanism and might involve cybernetic enhancements, artificial intelligence, or themes related to the post-human condition.",
+   :rdfs/label "Transhumanism",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Transhumanism"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Transhumanism/"}})
+
+(def Transportation
+  "The Transportation tag is used for games that feature managing a transport network, controlling various vehicles, or gameplay mechanics focused on transportation."
+  {:db/ident :steam/Transportation,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Transportation tag is used for games that feature managing a transport network, controlling various vehicles, or gameplay mechanics focused on transportation.",
+   :rdfs/label "Transportation",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Transport"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Transportation/"}})
+
 (def Trivia
   "Trivia games test players' knowledge of various topics, often in a quiz format."
   {:db/ident :steam/Trivia,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Trivia games test players' knowledge of various topics, often in a quiz format.",
    :rdfs/label "Trivia",
@@ -1776,7 +2662,7 @@
 (def TurnBasedStrategy
   "Turn-Based Strategy games involve strategic gameplay where players take turns when playing."
   {:db/ident :steam/TurnBasedStrategy,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Turn-Based Strategy games involve strategic gameplay where players take turns when playing.",
    :rdfs/label "Turn-Based Strategy",
@@ -1819,6 +2705,27 @@
    :rdfs/subClassOf :steam/Education,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Typing/"}})
 
+(def Underground
+  "The Underground tag is used for games that feature underground environments and might involve exploration of caves, dungeons, or other subterranean settings."
+  {:db/ident :steam/Underground,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Underground tag is used for games that feature underground environments and might involve exploration of caves, dungeons, or other subterranean settings.",
+   :rdfs/label "Underground",
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Underground/"}})
+
+(def Underwater
+  "The Underwater tag is used for games that involve underwater exploration, marine life, or gameplay mechanics focused on underwater navigation."
+  {:db/ident :steam/Underwater,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Underwater tag is used for games that involve underwater exploration, marine life, or gameplay mechanics focused on underwater navigation.",
+   :rdfs/label "Underwater",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Underwater"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Underwater/"}})
+
 (def VR
   "VR, or Virtual Reality, refers to a technology that allows players to experience a game in a three-dimensional, interactive environment."
   {:db/ident :steam/VR,
@@ -1829,10 +2736,20 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Virtual_reality"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/VR/"}})
 
+(def Vampire
+  "The Vampire tag is used for games that feature vampire characters, vampire lore, or gameplay mechanics focused on vampiric abilities."
+  {:db/ident :steam/Vampire,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Vampire tag is used for games that feature vampire characters, vampire lore, or gameplay mechanics focused on vampiric abilities.",
+   :rdfs/label "Vampire",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Vampire"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Vampire/"}})
+
 (def VisualNovel
   "Visual Novels are a narrative genre of game, featuring mostly static graphics, most often using anime-style art or occasionally live-action stills."
   {:db/ident :steam/VisualNovel,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Visual Novels are a narrative genre of game, featuring mostly static graphics, most often using anime-style art or occasionally live-action stills.",
    :rdfs/label "Visual Novel",
@@ -1862,13 +2779,23 @@
 (def WalkingSimulator
   "Walking Simulator games focus on exploration and narrative over gameplay, often involving walking through an environment to uncover the story."
   {:db/ident :steam/WalkingSimulator,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Walking Simulator games focus on exploration and narrative over gameplay, often involving walking through an environment to uncover the story.",
    :rdfs/label "Walking Simulator",
    :rdfs/subClassOf :steam/Adventure,
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Walking%20Simulator/"}})
+
+(def War
+  "The War tag is used for games that feature war or war themes."
+  {:db/ident :steam/War,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The War tag is used for games that feature war or war themes.",
+   :rdfs/label "War",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/War"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/War/"}})
 
 (def Wargame
   "Wargame games are a type of strategy game that simulates warfare. They often focus on realistic tactical and strategic battles, and can cover various periods of history."
@@ -1881,10 +2808,31 @@
    :rdfs/subClassOf :steam/Strategy,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Wargame/"}})
 
+(def Werewolves
+  "The Werewolves tag is used for games that feature werewolf characters, werewolf lore, or gameplay mechanics focused on lycanthropic abilities."
+  {:db/ident :steam/Werewolves,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Werewolves tag is used for games that feature werewolf characters, werewolf lore, or gameplay mechanics focused on lycanthropic abilities.",
+   :rdfs/label "Werewolves",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Werewolf"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Werewolves/"}})
+
+(def Western
+  "The Western tag is used for games that feature Western or Wild West themes."
+  {:db/ident :steam/Western,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The Western tag is used for games that feature Western or Wild West themes.",
+   :rdfs/label "Western",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Western_(genre)"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Western/"}})
+
 (def WordGame
   "Word games involve the creation or solving of words, often in a puzzle format."
   {:db/ident :steam/WordGame,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Word games involve the creation or solving of words, often in a puzzle format.",
    :rdfs/label "Word Game",
@@ -1893,10 +2841,32 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Word%20Game/"}})
 
+(def WorldWarI
+  "The World War I tag is used for games that feature World War I historical events, WWI era settings, or gameplay mechanics focused on the WWI period."
+  {:db/ident :steam/WorldWarI,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The World War I tag is used for games that feature World War I historical events, WWI era settings, or gameplay mechanics focused on the WWI period.",
+   :rdfs/label "World War I",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/World_War_I"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/World%20War%20I/"}})
+
+(def WorldWarII
+  "The World War II tag is used for games that feature World War II historical events, WWII era settings, or gameplay mechanics focused on the WWII period."
+  {:db/ident :steam/WorldWarII,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The World War II tag is used for games that feature World War II historical events, WWII era settings, or gameplay mechanics focused on the WWII period.",
+   :rdfs/label "World War II",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/World_War_II"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/World%20War%20II/"}})
+
 (def Wrestling
   "Wrestling games simulate the sport of wrestling, often with a focus on controlling a wrestler and competing in matches."
   {:db/ident :steam/Wrestling,
-   :rdf/type [:steam/Genre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/Genre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Wrestling games simulate the sport of wrestling, often with a focus on controlling a wrestler and competing in matches.",
    :rdfs/label "Wrestling",
@@ -1904,6 +2874,26 @@
                   "http://dbpedia.org/resource/Professional_wrestling"},
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Wrestling/"}})
+
+(def |1980s|
+  "The 1980s tag encapsulates the vibrant pop culture, technological optimism, and distinctive aesthetics of this decade. Games with this tag might feature neon colors, synth music, or references to iconic 80s events and personalities."
+  {:db/ident :steam/|1980s|,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The 1980s tag encapsulates the vibrant pop culture, technological optimism, and distinctive aesthetics of this decade. Games with this tag might feature neon colors, synth music, or references to iconic 80s events and personalities.",
+   :rdfs/label "1980s",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/1980s"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/1980s/"}})
+
+(def |1990s|
+  "The 1990s tag captures the spirit of this transformative decade, marked by the rise of the internet, grunge music, and a distinctive blend of optimism and cynicism. Games with this tag might feature early internet culture, iconic 90s fashion, or the decade's unique blend of music and art."
+  {:db/ident :steam/|1990s|,
+   :rdf/type [:steam/ThemesAndMoods :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "The 1990s tag captures the spirit of this transformative decade, marked by the rise of the internet, grunge music, and a distinctive blend of optimism and cynicism. Games with this tag might feature early internet culture, iconic 90s fashion, or the decade's unique blend of music and art.",
+   :rdfs/label "1990s",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/1990s"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/1990s/"}})
 
 (def |2_5D|
   "2.5D is a visual style that combines 2D graphics with a 3D perspective. This is often done to create depth or to achieve certain visual effects."

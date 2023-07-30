@@ -783,7 +783,7 @@ steam:ImmersiveSim a owl:Class, steam:SubGenre ;
 
 steam:Investigation a owl:Class, steam:SubGenre ;
   rdfs:label "Investigation" ;
-  rdfs:comment "Investigation games are games that involve players solving a mystery or crime by gathering clues and evidence." ;
+  rdfs:comment "The Investigation tag is used for games that might involve solving mysteries, uncovering clues, or playing as a detective or investigator." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Detective_fiction> ;
   schema:url <https://store.steampowered.com/tags/en/Investigation/> .
 
@@ -1074,8 +1074,8 @@ steam:Colorful a owl:Class, steam:VisualsAndViewpoint ;
 
 steam:ComicBook a owl:Class, steam:VisualsAndViewpoint ;
   rdfs:label "Comic Book" ;
-  rdfs:comment "Comic Book is a visual style that resembles the aesthetics of comic books, often characterized by bold outlines, bright colors, and stylized visuals." ;
-  rdfs:seeAlso <http://dbpedia.org/resource/Comics> ;
+  rdfs:comment "The Comic Book tag is used for games that draw inspiration from the world of comic books. These games might feature bold, colorful art styles, larger-than-life characters, or narrative structures inspired by comic book storytelling." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Comic_book> ;
   schema:url <https://store.steampowered.com/tags/en/Comic%20Book/> .
 
 steam:Cute a owl:Class, steam:VisualsAndViewpoint ;
@@ -1174,3 +1174,587 @@ steam:VR a owl:Class, steam:VisualsAndViewpoint ;
   rdfs:comment "VR, or Virtual Reality, refers to a technology that allows players to experience a game in a three-dimensional, interactive environment." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Virtual_reality> ;
   schema:url <https://store.steampowered.com/tags/en/VR/> .
+
+# Themes and Moods tags
+
+steam:1980s a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "1980s" ;
+  rdfs:comment "The 1980s tag encapsulates the vibrant pop culture, technological optimism, and distinctive aesthetics of this decade. Games with this tag might feature neon colors, synth music, or references to iconic 80s events and personalities." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/1980s> ;
+  schema:url <https://store.steampowered.com/tags/en/1980s/> .
+
+steam:1990s a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "1990s" ;
+  rdfs:comment "The 1990s tag captures the spirit of this transformative decade, marked by the rise of the internet, grunge music, and a distinctive blend of optimism and cynicism. Games with this tag might feature early internet culture, iconic 90s fashion, or the decade's unique blend of music and art." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/1990s> ;
+  schema:url <https://store.steampowered.com/tags/en/1990s/> .
+
+steam:Agriculture a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Agriculture" ;
+  rdfs:comment "The Agriculture tag is used for games that allow players to cultivate and manage their own farms, gardens, or vineyards. These games often emphasize patience, planning, and a connection with the land." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Agriculture> ;
+  schema:url <https://store.steampowered.com/tags/en/Agriculture/> .
+
+steam:Aliens a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Aliens" ;
+  rdfs:comment "The Aliens tag is used for games that feature extraterrestrial life. These games often explore themes of exploration, discovery, and sometimes conflict with unknown life forms." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Extraterrestrial_life> ;
+  schema:url <https://store.steampowered.com/tags/en/Aliens/> .
+
+steam:AlternateHistory a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Alternate History" ;
+  rdfs:comment "The Alternate History tag is used for games that re-imagine history. These games explore 'what if' scenarios, providing a unique twist on historical events or periods." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Alternate_history> ;
+  schema:url <https://store.steampowered.com/tags/en/Alternate%20History/> .
+
+steam:America a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "America" ;
+  rdfs:comment "The America tag is used for games that explore aspects of American life, history, or culture. These games might feature iconic American landscapes, historical events, or cultural touchstones." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/United_States> ;
+  schema:url <https://store.steampowered.com/tags/en/America/> .
+
+steam:Atmospheric a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Atmospheric" ;
+  rdfs:comment "The Atmospheric tag is used for games that place a strong emphasis on creating a specific mood or feeling. These games often use detailed environments, sound design, and visual aesthetics to draw players into their world." ;
+  schema:url <https://store.steampowered.com/tags/en/Atmospheric/> .
+
+steam:Assassin a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Assassin" ;
+  rdfs:comment "The Assassin tag is used for games that place the player in the role of an assassin. These games often involve stealth, strategy, and sometimes moral ambiguity as players navigate the shadowy world of their profession." ;
+  schema:url <https://store.steampowered.com/tags/en/Assassin/> .
+
+steam:Bikes a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Bikes" ;
+  rdfs:comment "The Bikes tag is used for games that feature bicycles or motorcycles as a significant element. These games might involve racing, stunts, or simply the joy of exploring on two wheels." ;
+  schema:url <https://store.steampowered.com/tags/en/Bikes/> .
+
+steam:Capitalism a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Capitalism" ;
+  rdfs:comment "The Capitalism tag is used for games that explore themes of free-market economics. These games might involve running a business, trading stocks, or navigating the complex world of finance." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Capitalism> ;
+  schema:url <https://store.steampowered.com/tags/en/Capitalism/> .
+
+steam:Cats a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Cats" ;
+  rdfs:comment "The Cats tag is used for games that feature cats as a significant element. These games might involve caring for cats, playing as a cat, or simply feature cats as part of the game's world." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cat> ;
+  schema:url <https://store.steampowered.com/tags/en/Cats/> .
+
+steam:ColdWar a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Cold War" ;
+  rdfs:comment "The Cold War tag is used for games that explore the tense geopolitical period from 1947 to 1991. These games might involve espionage, nuclear brinkmanship, or the ideological clash between capitalism and communism." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cold_War> ;
+  schema:url <https://store.steampowered.com/tags/en/Cold%20War/> .
+
+steam:ComicBook a owl:Class, steam:ThemesAndMoods .
+
+steam:Conspiracy a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Conspiracy" ;
+  rdfs:comment "The Conspiracy tag is used for games that delve into the world of secret plots and hidden agendas. These games might involve unraveling complex mysteries, navigating shadowy organizations, or uncovering hidden truths." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Conspiracy_theory> ;
+  schema:url <https://store.steampowered.com/tags/en/Conspiracy/> .
+
+steam:Crime a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Crime" ;
+  rdfs:comment "The Crime tag is used for games that involve the world of crime as a significant element. These games might involve playing as a criminal, solving crimes, or exploring the impact of crime on individuals and societies." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Crime> ;
+  schema:url <https://store.steampowered.com/tags/en/Crime/> .
+
+steam:Cyberpunk a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Cyberpunk" ;
+  rdfs:comment "The Cyberpunk tag is used for games that explore themes of a dystopian future dominated by advanced technology, corporate power, and social inequality. These games often feature neon-lit cityscapes, rogue AI, and anti-hero protagonists." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cyberpunk> ;
+  schema:url <https://store.steampowered.com/tags/en/Cyberpunk/> .
+
+steam:Dark a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Dark" ;
+  rdfs:comment "The Dark tag is used for games that feature a dark, often unsettling atmosphere. These games might involve horror elements, mature themes, or a sense of dread and unease." ;
+  schema:url <https://store.steampowered.com/tags/en/Dark/> .
+
+steam:DarkFantasy a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Dark Fantasy" ;
+  rdfs:comment "The Dark Fantasy tag is used for games that blend the fantastical elements of fantasy with darker, more horrifying themes. These games often feature grim settings, morally ambiguous characters, and a sense of impending doom." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Dark_fantasy> ;
+  schema:url <https://store.steampowered.com/tags/en/Dark%20Fantasy/> .
+
+steam:Demons a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Demons" ;
+  rdfs:comment "The Demons tag is used for games that feature demons and might involve battling demons, playing as a demon, or exploring a world where demons exist." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Demon> ;
+  schema:url <https://store.steampowered.com/tags/en/Demons/> .
+
+steam:Destruction a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Destruction" ;
+  rdfs:comment "The Destruction tag is used for games that might involve destroying environments, buildings, or other structures as part of the gameplay." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Destruction> ;
+  schema:url <https://store.steampowered.com/tags/en/Destruction/> .
+
+steam:Detective a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Detective" ;
+  rdfs:comment "The Detective tag is used for games that involve detective work and may involve solving mysteries, investigating crimes, or playing as a detective character." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Detective> ;
+  schema:url <https://store.steampowered.com/tags/en/Detective/> .
+
+steam:Dinosaurs a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Dinosaurs" ;
+  rdfs:comment "The Dinosaurs tag is used for games that feature dinosaurs and may involve interacting with dinosaurs, playing as a dinosaur, or exploring a world where dinosaurs exist." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Dinosaur> ;
+  schema:url <https://store.steampowered.com/tags/en/Dinosaurs/> .
+
+steam:Diplomacy a steam:ThemesAndMoods .
+
+steam:Dog a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Dog" ;
+  rdfs:comment "The Dog tag is used for games that feature dogs. These games might involve caring for dogs, playing as a dog, or simply feature dogs as part of the game's world." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Dog> ;
+  schema:url <https://store.steampowered.com/tags/en/Dog/> .
+
+steam:Dragons a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Dragons" ;
+  rdfs:comment "The Dragons tag is used for games that may involve battling dragons, playing as a dragon, or exploring a world where dragons exist." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Dragon> ;
+  schema:url <https://store.steampowered.com/tags/en/Dragons/> .
+
+steam:DynamicNarration a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Dynamic Narration" ;
+  rdfs:comment "The Dynamic Narration tag is used for games that feature a narrative that changes based on player actions. These games often offer a high degree of player agency and multiple branching story paths." ;
+  schema:url <https://store.steampowered.com/tags/en/Dynamic%20Narration/> .
+
+steam:Economy a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Economy" ;
+  rdfs:comment "The Economy tag is used for games that involve economic systems. These games might involve trading, resource management, or running a business." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Economy> ;
+  schema:url <https://store.steampowered.com/tags/en/Economy/> .
+
+steam:Education a owl:Class, steam:ThemesAndMoods .
+
+steam:Faith a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Faith" ;
+  rdfs:comment "The Faith tag is used for games that explore themes of faith, religion, or spirituality. These games might involve exploring religious beliefs, engaging with spiritual practices, or navigating the complexities of faith." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Faith> ;
+  schema:url <https://store.steampowered.com/tags/en/Faith/> .
+
+steam:FamilyFriendly a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Family Friendly" ;
+  rdfs:comment "The Family Friendly tag is used for games that are suitable for players of all ages. These games often avoid explicit content, focus on positive themes, and are designed to be accessible and enjoyable for a wide audience." ;
+  schema:url <https://store.steampowered.com/tags/en/Family%20Friendly/> .
+
+steam:Fantasy a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Fantasy" ;
+  rdfs:comment "The Fantasy tag is used for games that feature elements of fantasy, such as magic, mythical creatures, or fantastical settings. These games often involve quests, epic narratives, and exploration of magical worlds." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Fantasy> ;
+  schema:url <https://store.steampowered.com/tags/en/Fantasy/> .
+
+steam:Foreign a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Foreign" ;
+  rdfs:comment "The Foreign tag is used for games that originate from or are set in countries outside of the player's own. These games often offer insights into different cultures, languages, and perspectives." ;
+  schema:url <https://store.steampowered.com/tags/en/Foreign/> .
+
+steam:Futuristic a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Futuristic" ;
+  rdfs:comment "The Futuristic tag is used for games that are set in or draw inspiration from visions of the future. These games often feature advanced technology, futuristic settings, and themes of exploration and innovation." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Future> ;
+  schema:url <https://store.steampowered.com/tags/en/Futuristic/> .
+
+steam:Gambling a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Gambling" ;
+  rdfs:comment "The Gambling tag is used for games that involve playing casino games, betting on outcomes, or other forms of wagering." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Gambling> ;
+  schema:url <https://store.steampowered.com/tags/en/Gambling/> .
+
+steam:GameDevelopment a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Game Development" ;
+  rdfs:comment "The Game Development tag is used for games that might involve creating your own games, managing a game development studio, or exploring the process of game development." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Video_game_development> ;
+  schema:url <https://store.steampowered.com/tags/en/Game%20Development/> .
+
+steam:Gothic a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Gothic" ;
+  rdfs:comment "The Gothic tag is used for games that feature gothic themes or aesthetics. These games might involve dark and atmospheric settings, supernatural elements, or a focus on horror and mystery." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Gothic_fiction> ;
+  schema:url <https://store.steampowered.com/tags/en/Gothic/> .
+
+steam:Heist a steam:ThemesAndMoods .
+
+steam:Historical a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Historical" ;
+  rdfs:comment "The Historical tag is used for games that are set in or draw inspiration from real historical periods. These games often involve exploring historical events, interacting with historical figures, or recreating historical settings." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/History> ;
+  schema:url <https://store.steampowered.com/tags/en/Historical/> .
+
+steam:Horses a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Horses" ;
+  rdfs:comment "The Horses tag is used for games that feature horses. These games might involve riding horses, caring for horses, or exploring a world where horses play a significant role." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Horse> ;
+  schema:url <https://store.steampowered.com/tags/en/Horses/> .
+
+steam:Illuminati a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Illuminati" ;
+  rdfs:comment "The Illuminati tag is used for games that involve the Illuminati or similar secret societies as a significant element. These games might involve uncovering conspiracies, battling secret societies, or exploring the influence of all-powerful organizations." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Illuminati> ;
+  schema:url <https://store.steampowered.com/tags/en/Illuminati/> .
+
+steam:Investigation a owl:Class, steam:ThemesAndMoods .
+
+steam:Jet a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Jet" ;
+  rdfs:comment "The Jet tag is used for games that feature jets or jet-powered vehicles. These games might involve flying jets, participating in jet combat, or exploring a world where jets play a significant role." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Jet_aircraft> ;
+  schema:url <https://store.steampowered.com/tags/en/Jet/> .
+
+steam:Lemmings a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Lemmings" ;
+  rdfs:comment "The Lemmings tag is used for games that feature gameplay mechanics similar to the classic game Lemmings. These games often involve guiding a group of characters through a series of obstacles to reach a goal." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Lemmings_(video_game)> ;
+  schema:url <https://store.steampowered.com/tags/en/Lemmings/> .
+
+steam:LGBTQPlus a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "LGBTQ+" ;
+  rdfs:comment "The LGBTQ+ tag is used for games that feature LGBTQ+ themes or characters as a significant element. These games might involve exploring LGBTQ+ identities, relationships, or issues, or feature LGBTQ+ characters in prominent roles." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/LGBT> ;
+  schema:url <https://store.steampowered.com/tags/en/LGBTQ%2B/> .
+
+steam:Logic a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Logic" ;
+  rdfs:comment "The Logic tag is used for games that involve logic puzzles. These games might involve solving puzzles, deducing solutions, or applying logical reasoning to overcome challenges." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Logic> ;
+  schema:url <https://store.steampowered.com/tags/en/Logic/> .
+
+steam:Loot a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Loot" ;
+  rdfs:comment "The Loot tag is used for games that feature loot or item collection as a significant element. These games might involve finding and collecting items and upgrading equipment." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Loot> ;
+  schema:url <https://store.steampowered.com/tags/en/Loot/> .
+
+steam:Lovecraftian a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Lovecraftian" ;
+  rdfs:comment "The Lovecraftian tag is used for games that feature themes, settings, or elements inspired by the works of H.P. Lovecraft. These games often involve cosmic horror, ancient gods, or a sense of dread and the unknown." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Lovecraftian_horror> ;
+  schema:url <https://store.steampowered.com/tags/en/Lovecraftian/> .
+
+steam:Magic a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Magic" ;
+  rdfs:comment "The Magic tag is used for games that feature magic or magical elements as a significant aspect. These games might involve casting spells, exploring magical worlds, or interacting with magical creatures." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Magic_(supernatural)> ;
+  schema:url <https://store.steampowered.com/tags/en/Magic/> .
+
+steam:Management a steam:ThemesAndMoods .
+
+steam:Mars a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Mars" ;
+  rdfs:comment "The Mars tag is used for games that feature Mars or Martian elements. These games might involve exploring Mars, interacting with Martian life, or surviving in a Martian environment." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Mars> ;
+  schema:url <https://store.steampowered.com/tags/en/Mars/> .
+
+steam:Mechs a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Mechs" ;
+  rdfs:comment "The Mechs tag is used for games that feature mechs or mech combat. These games might involve piloting mechs, battling with mechs, or exploring a world where mechs play a significant role." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Mecha> ;
+  schema:url <https://store.steampowered.com/tags/en/Mechs/> .
+
+steam:Medieval a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Medieval" ;
+  rdfs:comment "The Medieval tag is used for games that are set in or draw inspiration from the medieval period. These games often involve exploring medieval settings, interacting with medieval characters, or recreating medieval life." ;
+  schema:url <https://store.steampowered.com/tags/en/Medieval/> .
+
+steam:Memes a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Memes" ;
+  rdfs:comment "The Memes tag is used for games that feature memes or meme culture." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Internet_meme> ;
+  schema:url <https://store.steampowered.com/tags/en/Memes/> .
+
+steam:Military a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Military" ;
+  rdfs:comment "The Military tag is used for games that may involve participating in military operations, exploring military history, or interacting with military equipment and personnel." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Military> ;
+  schema:url <https://store.steampowered.com/tags/en/Military/> .
+
+steam:Modern a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Modern" ;
+  rdfs:comment "The Modern tag is used for games that are set in or draw inspiration from the modern period or dealing with modern issues and themes." ;
+  schema:url <https://store.steampowered.com/tags/en/Modern/> .
+
+steam:Motorbike a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Motorbike" ;
+  rdfs:comment "The Motorbike tag is used for games that feature motorbikes or motorbike racing." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Motorcycle> ;
+  schema:url <https://store.steampowered.com/tags/en/Motorbike/> .
+
+steam:Mystery a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Mystery" ;
+  rdfs:comment "The Mystery tag is used for games that feature mystery or suspense. These games might involve solving mysteries and uncovering secrets." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Mystery_fiction> ;
+  schema:url <https://store.steampowered.com/tags/en/Mystery/> .
+
+steam:Mythology a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Mythology" ;
+  rdfs:comment "The Mythology tag is used for games that feature mythology and may involve exploring mythological worlds, interacting with mythological creatures, or delving into mythological lore." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Mythology> ;
+  schema:url <https://store.steampowered.com/tags/en/Mythology/> .
+
+steam:Nature a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Nature" ;
+  rdfs:comment "The Nature tag is used for games that feature nature or natural environments and may involve exploring natural landscapes and interacting with wildlife." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Nature> ;
+  schema:url <https://store.steampowered.com/tags/en/Nature/> .
+
+steam:Naval a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Naval" ;
+  rdfs:comment "The Naval tag is used for games that feature naval or maritime elements as a significant aspect. These games might involve commanding naval vessels, engaging in naval combat, or exploring maritime environments." ;
+  schema:url <https://store.steampowered.com/tags/en/Naval/> .
+
+steam:Ninja a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Ninja" ;
+  rdfs:comment "The Ninja tag is used for games that feature ninjas or ninja-themed elements as a significant aspect. These games might involve playing as a ninja, using ninja tactics, or exploring a world influenced by ninja culture." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Ninja> ;
+  schema:url <https://store.steampowered.com/tags/en/Ninja/> .
+
+steam:Offroad a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Offroad" ;
+  rdfs:comment "The Offroad tag is used for games that might involve driving offroad vehicles, navigating challenging terrains, or exploring remote environments." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Off-roading> ;
+  schema:url <https://store.steampowered.com/tags/en/Offroad/> .
+
+steam:OldSchool a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Old School" ;
+  rdfs:comment "The Old School tag is used for games that feature old school or retro elements as a significant aspect. These games might involve classic gameplay mechanics, retro graphics, or nostalgic themes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Retrogaming> ;
+  schema:url <https://store.steampowered.com/tags/en/Old%20School/> .
+
+steam:Otome a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Otome" ;
+  rdfs:comment "The Otome tag is used for games that are designed with the typical preferences of women in mind, and one of the main goals, besides the plot goal, is to develop a romantic relationship between the female player character and one of several male or female characters. This genre is most established in Japan, and is mostly made up of visual novels and simulation games." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Otome_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Otome/> .
+
+steam:Parkour a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Parkour" ;
+  rdfs:comment "The Parkour tag is used for games that feature parkour or free-running elements as a significant aspect." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Parkour> ;
+  schema:url <https://store.steampowered.com/tags/en/Parkour/> .
+
+steam:Philosophical a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Philosophical" ;
+  rdfs:comment "The Philosophical tag is used for games that feature philosophical themes or thought-provoking elements." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Philosophy> ;
+  schema:url <https://store.steampowered.com/tags/en/Philosophical/> .
+
+steam:Pirates a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Pirates" ;
+  rdfs:comment "The Pirates tag is used for games that feature pirates or piracy elements that might involve sailing pirate ships, engaging in pirate combat, or exploring a world influenced by pirate culture." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Piracy> ;
+  schema:url <https://store.steampowered.com/tags/en/Pirates/> .
+
+steam:Political a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Political" ;
+  rdfs:comment "The Political tag is often associated with games that deal with political science concepts. This could include the theoretical analysis of political systems, their origins, underlying values, and goals." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Politics> ;
+  schema:url <https://store.steampowered.com/tags/en/Political/> .
+
+steam:Politics a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Politics" ;
+  rdfs:comment "The Politics tag generally refers to games that involve activities related to governance or influencing the way a country or organization is governed. This could include decision-making processes, implementation of laws and norms within a game's universe, or strategies aimed at improving the lives of the game's characters." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Politics> ;
+  schema:url <https://store.steampowered.com/tags/en/Politics/> .
+
+steam:Pool a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Pool" ;
+  rdfs:comment "The Pool tag is used for games that feature pool or billiards elements." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Cue_sports> ;
+  schema:url <https://store.steampowered.com/tags/en/Pool/> .
+
+steam:PostApocalyptic a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Post-apocalyptic" ;
+  rdfs:comment "The Post-apocalyptic tag is used for games that feature post-apocalyptic themes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Post-apocalyptic> ;
+  schema:url <https://store.steampowered.com/tags/en/Post-apocalyptic/> .
+
+steam:Programming a owl:Class, steam:ThemesAndMoods .
+
+steam:Retro a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Retro" ;
+  rdfs:comment "The Retro tag is used for games that feature retro or vintage elements as a significant aspect. These games might involve retro graphics, vintage soundtracks, or gameplay mechanics reminiscent of older games." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Retrogaming> ;
+  schema:url <https://store.steampowered.com/tags/en/Retro/> .
+
+steam:Robots a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Robots" ;
+  rdfs:comment "The Robots tag is used for games that feature robots or robotics elements." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Robot> ;
+  schema:url <https://store.steampowered.com/tags/en/Robots/> .
+
+steam:Romance a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Romance" ;
+  rdfs:comment "The Romance tag is used for games that feature romance or romantic elements." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Romance_(love)> ;
+  schema:url <https://store.steampowered.com/tags/en/Romance/> .
+
+steam:Rome a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Rome" ;
+  rdfs:comment "The Rome tag is used for games that feature Rome or Roman elements and may involve Roman history or Roman mythology." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Ancient_Rome> ;
+  schema:url <https://store.steampowered.com/tags/en/Rome/> .
+
+steam:Satire a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Satire" ;
+  rdfs:comment "The Satire tag is used for games that feature satirical humor, satirical commentary, or satirical themes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Satire> ;
+  schema:url <https://store.steampowered.com/tags/en/Satire/> .
+
+steam:Science a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Science" ;
+  rdfs:comment "The Science tag is used for games may involve scientific concepts, scientific exploration, or settings based on scientific theories." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Science> ;
+  schema:url <https://store.steampowered.com/tags/en/Science/> .
+
+steam:SciFi a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Sci-fi" ;
+  rdfs:comment "The Sci-fi tag is used for games that feature science fiction or sci-fi elements as a significant aspect. These games might involve futuristic technology, alien worlds, or themes common in science fiction." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Science_fiction> ;
+  schema:url <https://store.steampowered.com/tags/en/Sci-fi/> .
+
+steam:Sniper a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Sniper" ;
+  rdfs:comment "The Sniper tag is used for games that feature sniper or sniping elements. These games might involve sniper rifles, sniper missions, or gameplay mechanics focused on precision and patience." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Sniper> ;
+  schema:url <https://store.steampowered.com/tags/en/Sniper/> .
+
+steam:Snow a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Snow" ;
+  rdfs:comment "The Snow tag is used for games that feature snow or snowy environments. These games might involve snow landscapes or snow sports." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Snow> ;
+  schema:url <https://store.steampowered.com/tags/en/Snow/> .
+
+steam:Space a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Space" ;
+  rdfs:comment "The Space tag is used for games that feature space or space exploration as a significant aspect. These games might involve space travel, alien planets, or settings in outer space." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Outer_space> ;
+  schema:url <https://store.steampowered.com/tags/en/Space/> .
+
+steam:Stealth a steam:ThemesAndMoods .
+
+steam:Steampunk a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Steampunk" ;
+  rdfs:comment "A subgenre of science fiction characterized by the setting of an alternate history—typically Victorian era or American 'Wild West'—where steam power remains a primary technology. It combines retro futuristic technology and aesthetics, often inspired by 19th-century industrial steam-powered machinery." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Steampunk> ;
+  schema:url <https://store.steampowered.com/tags/en/Steampunk/> .
+
+steam:Submarine a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Submarine" ;
+  rdfs:comment "The Submarine tag is used for games that feature submarines or submarine-based gameplay." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Submarine> ;
+  schema:url <https://store.steampowered.com/tags/en/Submarine/> .
+
+steam:Superhero a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Superhero" ;
+  rdfs:comment "The Superhero tag is used for games that feature superhero themes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Superhero> ;
+  schema:url <https://store.steampowered.com/tags/en/Superhero/> .
+
+steam:Supernatural a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Supernatural" ;
+  rdfs:comment "The Supernatural tag is used for games that feature supernatural themes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Supernatural> ;
+  schema:url <https://store.steampowered.com/tags/en/Supernatural/> .
+
+steam:Surreal a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Surreal" ;
+  rdfs:comment "The Surreal tag is used for games that feature surreal or surrealistic elements as a significant aspect. These games might involve dream-like landscapes, bizarre characters, or gameplay mechanics that defy reality." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Surrealism> ;
+  schema:url <https://store.steampowered.com/tags/en/Surreal/> .
+
+steam:Survival a owl:Class, steam:ThemesAndMoods .
+
+steam:Swordplay a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Swordplay" ;
+  rdfs:comment "The Swordplay tag is used for games that feature sword fights, historical fencing, or gameplay mechanics focused on swordplay." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Swordsmanship> ;
+  schema:url <https://store.steampowered.com/tags/en/Swordplay/> .
+
+steam:Tactical a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Tactical" ;
+  rdfs:comment "The Tactical tag is used for games that feature tactical or strategy-based gameplay as a significant aspect. These games might involve tactical combat, strategic planning, or gameplay mechanics focused on tactics." ;
+  schema:url <https://store.steampowered.com/tags/en/Tactical/> .
+
+steam:Tanks a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Tanks" ;
+  rdfs:comment "The Tanks tag is used for games that feature tanks or tank-based combat." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Tank> ;
+  schema:url <https://store.steampowered.com/tags/en/Tanks/> .
+
+steam:Thriller a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Thriller" ;
+  rdfs:comment "The Thriller tag is used for games that feature suspenseful narratives, thrilling scenarios, or gameplay mechanics focused on creating tension." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Thriller_(genre)> ;
+  schema:url <https://store.steampowered.com/tags/en/Thriller/> .
+
+steam:TimeTravel a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Time Travel" ;
+  rdfs:comment "The Time Travel tag is used for games that feature traveling through time, changing history, or gameplay mechanics focused on time manipulation." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Time_travel> ;
+  schema:url <https://store.steampowered.com/tags/en/Time%20Travel/> .
+
+steam:Trains a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Trains" ;
+  rdfs:comment "The Trains tag is used for games that feature trains and might involve controlling a train, managing a railway, etc." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Train> ;
+  schema:url <https://store.steampowered.com/tags/en/Trains/> .
+
+steam:Transhumanism a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Transhumanism" ;
+  rdfs:comment "The Transhumanism tag is used for games that feature transhumanism and might involve cybernetic enhancements, artificial intelligence, or themes related to the post-human condition." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Transhumanism> ;
+  schema:url <https://store.steampowered.com/tags/en/Transhumanism/> .
+
+steam:Transportation a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Transportation" ;
+  rdfs:comment "The Transportation tag is used for games that feature managing a transport network, controlling various vehicles, or gameplay mechanics focused on transportation." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Transport> ;
+  schema:url <https://store.steampowered.com/tags/en/Transportation/> .
+
+steam:Underground a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Underground" ;
+  rdfs:comment "The Underground tag is used for games that feature underground environments and might involve exploration of caves, dungeons, or other subterranean settings." ;
+  schema:url <https://store.steampowered.com/tags/en/Underground/> .
+
+steam:Underwater a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Underwater" ;
+  rdfs:comment "The Underwater tag is used for games that involve underwater exploration, marine life, or gameplay mechanics focused on underwater navigation." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Underwater> ;
+  schema:url <https://store.steampowered.com/tags/en/Underwater/> .
+
+steam:Vampire a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Vampire" ;
+  rdfs:comment "The Vampire tag is used for games that feature vampire characters, vampire lore, or gameplay mechanics focused on vampiric abilities." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Vampire> ;
+  schema:url <https://store.steampowered.com/tags/en/Vampire/> .
+
+steam:War a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "War" ;
+  rdfs:comment "The War tag is used for games that feature war or war themes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/War> ;
+  schema:url <https://store.steampowered.com/tags/en/War/> .
+
+steam:Werewolves a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Werewolves" ;
+  rdfs:comment "The Werewolves tag is used for games that feature werewolf characters, werewolf lore, or gameplay mechanics focused on lycanthropic abilities." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Werewolf> ;
+  schema:url <https://store.steampowered.com/tags/en/Werewolves/> .
+
+steam:Western a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "Western" ;
+  rdfs:comment "The Western tag is used for games that feature Western or Wild West themes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Western_(genre)> ;
+  schema:url <https://store.steampowered.com/tags/en/Western/> .
+
+steam:WorldWarI a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "World War I" ;
+  rdfs:comment "The World War I tag is used for games that feature World War I historical events, WWI era settings, or gameplay mechanics focused on the WWI period." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/World_War_I> ;
+  schema:url <https://store.steampowered.com/tags/en/World%20War%20I/> .
+
+steam:WorldWarII a owl:Class, steam:ThemesAndMoods ;
+  rdfs:label "World War II" ;
+  rdfs:comment "The World War II tag is used for games that feature World War II historical events, WWII era settings, or gameplay mechanics focused on the WWII period." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/World_War_II> ;
+  schema:url <https://store.steampowered.com/tags/en/World%20War%20II/> .
