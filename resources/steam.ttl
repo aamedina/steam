@@ -79,3 +79,70 @@ steam:Funding a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Funding" ;
   rdfs:comment "A tag used to categorize the funding of a game on Steam" .
+
+steam:Action a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Action" ;
+  rdfs:comment "Action games emphasize physical challenges that require hand-eye coordination and motor skill to overcome. They center around the player controlling a character in a world where they must navigate obstacles and fight enemies to succeed." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Action_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Action/> .
+
+steam:Adventure a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Adventure" ;
+  rdfs:comment "Adventure games focus on puzzle solving within a narrative framework, generally with few or no action elements. These games encourage players to explore, interact with different objects, and solve complex puzzles to progress the story." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Adventure_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Adventure/> .
+
+steam:Casual a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Casual" ;
+  rdfs:comment "Casual games are designed to be easily picked up and put down again, allowing for potentially short bursts of play. They often have simpler rules, shorter sessions, and less learned skill than hardcore games." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Casual_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Casual/> .
+
+steam:Experimental a owl:NamedIndividual, steam:TopLevelGenre, steam:Genre ;
+  rdfs:label "Experimental" ;
+  rdfs:comment "Experimental games are those that challenge the status quo of gaming and offer a unique, sometimes strange, gaming experience. These games often explore new game mechanics, storytelling methods, and art styles." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Art_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Experimental/> .
+
+steam:Puzzle a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Puzzle" ;
+  rdfs:comment "Puzzle games focus on problem solving and logical thinking. They challenge the player to solve head-scratching puzzles and often offer a slower paced, more relaxing gaming experience." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Puzzle_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Puzzle/> .
+
+steam:Racing a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Racing" ;
+  rdfs:comment "Racing games simulate the competition of racing, where the player controls a vehicle or other transport. They often have a time limit, and can include obstacles and competitors to beat." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Racing_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Racing/> .
+
+steam:RPG a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "RPG" ;
+  rdfs:comment "Role-playing games (RPGs) often involve story-telling and narrative elements, character development, complexity, as well as replayability and immersion. The player controls a character in a world where they undertake quests and challenges." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Role-playing_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/RPG/> .
+
+steam:Simulation a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Simulation" ;
+  rdfs:comment "Simulation games are designed to accurately simulate real-world activities. They can cover a variety of activities, including driving vehicles, managing a business, or living a life." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Simulation_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Simulation/> .
+
+steam:Sports a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Sports" ;
+  rdfs:comment "Sports games simulate the practice of traditional physical sports. This can be team sports such as soccer, basketball, or individual activities like golf, fishing, skateboarding." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Sports_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Sports/> .
+
+steam:Strategy a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Strategy" ;
+  rdfs:comment "Strategy games require strategic, tactical, and sometimes logistical challenges. Many games also offer economic challenges and exploration." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Strategy_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Strategy/> .
+
+steam:Tabletop a owl:NamedIndividual, steam:TopLevelGenre ;
+  rdfs:label "Tabletop" ;
+  rdfs:comment "Tabletop games are those that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames, tile-based games and role-playing games. In the digital context, these games are often adaptations of traditional tabletop games." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Tabletop_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Tabletop/> .
+

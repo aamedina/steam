@@ -31,6 +31,7 @@
 
 (set-init
   (fn [_]
+    (set! *print-namespace-maps* nil)
     (if-let [r (io/resource "system.edn")]
       (-> (slurp r)
           (edn/read-string)
