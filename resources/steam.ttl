@@ -20,67 +20,67 @@ steam:Tag a owl:Class ;
 steam:TopLevelGenre a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Top Level Genre" ;
-  rdfs:comment "A top level genre used to categorize a game on Steam" .
+  rdfs:comment "A top level genre used to categorize a game on Steam." .
 
 steam:Genre a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Genre" ;
-  rdfs:comment "A genre used to categorize a game on Steam" .
+  rdfs:comment "A genre used to categorize a game on Steam." .
 
 steam:SubGenre a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Sub-Genre" ;
-  rdfs:comment "A sub-genre used to categorize a game on Steam" .
+  rdfs:comment "A sub-genre used to categorize a game on Steam." .
 
 steam:VisualsAndViewpoint a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Visuals and Viewpoint" ;
-  rdfs:comment "A tag used to describe the visuals and viewpoint of a game on Steam" .
+  rdfs:comment "A tag used to describe the visuals and viewpoint of something on Steam." .
 
 steam:ThemesAndMoods a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Themes and Moods" ;
-  rdfs:comment "A tag used to describe the themes and moods of a game on Steam" .
+  rdfs:comment "A tag used to describe the themes and moods of something on Steam." .
 
 steam:Features a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Features" ;
-  rdfs:comment "A tag used to describe the features of a game on Steam" .
+  rdfs:comment "A tag used to describe the features of a game on Steam." .
 
-steam:Players a owl:Class, schema:GamePlayMode ;
-  rdfs:subClassOf steam:Tag ;
+steam:Players a owl:Class ;
+  rdfs:subClassOf steam:Tag, schema:GamePlayMode ;
   rdfs:label "Players" ;
-  rdfs:comment "A tag used to describe the player options of a game on Steam" .
+  rdfs:comment "A tag used to describe the game play modes supported by a game on Steam." .
 
 steam:Other a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Other" ;
-  rdfs:comment "A tag used to categorize other aspects of a game on Steam" .
+  rdfs:comment "A tag used to categorize other aspects of something on Steam." .
 
 steam:Software a owl:Class ;
-  rdfs:subClassOf steam:Tag ;
+  rdfs:subClassOf steam:Tag, schema:SoftwareApplication ;
   rdfs:label "Software" ;
-  rdfs:comment "A tag used to categorize the software of a game on Steam" .
+  rdfs:comment "A tag used to categorize software on Steam." .
 
 steam:Assessments a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Assessments" ;
-  rdfs:comment "A tag used to categorize the assessments of a game on Steam" .
+  rdfs:comment "A tag used to categorize the assessments of something on Steam." .
 
 steam:Ratings a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Ratings" ;
-  rdfs:comment "A tag used to categorize the ratings of a game on Steam" .
+  rdfs:comment "A tag used to categorize the ratings of something on Steam." .
 
 steam:HardwareInput a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Hardware Input" ;
-  rdfs:comment "A tag used to categorize the hardware input of a game on Steam" .
+  rdfs:comment "A tag used to categorize the hardware input of a game on Steam." .
 
 steam:Funding a owl:Class ;
   rdfs:subClassOf steam:Tag ;
   rdfs:label "Funding" ;
-  rdfs:comment "A tag used to categorize the funding of a game on Steam" .
+  rdfs:comment "A tag used to categorize the funding of something on Steam." .
 
 # Top Level Genre tags
 
@@ -2299,4 +2299,109 @@ steam:Warhammer40K a owl:Class, steam:Other ;
   rdfs:seeAlso <http://dbpedia.org/resource/Warhammer_40,000> ;
   schema:url <https://store.steampowered.com/tags/en/Warhammer%2040K/> .
 
+# Software tags
 
+# https://developers.google.com/search/docs/appearance/structured-data/software-app
+
+# schema:applicationCategory 
+
+# GameApplication
+# SocialNetworkingApplication
+# TravelApplication
+# ShoppingApplication
+# SportsApplication
+# LifestyleApplication
+# BusinessApplication
+# DesignApplication
+# DeveloperApplication
+# DriverApplication
+# EducationalApplication
+# HealthApplication
+# FinanceApplication
+# SecurityApplication
+# BrowserApplication
+# CommunicationApplication
+# DesktopEnhancementApplication
+# EntertainmentApplication
+# MultimediaApplication
+# HomeApplication
+# UtilitiesApplication
+# ReferenceApplication
+
+steam:AnimationAndModeling a owl:Class, steam:Software ;
+  rdfs:label "Animation & Modeling" ;
+  rdfs:comment "Software that is used for animation and modeling purposes. This can include 3D modeling, 2D animation, sculpting, and more." ;
+  schema:applicationCategory "DesignApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Animation%20%26%20Modeling/> .
+
+steam:AudioProduction a owl:Class, steam:Software ;
+  rdfs:label "Audio Production" ;
+  rdfs:comment "Software that is used for audio production. This can include digital audio workstations, audio editors, music production software, and more." ;
+  schema:applicationCategory "MultimediaApplication", "DesignApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Audio%20Production/> .
+
+steam:Benchmark a owl:Class, steam:Software ;
+  rdfs:label "Benchmark" ;
+  rdfs:comment "Software that is used to benchmark the performance of a computer system. This can include CPU benchmarks, GPU benchmarks, and more." ;
+  schema:applicationCategory "UtilitiesApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Benchmark/> .
+
+steam:DesignAndIllustration a owl:Class, steam:Software ;
+  rdfs:label "Design & Illustration" ;
+  rdfs:comment "Software that is used for design and illustration purposes. This can include graphic design software, illustration software, and more." ;
+  schema:applicationCategory "DesignApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Design%20%26%20Illustration/> .
+
+steam:GameMaker a owl:Class, steam:Software ;
+  rdfs:label "GameMaker" ;
+  rdfs:comment "Software that is used to create games. GameMaker is also a specific brand of game development software that allows users to create their own video games." ;
+  schema:applicationCategory "DeveloperApplication", "GameApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/GameMaker/> .
+
+steam:Gaming a owl:Class, steam:Software ;
+  rdfs:label "Gaming" ;
+  rdfs:comment "Software that is related to gaming. This can include game launchers, game optimization software, and more." ;
+  schema:applicationCategory "GameApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Gaming/> .
+
+steam:PhotoEditing a owl:Class, steam:Software ;
+  rdfs:label "Photo Editing" ;
+  rdfs:comment "Software that is used for photo editing. This can include image editors, photo manipulation software, and more." ;
+  schema:applicationCategory "DesignApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Photo%20Editing/> .
+
+steam:RPGMaker a owl:Class, steam:Software ;
+  rdfs:label "RPGMaker" ;
+  rdfs:comment "Software that is used to create role-playing games. RPGMaker is also a specific brand of game development software that allows users to create their own RPGs." ;
+  schema:applicationCategory "DeveloperApplication", "GameApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/RPGMaker/> .
+
+steam:SoftwareTag a owl:Class, steam:Software ;
+  rdfs:label "Software" ;
+  rdfs:comment "General software that doesn't fit into any other category." ;
+  schema:applicationCategory "UtilitiesApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Software/> .
+
+steam:SoftwareTraining a owl:Class, steam:Software ;
+  rdfs:label "Software Training" ;
+  rdfs:comment "Software that is used for training purposes. This can include tutorial software, educational software, and more." ;
+  schema:applicationCategory "EducationalApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Software%20Training/> .
+
+steam:Utilities a owl:Class, steam:Software ;
+  rdfs:label "Utilities" ;
+  rdfs:comment "Software that is used for utility purposes. This can include system utilities, optimization software, and more." ;
+  schema:applicationCategory "UtilitiesApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Utilities/> .
+
+steam:VideoProduction a owl:Class, steam:Software ;
+  rdfs:label "Video Production" ;
+  rdfs:comment "Software that is used for video production. This can include video editors, video capture software, and more." ;
+  schema:applicationCategory "MultimediaApplication", "DesignApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Video%20Production/> .
+
+steam:WebPublishing a owl:Class, steam:Software ;
+  rdfs:label "Web Publishing" ;
+  rdfs:comment "Software that is used for web publishing. This can include web design software, content management systems, and more." ;
+  schema:applicationCategory "DesignApplication", "DeveloperApplication" ;
+  schema:url <https://store.steampowered.com/tags/en/Web%20Publishing/> .

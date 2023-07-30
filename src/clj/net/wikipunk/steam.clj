@@ -10,6 +10,7 @@
 (defrecord Steam []
   com/Lifecycle
   (start [this]
+    (defmethod rdf/infer-datomic-type :schema/applicationCategory [_] :db.type/string)
     this)
   (stop [this]
     this))
