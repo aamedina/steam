@@ -7,13 +7,15 @@
 
 steam: a owl:Ontology ;
   rdfs:label "Steam Ontology" ;
-  rdfs:comment  "A work-in-progress ontology describing the Steam platform." ;
-  rdfs:seeAlso <https://partner.steamgames.com/doc/home> .
+  rdfs:comment  "A work-in-progress ontology describing the Steam platform. Use the rdfs:label property on tag classes to get the name of the tag as catalogued by Steam." ;
+  rdfs:seeAlso <https://partner.steamgames.com/doc/home>, <https://partner.steamgames.com/doc/store/tags> .
 
 steam:Tag a owl:Class ;
   rdfs:subClassOf schema:Thing ;
   rdfs:label "Tag" ;
   rdfs:comment "A tag used to categorize a game on Steam" .
+
+# Tag classes
 
 steam:TopLevelGenre a owl:Class ;
   rdfs:subClassOf steam:Tag ;
@@ -80,69 +82,525 @@ steam:Funding a owl:Class ;
   rdfs:label "Funding" ;
   rdfs:comment "A tag used to categorize the funding of a game on Steam" .
 
-steam:Action a owl:NamedIndividual, steam:TopLevelGenre ;
+# Top Level Genre tags
+
+steam:Action a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Action" ;
   rdfs:comment "Action games emphasize physical challenges that require hand-eye coordination and motor skill to overcome. They center around the player controlling a character in a world where they must navigate obstacles and fight enemies to succeed." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Action_game> ;
   schema:url <https://store.steampowered.com/tags/en/Action/> .
 
-steam:Adventure a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Adventure a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Adventure" ;
   rdfs:comment "Adventure games focus on puzzle solving within a narrative framework, generally with few or no action elements. These games encourage players to explore, interact with different objects, and solve complex puzzles to progress the story." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Adventure_game> ;
   schema:url <https://store.steampowered.com/tags/en/Adventure/> .
 
-steam:Casual a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Casual a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Casual" ;
   rdfs:comment "Casual games are designed to be easily picked up and put down again, allowing for potentially short bursts of play. They often have simpler rules, shorter sessions, and less learned skill than hardcore games." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Casual_game> ;
   schema:url <https://store.steampowered.com/tags/en/Casual/> .
 
-steam:Experimental a owl:NamedIndividual, steam:TopLevelGenre, steam:Genre ;
+steam:Experimental a owl:Class, steam:TopLevelGenre, steam:Genre ;
   rdfs:label "Experimental" ;
   rdfs:comment "Experimental games are those that challenge the status quo of gaming and offer a unique, sometimes strange, gaming experience. These games often explore new game mechanics, storytelling methods, and art styles." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Art_game> ;
   schema:url <https://store.steampowered.com/tags/en/Experimental/> .
 
-steam:Puzzle a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Puzzle a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Puzzle" ;
   rdfs:comment "Puzzle games focus on problem solving and logical thinking. They challenge the player to solve head-scratching puzzles and often offer a slower paced, more relaxing gaming experience." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Puzzle_video_game> ;
   schema:url <https://store.steampowered.com/tags/en/Puzzle/> .
 
-steam:Racing a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Racing a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Racing" ;
   rdfs:comment "Racing games simulate the competition of racing, where the player controls a vehicle or other transport. They often have a time limit, and can include obstacles and competitors to beat." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Racing_video_game> ;
   schema:url <https://store.steampowered.com/tags/en/Racing/> .
 
-steam:RPG a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:RPG a owl:Class, steam:TopLevelGenre ;
   rdfs:label "RPG" ;
   rdfs:comment "Role-playing games (RPGs) often involve story-telling and narrative elements, character development, complexity, as well as replayability and immersion. The player controls a character in a world where they undertake quests and challenges." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Role-playing_video_game> ;
   schema:url <https://store.steampowered.com/tags/en/RPG/> .
 
-steam:Simulation a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Simulation a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Simulation" ;
   rdfs:comment "Simulation games are designed to accurately simulate real-world activities. They can cover a variety of activities, including driving vehicles, managing a business, or living a life." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Simulation_video_game> ;
   schema:url <https://store.steampowered.com/tags/en/Simulation/> .
 
-steam:Sports a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Sports a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Sports" ;
   rdfs:comment "Sports games simulate the practice of traditional physical sports. This can be team sports such as soccer, basketball, or individual activities like golf, fishing, skateboarding." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Sports_game> ;
   schema:url <https://store.steampowered.com/tags/en/Sports/> .
 
-steam:Strategy a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Strategy a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Strategy" ;
   rdfs:comment "Strategy games require strategic, tactical, and sometimes logistical challenges. Many games also offer economic challenges and exploration." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Strategy_video_game> ;
   schema:url <https://store.steampowered.com/tags/en/Strategy/> .
 
-steam:Tabletop a owl:NamedIndividual, steam:TopLevelGenre ;
+steam:Tabletop a owl:Class, steam:TopLevelGenre ;
   rdfs:label "Tabletop" ;
   rdfs:comment "Tabletop games are those that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames, tile-based games and role-playing games. In the digital context, these games are often adaptations of traditional tabletop games." ;
   rdfs:seeAlso <http://dbpedia.org/resource/Tabletop_game> ;
   schema:url <https://store.steampowered.com/tags/en/Tabletop/> .
+
+# Genre tags
+
+steam:ActionRPG a owl:Class, steam:Genre ;
+  rdfs:label "Action RPG" ;
+  rdfs:comment "Action RPG games combine elements of action games with elements of role-playing games, typically featuring real-time combat where the player has direct control over characters, as opposed to turn-based or menu-based combat." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Action_role-playing_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Action%20RPG/> .
+
+steam:ActionAdventure a owl:Class, steam:Genre ;
+  rdfs:label "Action-Adventure" ;
+  rdfs:comment "Action-Adventure games blend elements of action games with elements of adventure games, typically featuring an emphasis on combat along with puzzle-solving and item-gathering." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Action-adventure_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Action-Adventure/> .
+
+steam:Arcade a owl:Class, steam:Genre ;
+  rdfs:label "Arcade" ;
+  rdfs:comment "Arcade games are focused on short, simple gameplay offering immediate satisfaction but also challenge and replayability. They often mimic games found in real-world arcades, like racing, shooting, or sports games." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Arcade_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Arcade/> .
+
+steam:AutoBattler a owl:Class, steam:Genre ;
+  rdfs:label "Auto Battler" ;
+  rdfs:comment "Auto Battler games, also known as auto chess, involve automatic battles between characters controlled by the game rather than the player. Players typically focus on strategy, such as character placement and upgrades." ;
+  schema:url <https://store.steampowered.com/tags/en/Auto%20Battler/> .
+
+steam:AutomobileSim a owl:Class, steam:Genre ;
+  rdfs:label "Automobile Sim" ;
+  rdfs:comment "Automobile Sim games simulate the experience of driving or racing cars. They often focus on realistic physics and vehicle handling, as well as potentially managing aspects of the car's performance such as fuel usage or mechanical wear." ;
+  rdfs:subClassOf steam:Simulation, steam:Racing ;
+  schema:url <https://store.steampowered.com/tags/en/Automobile%20Sim/> .
+
+steam:BaseBuilding a owl:Class, steam:Genre ;
+  rdfs:label "Base Building" ;
+  rdfs:comment "Base Building games focus on the construction and management of a home base or headquarters for the player. This often involves gathering resources, managing infrastructure, and defending against attacks." ;
+  schema:url <https://store.steampowered.com/tags/en/Base%20Building/> .
+
+steam:Baseball a owl:Class, steam:Genre ;
+  rdfs:label "Baseball" ;
+  rdfs:comment "Baseball games simulate the sport of baseball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Baseball> ;
+  schema:url <https://store.steampowered.com/tags/en/Baseball/> .
+
+steam:Basketball a owl:Class, steam:Genre ;
+  rdfs:label "Basketball" ;
+  rdfs:comment "Basketball games simulate the sport of basketball, allowing players to control a team and compete in games or seasons. They often focus on realistic gameplay and statistics." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Basketball> ;
+  schema:url <https://store.steampowered.com/tags/en/Basketball/> .
+
+steam:BattleRoyale a owl:Class, steam:Genre ;
+  rdfs:label "Battle Royale" ;
+  rdfs:comment "Battle Royale games involve numerous players that compete to be the last person or team standing. These games often involve a shrinking play area to bring players closer together over time." ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty schema:playMode ;
+    owl:hasValue schema:MultiPlayer
+    ] ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Battle_royale_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Battle%20Royale/> .
+
+steam:BMX a owl:Class, steam:Genre ;
+  rdfs:label "BMX" ;
+  rdfs:comment "BMX games simulate the sport of BMX biking, allowing players to perform tricks, compete in races, or explore environments on a BMX bike." ;
+  rdfs:subClassOf steam:Sports, steam:Racing ;
+  rdfs:seeAlso <http://dbpedia.org/resource/BMX> ;
+  schema:url <https://store.steampowered.com/tags/en/BMX/> .
+
+steam:BoardGame a owl:Class, steam:Genre ;
+  rdfs:label "Board Game" ;
+  rdfs:comment "Board Game genre includes games that are digital adaptations of traditional or modern board games. They often involve strategic decision making, and can be played solo or multiplayer." ;
+  rdfs:subClassOf steam:Tabletop ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Board_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Board%20Game/> .
+
+steam:Bowling a owl:Class, steam:Genre ;
+  rdfs:label "Bowling" ;
+  rdfs:comment "Bowling games simulate the sport of bowling, allowing players to compete in games or tournaments. They often focus on realistic physics and gameplay." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Bowling> ;
+  schema:url <https://store.steampowered.com/tags/en/Bowling/> .
+
+steam:Building a owl:Class, steam:Genre ;
+  rdfs:label "Building" ;
+  rdfs:comment "Building games focus on the construction of structures or environments. They often involve gathering resources, planning and designing buildings, and managing infrastructure." ;
+  rdfs:subClassOf steam:Simulation ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Construction_and_management_simulation> ;
+  schema:url <https://store.steampowered.com/tags/en/Building/> .
+
+steam:CardGame a owl:Class, steam:Genre ;
+  rdfs:label "Card Game" ;
+  rdfs:comment "Card games are digital adaptations of traditional or modern card games. They often involve strategic decision making, and can be played solo or multiplayer." ;
+  rdfs:subClassOf steam:Tabletop ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Card_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Card%20Game/> .
+
+steam:CharacterActionGame a owl:Class, steam:Genre ;
+  rdfs:label "Character Action Game" ;
+  rdfs:comment "Character Action Games are action games that allow players to control a single, or sometimes multiple, characters. These games often feature combat and exploration." ;
+  rdfs:subClassOf steam:Action ;
+  schema:url <https://store.steampowered.com/tags/en/Character%20Action%20Game/> .
+
+steam:Chess a owl:Class, steam:Genre ;
+  rdfs:label "Chess" ;
+  rdfs:comment "Chess games are digital adaptations of the traditional board game of chess. They often allow for play against AI or human opponents, and may offer additional features like tutorials or puzzles." ;
+  rdfs:subClassOf steam:BoardGame ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Chess> ;
+  schema:url <https://store.steampowered.com/tags/en/Chess/> .
+
+steam:Clicker a owl:Class, steam:Genre ;
+  rdfs:label "Clicker" ;
+  rdfs:comment "Clicker games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades." ;
+  rdfs:subClassOf steam:Casual ;  
+  rdfs:seeAlso <http://dbpedia.org/resource/Incremental_game> ;
+  schema:sameAs steam:Idler ;  
+  schema:url <https://store.steampowered.com/tags/en/Clicker/> .
+
+steam:Cycling a owl:Class, steam:Genre ;
+  rdfs:label "Cycling" ;
+  rdfs:comment "Cycling games simulate the sport of cycling, allowing players to compete in races or explore environments on a bike." ;
+  rdfs:subClassOf steam:Sports, steam:Racing ;
+  schema:url <https://store.steampowered.com/tags/en/Cycling/> .
+
+steam:Diplomacy a owl:Class, steam:Genre ;
+  rdfs:label "Diplomacy" ;
+  rdfs:comment "Diplomacy games involve negotiation, strategy, and social interaction. Players often need to form alliances, make deals, or negotiate with other players to achieve their goals." ;
+  rdfs:subClassOf steam:Strategy ;
+  schema:url <https://store.steampowered.com/tags/en/Diplomacy/> .
+
+steam:Esports a owl:Class, steam:Genre ;
+  rdfs:label "eSports" ;
+  rdfs:comment "Esports games are competitive games that are often played in professional competitions. They often require high levels of skill and strategy, and have large online communities." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Esports> ;
+  rdfs:subClassOf steam:Sports ;
+  schema:url <https://store.steampowered.com/tags/en/eSports/> .
+
+steam:Exploration a owl:Class, steam:Genre ;
+  rdfs:label "Exploration" ;
+  rdfs:comment "Exploration games focus on the act of exploring an environment. They often feature open-world settings, and encourage players to explore and discover new areas, items, or storylines." ;
+  schema:url <https://store.steampowered.com/tags/en/Exploration/> .
+
+steam:FarmingSim a owl:Class, steam:Genre ;
+  rdfs:label "Farming Sim" ;
+  rdfs:comment "Farming Sim games simulate the experience of farming, including the cultivation of crops, raising of livestock, and management of a farm. They often involve elements of strategy and resource management." ;
+  rdfs:subClassOf steam:Simulation ;
+  schema:url <https://store.steampowered.com/tags/en/Farming%20Sim/> .
+
+steam:Fighting a owl:Class, steam:Genre ;
+  rdfs:label "Fighting" ;
+  rdfs:comment "Fighting games are characterized by close combat between two fighters or groups of fighters, often set in arenas. Players must master techniques, combos, and strategy to overcome their opponents." ;
+  rdfs:subClassOf steam:Action ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Fighting_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Fighting/> .
+
+steam:Football a owl:Class, steam:Genre ;
+  rdfs:label "Football" ;
+  rdfs:comment "Football games simulate the sport of football, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Football_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Football/> .
+
+steam:GodGame a owl:Class, steam:Genre ;
+  rdfs:label "God Game" ;
+  rdfs:comment "God games are a type of game where players control a character with divine powers. They often involve elements of creation, terraforming, and control over nature." ;
+  rdfs:subClassOf steam:Simulation ;
+  rdfs:seeAlso <http://dbpedia.org/resource/God_game> ;
+  schema:url <https://store.steampowered.com/tags/en/God%20Game/> .
+
+steam:Golf a owl:Class, steam:Genre ;
+  rdfs:label "Golf" ;
+  rdfs:comment "Golf games simulate the sport of golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Golf_game> ;
+  rdfs:subClassOf steam:Sports ;
+  schema:url <https://store.steampowered.com/tags/en/Golf/> .
+
+steam:Hacking a owl:Class, steam:Genre ;
+  rdfs:label "Hacking" ;
+  rdfs:comment "Hacking games involve elements of computer hacking. They often require players to solve puzzles, exploit systems, or engage in simulated computer hacking tasks." ;
+  schema:url <https://store.steampowered.com/tags/en/Hacking/> .
+
+steam:HiddenObject a owl:Class, steam:Genre ;
+  rdfs:label "Hidden Object" ;
+  rdfs:comment "Hidden Object games require players to find specific items from a list that are hidden within a picture or scene." ;
+  rdfs:subClassOf steam:Puzzle ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Hidden_object_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Hidden%20Object/> .
+
+steam:Hockey a owl:Class, steam:Genre ;
+  rdfs:label "Hockey" ;
+  rdfs:comment "Hockey games simulate the sport of hockey, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics." ;
+  rdfs:subClassOf steam:Sports ;
+  schema:url <https://store.steampowered.com/tags/en/Hockey/> .
+
+steam:Idler a owl:Class, steam:Genre ;
+  rdfs:label "Idler" ;
+  rdfs:comment "Idler games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades." ;
+  rdfs:subClassOf steam:Casual ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Incremental_game> ;
+  schema:sameAs steam:Clicker ;
+  schema:url <https://store.steampowered.com/tags/en/Idler/> .
+
+steam:InteractiveFiction a owl:Class, steam:Genre ;
+  rdfs:label "Interactive Fiction" ;
+  rdfs:comment "Interactive Fiction games are games that emphasize narrative and player choice. They often involve complex branching narratives and multiple endings." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Interactive_fiction> ;
+  schema:url <https://store.steampowered.com/tags/en/Interactive%20Fiction/> .
+
+steam:Management a owl:Class, steam:Genre ;
+  rdfs:label "Management" ;
+  rdfs:comment "Management games involve managing resources and making strategic decisions. They often require players to manage businesses, cities, or other entities." ;
+  rdfs:subClassOf steam:Simulation ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Construction_and_management_simulation> ;
+  schema:url <https://store.steampowered.com/tags/en/Management/> .
+
+steam:Match3 a owl:Class, steam:Genre ;
+  rdfs:label "Match 3" ;
+  rdfs:comment "Match 3 games require players to match three or more items of the same type to achieve a goal. They often involve puzzle-solving and strategic thinking." ;
+  rdfs:subClassOf steam:Puzzle ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Tile-matching_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Match%203/> .
+
+steam:MedicalSim a owl:Class, steam:Genre ;
+  rdfs:label "Medical Sim" ;
+  rdfs:comment "Medical Sim games simulate medical scenarios or procedures. They often require players to diagnose and treat patients, manage a medical facility, or perform simulated surgeries." ;
+  rdfs:subClassOf steam:Simulation ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Medical_simulation> ;
+  schema:url <https://store.steampowered.com/tags/en/Medical%20Sim/> .
+
+steam:MiniGolf a owl:Class, steam:Genre ;
+  rdfs:label "Mini Golf" ;
+  rdfs:comment "Mini Golf games simulate the sport of mini golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Miniature_golf> ;
+  schema:url <https://store.steampowered.com/tags/en/Mini%20Golf/> .
+
+steam:Mining a owl:Class, steam:Genre ;
+  rdfs:label "Mining" ;
+  rdfs:comment "Mining games involve the extraction of valuable minerals or other geological materials from the earth. They often require players to manage resources, explore environments, and develop mining operations." ;
+  schema:url <https://store.steampowered.com/tags/en/Mining/> .
+
+steam:MMORPG a owl:Class, steam:Genre ;
+  rdfs:label "MMORPG" ;
+  rdfs:comment "MMORPGs (Massively Multiplayer Online Role-Playing Games) are games that involve large numbers of players interacting in a virtual world. They often involve character development, quests, and multiplayer cooperation or competition." ;
+  rdfs:subClassOf steam:RPG ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty schema:playMode ;
+    owl:hasValue schema:MultiPlayer
+    ] ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Massively_multiplayer_online_role-playing_game> ;
+  schema:url <https://store.steampowered.com/tags/en/MMORPG/> .
+
+steam:MOBA a owl:Class, steam:Genre ;
+  rdfs:label "MOBA" ;
+  rdfs:comment "MOBA (Multiplayer Online Battle Arena) games involve teams of players competing against each other in an arena. They often require strategic decision-making, teamwork, and player skill." ;
+  rdfs:subClassOf steam:Strategy ;
+  rdfs:subClassOf [
+    a owl:Restriction ;
+    owl:onProperty schema:playMode ;
+    owl:hasValue schema:MultiPlayer
+    ] ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Multiplayer_online_battle_arena> ;
+  schema:url <https://store.steampowered.com/tags/en/MOBA/> .
+
+steam:Motocross a owl:Class, steam:Genre ;
+  rdfs:label "Motocross" ;
+  rdfs:comment "Motocross games simulate the sport of motocross, allowing players to compete in races or perform stunts on a motocross bike." ;
+  rdfs:subClassOf steam:Racing, steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Motocross_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Motocross/> .
+
+steam:OpenWorld a owl:Class, steam:Genre ;
+  rdfs:label "Open World" ;
+  rdfs:comment "Open World games provide a large, open environment for players to explore and interact with. They often allow players to choose their own objectives and play at their own pace." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Open_world> ;
+  schema:url <https://store.steampowered.com/tags/en/Open%20World/> .
+
+steam:OutbreakSim a owl:Class, steam:Genre ;
+  rdfs:label "Outbreak Sim" ;
+  rdfs:comment "Outbreak Sim games simulate the spread of diseases or other outbreaks and often involve strategy and management elements." ;
+  rdfs:subClassOf steam:Simulation ;
+  schema:url <https://store.steampowered.com/tags/en/Outbreak%20Sim/> .
+
+steam:PartyBasedRPG a owl:Class, steam:Genre ;
+  rdfs:label "Party-Based RPG" ;
+  rdfs:comment "Party-Based RPGs are role-playing games where players control a group of characters, often with different abilities and roles, and must use teamwork and strategy to succeed." ;
+  rdfs:subClassOf steam:RPG ;
+  schema:url <https://store.steampowered.com/tags/en/Party-Based%20RPG/> .
+
+steam:Pinball a owl:Class, steam:Genre ;
+  rdfs:label "Pinball" ;
+  rdfs:comment "Pinball games simulate the classic arcade game of pinball, where players use flippers to hit a ball and score points." ;
+  rdfs:subClassOf steam:Arcade ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Pinball> ;
+  schema:url <https://store.steampowered.com/tags/en/Pinball/> .
+
+steam:Platformer a owl:Class, steam:Genre ;
+  rdfs:label "Platformer" ;
+  rdfs:comment "Platformer games involve guiding a character through levels and overcoming obstacles, often by jumping onto platforms at different heights." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Platform_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Platformer/> .
+
+steam:PointAndClick a owl:Class, steam:Genre ;
+  rdfs:label "Point & Click" ;
+  rdfs:comment "Point & Click games involve interacting with the environment and solving puzzles through a point-and-click interface." ;
+  schema:url <https://store.steampowered.com/tags/en/Point%20&%20Click/> .
+
+steam:Rhythm a owl:Class, steam:Genre ;
+  rdfs:label "Rhythm" ;
+  rdfs:comment "Rhythm games challenge players to follow the beat or rhythm of music tracks." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Rhythm_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Rhythm/> .
+
+steam:Roguelike a owl:Class, steam:Genre ;
+  rdfs:label "Roguelike" ;
+  rdfs:comment "Roguelike games feature procedurally generated levels and permadeath, often with RPG elements." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Roguelike> ;
+  schema:url <https://store.steampowered.com/tags/en/Roguelike/> .
+
+steam:RTS a owl:Class, steam:Genre ;
+  rdfs:label "RTS" ;
+  rdfs:comment "Real-Time Strategy (RTS) games require strategic decision making in real time, often involving resource management and direct control over units." ;
+  rdfs:subClassOf steam:Strategy ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Real-time_strategy> ;
+  schema:url <https://store.steampowered.com/tags/en/RTS/> .
+
+steam:Sandbox a owl:Class, steam:Genre ;
+  rdfs:label "Sandbox" ;
+  rdfs:comment "Sandbox games allow players to explore, create, and manipulate their environment with few imposed goals or restrictions." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Sandbox_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Sandbox/> .
+
+steam:Shooter a owl:Class, steam:Genre ;
+  rdfs:label "Shooter" ;
+  rdfs:comment "Shooter games focus on combat involving projectile weapons, such as guns and missiles." ;
+  rdfs:subClassOf steam:Action ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Shooter_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Shooter/> .
+
+steam:Skateboarding a owl:Class, steam:Genre ;
+  rdfs:label "Skateboarding" ;
+  rdfs:comment "Skateboarding games simulate skateboarding activities, often with a focus on performing tricks and stunts." ;
+  rdfs:subClassOf steam:Skating ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Skateboarding> ;
+  schema:url <https://store.steampowered.com/tags/en/Skateboarding/> .
+
+steam:Skating a owl:Class, steam:Genre ;
+  rdfs:label "Skating" ;
+  rdfs:comment "Skating games simulate skating activities, often with a focus on performing tricks and stunts." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Skating> ;
+  schema:url <https://store.steampowered.com/tags/en/Skating/> .
+
+steam:Skiing a owl:Class, steam:Genre ;
+  rdfs:label "Skiing" ;
+  rdfs:comment "Skiing games simulate skiing activities, often with a focus on racing or performing tricks." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Skiing> ;
+  schema:url <https://store.steampowered.com/tags/en/Skiing/> .
+
+steam:Snowboarding a owl:Class, steam:Genre ;
+  rdfs:label "Snowboarding" ;
+  rdfs:comment "Snowboarding games simulate snowboarding activities, often with a focus on racing or performing tricks." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Snowboarding> ;
+  schema:url <https://store.steampowered.com/tags/en/Snowboarding/> .
+
+steam:Soccer a owl:Class, steam:Genre ;
+  rdfs:label "Soccer" ;
+  rdfs:comment "Soccer games simulate the sport of soccer, often with a focus on controlling a team and competing in matches." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Association_football> ;
+  schema:url <https://store.steampowered.com/tags/en/Soccer/> .
+
+steam:SpaceSim a owl:Class, steam:Genre ;
+  rdfs:label "Space Sim" ;
+  rdfs:comment "Space Sim games simulate space exploration or combat in a space setting." ;
+  rdfs:subClassOf steam:Simulation ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Space_flight_simulation_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Space%20Sim/> .
+
+steam:Stealth a owl:Class, steam:Genre ;
+  rdfs:label "Stealth" ;
+  rdfs:comment "Stealth games challenge players to avoid detection, often by sneaking past enemies or obstacles." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Stealth_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Stealth/> .
+
+steam:StrategyRPG a owl:Class, steam:Genre ;
+  rdfs:label "Strategy RPG" ;
+  rdfs:comment "Strategy RPGs combine strategic gameplay with role-playing elements, often involving character development and tactical combat." ;
+  rdfs:subClassOf steam:RPG, steam:Strategy ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Tactical_role-playing_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Strategy%20RPG/> .
+
+steam:Survival a owl:Class, steam:Genre ;
+  rdfs:label "Survival" ;
+  rdfs:comment "Survival games challenge players to survive in a hostile environment, often by gathering resources, crafting tools, and building shelters." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Survival_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Survival/> .
+
+steam:Tennis a owl:Class, steam:Genre ;
+  rdfs:label "Tennis" ;
+  rdfs:comment "Tennis games simulate the sport of tennis, often with a focus on controlling a player and competing in matches." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Tennis> ;
+  schema:url <https://store.steampowered.com/tags/en/Tennis/> .
+
+steam:TowerDefense a owl:Class, steam:Genre ;
+  rdfs:label "Tower Defense" ;
+  rdfs:comment "Tower Defense games challenge players to defend a location by placing defensive structures along the path of incoming enemies." ;
+  rdfs:subClassOf steam:Strategy ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Tower_defense> ;
+  schema:url <https://store.steampowered.com/tags/en/Tower%20Defense/> .
+
+steam:Trivia a owl:Class, steam:Genre ;
+  rdfs:label "Trivia" ;
+  rdfs:comment "Trivia games test players' knowledge of various topics, often in a quiz format." ;
+  rdfs:subClassOf steam:Casual ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Trivia> ;
+  schema:url <https://store.steampowered.com/tags/en/Trivia/> .
+
+steam:TurnBasedStrategy a owl:Class, steam:Genre ;
+  rdfs:label "Turn-Based Strategy" ;
+  rdfs:comment "Turn-Based Strategy games involve strategic gameplay where players take turns when playing." ;
+  rdfs:subClassOf steam:Strategy ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Turn-based_strategy> ;
+  schema:url <https://store.steampowered.com/tags/en/Turn-Based%20Strategy/> .
+
+steam:VisualNovel a owl:Class, steam:Genre ;
+  rdfs:label "Visual Novel" ;
+  rdfs:comment "Visual Novels are a narrative genre of game, featuring mostly static graphics, most often using anime-style art or occasionally live-action stills." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Visual_novel> ;
+  schema:url <https://store.steampowered.com/tags/en/Visual%20Novel/> .
+
+steam:WalkingSimulator a owl:Class, steam:Genre ;
+  rdfs:label "Walking Simulator" ;
+  rdfs:comment "Walking Simulator games focus on exploration and narrative over gameplay, often involving walking through an environment to uncover the story." ;
+  rdfs:subClassOf steam:Adventure ;
+  schema:url <https://store.steampowered.com/tags/en/Walking%20Simulator/> .
+
+steam:WordGame a owl:Class, steam:Genre ;
+  rdfs:label "Word Game" ;
+  rdfs:comment "Word games involve the creation or solving of words, often in a puzzle format." ;
+  rdfs:subClassOf steam:Puzzle, steam:Casual ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Word_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Word%20Game/> .
+
+steam:Wrestling a owl:Class, steam:Genre ;
+  rdfs:label "Wrestling" ;
+  rdfs:comment "Wrestling games simulate the sport of wrestling, often with a focus on controlling a wrestler and competing in matches." ;
+  rdfs:subClassOf steam:Sports ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Professional_wrestling> ;
+  schema:url <https://store.steampowered.com/tags/en/Wrestling/> .
 
