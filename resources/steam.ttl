@@ -1758,3 +1758,334 @@ steam:WorldWarII a owl:Class, steam:ThemesAndMoods ;
   rdfs:comment "The World War II tag is used for games that feature World War II historical events, WWII era settings, or gameplay mechanics focused on the WWII period." ;
   rdfs:seeAlso <http://dbpedia.org/resource/World_War_II> ;
   schema:url <https://store.steampowered.com/tags/en/World%20War%20II/> .
+
+# Features tags
+
+steam:6DOF a owl:Class, steam:Features ;
+  rdfs:label "6DOF" ;
+  rdfs:comment "6DOF (Six Degrees of Freedom) is a feature that allows full 3D spatial movement and rotation. This includes the ability to move forward/backward, up/down, left/right and to rotate along three perpendicular axes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Six_degrees_of_freedom> ;
+  schema:url <https://store.steampowered.com/tags/en/6DOF/> .
+
+steam:Archery a owl:Class, steam:Features ;
+  rdfs:label "Archery" ;
+  rdfs:comment "Archery is a feature that involves the use of bows and arrows as a primary mechanic. It often requires precision and timing, and can be used in combat, hunting, or sport scenarios within the game." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Archery> ;
+  schema:url <https://store.steampowered.com/tags/en/Archery/> .
+
+steam:ArtificialIntelligence a owl:Class, steam:Features ;
+  rdfs:label "Artificial Intelligence" ;
+  rdfs:comment "Artificial Intelligence is a feature that involves the use of AI-controlled characters or systems. These can range from enemy combatants to friendly NPCs, and their behavior can significantly impact the gameplay experience." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Artificial_intelligence> ;
+  schema:url <https://store.steampowered.com/tags/en/Artificial%20Intelligence/> .
+
+steam:AsymmetricVR a owl:Class, steam:Features ;
+  rdfs:label "Asymmetric VR" ;
+  rdfs:comment "Asymmetric VR is a feature that involves different experiences for VR and non-VR players in the same game. This can create unique cooperative or competitive scenarios, enhancing the diversity of gameplay." ;
+  schema:url <https://store.steampowered.com/tags/en/Asymmetric%20VR/> .
+
+steam:ATV a owl:Class, steam:Features ;
+  rdfs:label "ATV" ;
+  rdfs:comment "ATV (All-Terrain Vehicle) is a feature that involves the use of off-road vehicles. This can add an element of exploration, racing, or combat to the game, often in rugged, outdoor environments." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/All-terrain_vehicle> ;
+  schema:url <https://store.steampowered.com/tags/en/ATV/> .
+
+steam:Automation a owl:Class, steam:Features ;
+  rdfs:label "Automation" ;
+  rdfs:comment "Automation is a feature that allows certain tasks or processes to be automatically controlled or carried out within the game. This can involve resource management, base building, or AI-controlled characters." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Automation> ;
+  schema:url <https://store.steampowered.com/tags/en/Automation/> .
+
+steam:BaseBuilding a steam:Features .
+
+steam:Boxing a owl:Class, steam:Features ;
+  rdfs:label "Boxing" ;
+  rdfs:comment "Boxing, as a feature in games, simulates the sport of boxing, focusing on timing, strategy, and quick reflexes. It often involves one-on-one combat where players control a boxer." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Boxing> ;
+  schema:url <https://store.steampowered.com/tags/en/Boxing/> .
+
+steam:Building a steam:Features .
+
+steam:BulletTime a owl:Class, steam:Features ;
+  rdfs:label "Bullet Time" ;
+  rdfs:comment "Bullet Time is a feature where time slows down, often during combat scenarios. It allows players to see actions such as bullets moving in slow motion, adding a cinematic feel to the gameplay." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Bullet_time> ;
+  schema:url <https://store.steampowered.com/tags/en/Bullet%20Time/> .
+
+steam:CharacterCustomization a owl:Class, steam:Features ;
+  rdfs:label "Character Customization" ;
+  rdfs:comment "Character Customization is a feature that offers detailed control over the visual design and/or abilities of player characters. It allows players to create unique avatars, enhancing immersion and personal connection to the game world." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Character_creation> ;
+  schema:url <https://store.steampowered.com/tags/en/Character%20Customization/> .
+
+steam:ChoicesMatter a owl:Class, steam:Features ;
+  rdfs:label "Choices Matter" ;
+  rdfs:comment "Choices Matter is a feature where the decisions made by the player significantly affect the course of the game's narrative or gameplay. It often leads to multiple endings, enhancing replayability and player agency." ;
+  schema:url <https://store.steampowered.com/tags/en/Choices%20Matter/> .
+
+steam:ClassBased a owl:Class, steam:Features ;
+  rdfs:label "Class-Based" ;
+  rdfs:comment "Class-Based is a feature that involves the use of distinct character classes, each with their own unique abilities, skills, and roles within the game. This can add depth and variety to gameplay, encouraging different playstyles and strategies." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Character_class> ;
+  schema:url <https://store.steampowered.com/tags/en/Class-Based/> .
+
+steam:Combat a owl:Class, steam:Features ;
+  rdfs:label "Combat" ;
+  rdfs:comment "Combat is a feature that involves fighting between characters. This can take many forms, from melee to ranged, magic to technology, and can be a central part of many game genres." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Combat> ;
+  schema:url <https://store.steampowered.com/tags/en/Combat/> .
+
+steam:Conversation a owl:Class, steam:Features ;
+  rdfs:label "Conversation" ;
+  rdfs:comment "Conversation is a feature that involves dialogue between characters. This can be a key part of narrative-driven games, and can also involve elements of choice and consequence." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Conversation> ;
+  schema:url <https://store.steampowered.com/tags/en/Conversation/> .
+
+steam:Crafting a owl:Class, steam:Features ;
+  rdfs:label "Crafting" ;
+  rdfs:comment "Crafting is a feature that allows players to create new items or equipment from resources. This can be a key part of survival games, RPGs, and more, allowing for customization and progression." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Craft> ;
+  schema:url <https://store.steampowered.com/tags/en/Crafting/> .
+
+steam:Deckbuilding a owl:Class, steam:Features ;
+  rdfs:label "Deckbuilding" ;
+  rdfs:comment "Deckbuilding is a feature that involves creating and customizing a deck of cards to use in gameplay. This is a key part of many card games, and can involve strategic decision-making and planning." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Deck-building_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Deckbuilding/> .
+
+steam:Driving a owl:Class, steam:Features ;
+  rdfs:label "Driving" ;
+  rdfs:comment "Driving is a feature that involves controlling a vehicle. This can be a key part of racing games, but can also feature in a wide range of other genres." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Driving> ;
+  schema:url <https://store.steampowered.com/tags/en/Driving/> .
+
+steam:Fishing a owl:Class, steam:Features ;
+  rdfs:label "Fishing" ;
+  rdfs:comment "Fishing is a feature that involves catching fish. This can be a relaxing pastime within a larger game, or the central focus of a fishing game." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Fishing> ;
+  schema:url <https://store.steampowered.com/tags/en/Fishing/> .
+
+steam:Flight a steam:Features .
+
+steam:FMV a steam:Features .
+
+steam:GridBasedMovement a owl:Class, steam:Features ;
+  rdfs:label "Grid-Based Movement" ;
+  rdfs:comment "Grid-Based Movement is a feature that restricts movement to a grid. This can be a key part of many strategy and puzzle games, and can add a layer of tactical decision-making to gameplay." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Grid_plan> ;
+  schema:url <https://store.steampowered.com/tags/en/Grid-Based%20Movement/> .
+
+steam:GunCustomization a owl:Class, steam:Features ;
+  rdfs:label "Gun Customization" ;
+  rdfs:comment "Gun Customization is a feature that allows players to modify and personalize firearms. This can be a key part of many shooter games, allowing for a wide range of playstyles and strategies." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Firearm> ;
+  schema:url <https://store.steampowered.com/tags/en/Gun%20Customization/> .
+
+steam:HackAndSlash a steam:Features .
+
+steam:Hacking a steam:Features .
+
+steam:HexGrid a owl:Class, steam:Features ;
+  rdfs:label "Hex Grid" ;
+  rdfs:comment "Hex Grid is a feature that involves a grid of hexagonal tiles. This can be a key part of many strategy games, and can allow for more complex and varied movement than a square grid." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Hex_map> ;
+  schema:url <https://store.steampowered.com/tags/en/Hex%20Grid/> .
+
+steam:Hunting a owl:Class, steam:Features ;
+  rdfs:label "Hunting" ;
+  rdfs:comment "Hunting is a feature that involves tracking and killing animals. This can be a key part of many survival games, and can involve elements of tracking, stealth, and resource management." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Hunting> ;
+  schema:url <https://store.steampowered.com/tags/en/Hunting/> .
+
+steam:InventoryManagement a owl:Class, steam:Features ;
+  rdfs:label "Inventory Management" ;
+  rdfs:comment "Inventory Management is a feature that involves managing a limited inventory of items. This can be a key part of many RPGs and survival games, and can involve strategic decision-making and planning." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Inventory> ;
+  schema:url <https://store.steampowered.com/tags/en/Inventory%20Management/> .
+
+steam:LevelEditor a owl:Class, steam:Features ;
+  rdfs:label "Level Editor" ;
+  rdfs:comment "Level Editor is a feature that allows players to create and share their own levels or maps. This can add a significant amount of replayability to a game, and allows for a high degree of player creativity." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Level_editor> ;
+  schema:url <https://store.steampowered.com/tags/en/Level%20Editor/> .
+
+steam:Linear a owl:Class, steam:Features ;
+  rdfs:label "Linear" ;
+  rdfs:comment "Linear is a feature that involves a set, predetermined path through the game. This can be a key part of many narrative-driven games, and often involves a strong focus on storytelling." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Linearity> ;
+  schema:url <https://store.steampowered.com/tags/en/Linear/> .
+
+steam:MartialArts a owl:Class, steam:Features ;
+  rdfs:label "Martial Arts" ;
+  rdfs:comment "Martial Arts is a feature that involves combat techniques. This can be a key part of many action and fighting games, and often involves a focus on skill and timing." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Martial_arts> ;
+  schema:url <https://store.steampowered.com/tags/en/Martial%20Arts/> .
+
+steam:Mining a steam:Features .
+
+steam:Moddable a owl:Class, steam:Features ;
+  rdfs:label "Moddable" ;
+  rdfs:comment "Moddable is a feature that allows players to modify the game. This can add a significant amount of replayability to a game, and allows for a high degree of player creativity." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Video_game_modding> ;
+  schema:url <https://store.steampowered.com/tags/en/Moddable/> .
+
+steam:MultipleEndings a owl:Class, steam:Features ;
+  rdfs:label "Multiple Endings" ;
+  rdfs:comment "Multiple Endings is a feature that involves different potential outcomes to the game's story. This can be a key part of many narrative-driven games, and often involves a focus on player choice and branching narratives." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Types_of_fiction_with_multiple_endings> ;
+  schema:url <https://store.steampowered.com/tags/en/Multiple%20Endings/> .
+
+steam:MusicBasedProceduralGeneration a owl:Class, steam:Features ;
+  rdfs:label "Music-Based Procedural Generation" ;
+  rdfs:comment "Music-Based Procedural Generation is a feature that involves generating content based on music. This can be a key part of many rhythm and music games, and often involves a unique and dynamic gameplay experience." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Procedural_generation> ;
+  schema:url <https://store.steampowered.com/tags/en/Music-Based%20Procedural%20Generation/> .
+
+steam:Narration a owl:Class, steam:Features ;
+  rdfs:label "Narration" ;
+  rdfs:comment "Narration is a feature that involves a narrator telling a story. This can be a key part of many narrative-driven games, and often involves a focus on storytelling and atmosphere." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Narration> ;
+  schema:url <https://store.steampowered.com/tags/en/Narration/> .
+
+steam:NavalCombat a owl:Class, steam:Features ;
+  rdfs:label "Naval Combat" ;
+  rdfs:comment "Naval Combat is a feature that involves combat between ships or naval vessels. This can be a key part of many strategy and simulation games, and often involves a focus on tactics and positioning." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Naval_warfare> ;
+  schema:url <https://store.steampowered.com/tags/en/Naval%20Combat/> .
+
+steam:Nonlinear a owl:Class, steam:Features ;
+  rdfs:label "Nonlinear" ;
+  rdfs:comment "Nonlinear is a feature that involves a non-predetermined path through the game. This can be a key part of many open-world and adventure games, and often involves a focus on exploration and player choice." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Nonlinear_gameplay> ;
+  schema:url <https://store.steampowered.com/tags/en/Nonlinear/> .
+
+steam:OpenWorld a steam:Features .
+
+steam:PermaDeath a owl:Class, steam:Features ;
+  rdfs:label "Perma Death" ;
+  rdfs:comment "Perma Death is a feature that involves permanent death for player characters. This can be a key part of many roguelike and survival games, and often involves a high level of challenge and tension." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Permadeath> ;
+  schema:url <https://store.steampowered.com/tags/en/Perma%20Death/> .
+
+steam:Physics a owl:Class, steam:Features ;
+  rdfs:label "Physics" ;
+  rdfs:comment "Physics is a feature that involves the simulation of physical systems. This can be a key part of many simulation and puzzle games, and often involves a focus on realism and interactivity." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Physics_engine> ;
+  schema:url <https://store.steampowered.com/tags/en/Physics/> .
+
+steam:ProceduralGeneration a owl:Class, steam:Features ;
+  rdfs:label "Procedural Generation" ;
+  rdfs:comment "Procedural Generation is a feature that involves generating game content algorithmically rather than manually. This can be a key part of many roguelike and sandbox games, and often involves a high level of replayability." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Procedural_generation> ;
+  schema:url <https://store.steampowered.com/tags/en/Procedural%20Generation/> .
+
+steam:PvE a owl:Class, steam:Features ;
+  rdfs:label "PvE" ;
+  rdfs:comment "PvE (Player versus Environment) is a feature that involves players battling against computer-controlled enemies or challenges. This can be a key part of many role-playing and action games, and often involves a focus on cooperation and teamwork." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Player_versus_environment> ;
+  schema:url <https://store.steampowered.com/tags/en/PvE/> .
+
+steam:PvP a owl:Class, steam:Features ;
+  rdfs:label "PvP" ;
+  rdfs:comment "PvP (Player versus Player) is a feature that involves players battling against each other. This can be a key part of many competitive and multiplayer games, and often involves a focus on skill and competition." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Player_versus_player> ;
+  schema:url <https://store.steampowered.com/tags/en/PvP/> .
+
+steam:QuickTimeEvents a owl:Class, steam:Features ;
+  rdfs:label "Quick-Time Events" ;
+  rdfs:comment "Quick-Time Events is a feature that involves timed inputs during cinematic sequences. This can be a key part of many action and adventure games, and often involves a focus on timing and reflexes." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Quick_time_event> ;
+  schema:url <https://store.steampowered.com/tags/en/Quick-Time%20Events/> .
+
+steam:ResourceManagement a owl:Class, steam:Features ;
+  rdfs:label "Resource Management" ;
+  rdfs:comment "Resource Management is a feature that involves managing resources to achieve goals. This can be a key part of many strategy and simulation games, and often involves a focus on planning and strategy." ;
+  schema:url <https://store.steampowered.com/tags/en/Resource%20Management/> .
+
+steam:Sailing a owl:Class, steam:Features ;
+  rdfs:label "Sailing" ;
+  rdfs:comment "Sailing is a feature that involves the navigation of watercraft. This can be a key part of many adventure and simulation games, and often involves a focus on exploration and strategy." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Sailing_(sport)> ;
+  schema:url <https://store.steampowered.com/tags/en/Sailing/> .
+
+steam:ScoreAttack a owl:Class, steam:Features ;
+  rdfs:label "Score Attack" ;
+  rdfs:comment "Score Attack is a feature that involves trying to achieve the highest score possible. This can be a key part of many arcade and action games, and often involves a focus on skill and competition." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Score_attack> ;
+  schema:url <https://store.steampowered.com/tags/en/Score%20Attack/> .
+
+steam:Stealth a steam:Features .
+
+steam:StoryRich a owl:Class, steam:Features ;
+  rdfs:label "Story Rich" ;
+  rdfs:comment "Story Rich is a feature that involves a strong emphasis on narrative. This can be a key part of many adventure and role-playing games, and often involves a focus on character development and world-building." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Interactive_narrative> ;
+  schema:url <https://store.steampowered.com/tags/en/Story%20Rich/> .
+
+steam:Tabletop a steam:Features .
+
+steam:TeamBased a owl:Class, steam:Features ;
+  rdfs:label "Team-Based" ;
+  rdfs:comment "Team-Based is a feature that involves cooperation with other players to achieve goals. This can be a key part of many multiplayer and competitive games, and often involves a focus on teamwork and communication." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Team_sport> ;
+  schema:url <https://store.steampowered.com/tags/en/Team-Based/> .
+
+steam:TextBased a steam:Features .
+
+steam:TimeManipulation a owl:Class, steam:Features ;
+  rdfs:label "Time Manipulation" ;
+  rdfs:comment "Time Manipulation is a feature that involves the control of time as a gameplay mechanic. This can be a key part of many action and puzzle games, and often involves a focus on strategy and problem-solving." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Time_manipulation> ;
+  schema:url <https://store.steampowered.com/tags/en/Time%20Manipulation/> .
+
+steam:Trading a steam:Features .
+
+steam:TurnBasedCombat a owl:Class, steam:Features ;
+  rdfs:label "Turn-Based Combat" ;
+  rdfs:comment "Turn-Based Combat is a feature that involves combat mechanics where players take turns. This can be a key part of many role-playing and strategy games, and often involves a focus on planning and strategy." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Turn-based_strategy> ;
+  schema:url <https://store.steampowered.com/tags/en/Turn-Based%20Combat/> .
+
+steam:TurnBasedTactics a steam:Features .
+
+steam:Tutorial a owl:Class, steam:Features ;
+  rdfs:label "Tutorial" ;
+  rdfs:comment "Tutorial is a feature that involves guided instructions or lessons to teach players how to play the game. This can be a key part of many games, and often involves a focus on learning and skill development." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Tutorial> ;
+  schema:url <https://store.steampowered.com/tags/en/Tutorial/> .
+
+steam:VehicularCombat a owl:Class, steam:Features ;
+  rdfs:label "Vehicular Combat" ;
+  rdfs:comment "Vehicular Combat is a feature that involves combat mechanics using vehicles. This can be a key part of many action and racing games, and often involves a focus on skill and competition." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Vehicular_combat_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Vehicular%20Combat/> .
+
+steam:FemaleProtagonist a owl:Class, steam:Features ;
+  rdfs:label "Female Protagonist" ;
+  rdfs:comment "Female Protagonist is a feature that involves the main character of the game being female. This can be a key part of many games, and often involves a focus on character development and narrative." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Category:Video_games_featuring_female_protagonists> ;
+  schema:url <https://store.steampowered.com/tags/en/Female%20Protagonist/> .
+
+steam:SilentProtagonist a owl:Class, steam:Features ;
+  rdfs:label "Silent Protagonist" ;
+  rdfs:comment "Silent Protagonist is a feature that involves the main character of the game being silent. This can be a key part of many games, and often involves a focus on narrative and player immersion." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Silent_protagonist> ;
+  schema:url <https://store.steampowered.com/tags/en/Silent%20Protagonist/> .
+
+steam:VillainProtagonist a owl:Class, steam:Features ;
+  rdfs:label "Villain Protagonist" ;
+  rdfs:comment "Villain Protagonist is a feature that involves the main character of the game being a villain. This can be a key part of many games, and often involves a focus on character development and narrative." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Villain_protagonist> ;
+  schema:url <https://store.steampowered.com/tags/en/Villain%20Protagonist/> .
+
+steam:Minigames a owl:Class, steam:Features ;
+  rdfs:label "Minigames" ;
+  rdfs:comment "Minigames is a feature that involves smaller games within the main game. This can be a key part of many games, and often involves a focus on variety and additional content." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Minigame> ;
+  schema:url <https://store.steampowered.com/tags/en/Minigames/> .
+
+steam:IntentionallyAwkwardControls a owl:Class, steam:Features ;
+  rdfs:label "Intentionally Awkward Controls" ;
+  rdfs:comment "Intentionally Awkward Controls is a feature that involves game controls that are deliberately difficult to use. This can be a key part of many comedy and challenge-focused games, and often involves a focus on skill and adaptability." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/QWOP> ;
+  schema:url <https://store.steampowered.com/tags/en/Intentionally%20Awkward%20Controls/> .
