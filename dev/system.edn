@@ -1,0 +1,12 @@
+{:vocab  {:sc/create-fn net.wikipunk.rdf/map->UniversalTranslator
+          :sc/refs      [:steam]
+          :boot         [net.wikipunk.steam.boot]
+          :config       {:xtdb.lucene/lucene-store
+                         {:db-dir ".vocab/lucene"}}}
+ :steam  {:sc/create-fn net.wikipunk.steam/map->Steam}
+ :client {:sc/create-fn datomic.client.api/client
+          :server-type  :dev-local
+          :system       "dev"}
+ :db     {:sc/create-fn net.wikipunk.datomic/map->Connection
+          :sc/refs      [:client]
+          :db-name      "steam"}}

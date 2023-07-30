@@ -1,0 +1,81 @@
+@prefix steam: <https://wikipunk.net/steam/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix schema: <http://schema.org/> .
+
+steam: a owl:Ontology ;
+  rdfs:label "Steam Ontology" ;
+  rdfs:comment  "A work-in-progress ontology describing the Steam platform." ;
+  rdfs:seeAlso <https://partner.steamgames.com/doc/home> .
+
+steam:Tag a owl:Class ;
+  rdfs:subClassOf schema:Thing ;
+  rdfs:label "Tag" ;
+  rdfs:comment "A tag used to categorize a game on Steam" .
+
+steam:TopLevelGenre a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Top Level Genre" ;
+  rdfs:comment "A top level genre used to categorize a game on Steam" .
+
+steam:Genre a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Genre" ;
+  rdfs:comment "A genre used to categorize a game on Steam" .
+
+steam:SubGenre a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Sub Genre" ;
+  rdfs:comment "A sub genre used to categorize a game on Steam" .
+
+steam:VisualsAndViewpoint a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Visuals and Viewpoint" ;
+  rdfs:comment "A tag used to describe the visuals and viewpoint of a game on Steam" .
+
+steam:ThemesAndMoods a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Themes and Moods" ;
+  rdfs:comment "A tag used to describe the themes and moods of a game on Steam" .
+
+steam:Features a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Features" ;
+  rdfs:comment "A tag used to describe the features of a game on Steam" .
+
+steam:Players a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Players" ;
+  rdfs:comment "A tag used to describe the player options of a game on Steam" .
+
+steam:Other a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Other" ;
+  rdfs:comment "A tag used to categorize other aspects of a game on Steam" .
+
+steam:Software a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Software" ;
+  rdfs:comment "A tag used to categorize the software of a game on Steam" .
+
+steam:Assessments a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Assessments" ;
+  rdfs:comment "A tag used to categorize the assessments of a game on Steam" .
+
+steam:Ratings a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Ratings" ;
+  rdfs:comment "A tag used to categorize the ratings of a game on Steam" .
+
+steam:HardwareInput a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Hardware Input" ;
+  rdfs:comment "A tag used to categorize the hardware input of a game on Steam" .
+
+steam:Funding a owl:Class ;
+  rdfs:subClassOf steam:Tag ;
+  rdfs:label "Funding" ;
+  rdfs:comment "A tag used to categorize the funding of a game on Steam" .
