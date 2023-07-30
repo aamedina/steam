@@ -2156,3 +2156,147 @@ steam:Singleplayer a owl:Class, steam:Players ;
   rdfs:subClassOf schema:SinglePlayer ;
   rdfs:seeAlso <http://dbpedia.org/resource/Single-player_video_game> ;
   schema:url <https://store.steampowered.com/tags/en/Singleplayer/> .
+
+# Other tags
+
+steam:BasedOnANovel a owl:Class, steam:Other ;
+  rdfs:label "Based on a Novel" ;
+  rdfs:comment "Based on a Novel represents games that are adaptations of literary works. These games often strive to capture the narrative, themes, and characters of the original novels, providing an interactive experience of the story." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Video_game_adaptation> ;
+  schema:url <https://store.steampowered.com/tags/en/Based%20On%20A%20Novel/> .
+
+steam:Batman a owl:Class, steam:Other ;
+  rdfs:label "Batman" ;
+  rdfs:comment "Batman represents games that are based on the Batman franchise. These games often feature Batman as the main character and are set in Gotham City, involving themes of crime-fighting, detective work, and superhero action." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Batman> ;
+  schema:url <https://store.steampowered.com/tags/en/Batman/> .
+
+steam:Documentary a owl:Class, steam:Other ;
+  rdfs:label "Documentary" ;
+  rdfs:comment "Documentary represents media that aim to document reality, providing factual information and often focusing on a particular subject or theme." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Documentary_film> ;
+  schema:url <https://store.steampowered.com/tags/en/Documentary/> .
+
+steam:Drama a owl:Class, steam:Other ;
+  rdfs:label "Drama" ;
+  rdfs:comment "Drama represents media that focus on dramatic, emotional storytelling. These games often involve complex characters, moral dilemmas, and narrative arcs that evoke emotional responses from the players." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Drama> ;
+  schema:url <https://store.steampowered.com/tags/en/Drama/> .
+
+steam:DungeonsAndDragons a owl:Class, steam:Other ;
+  rdfs:label "Dungeons & Dragons" ;
+  rdfs:comment "Dungeons & Dragons represents media that are based on the Dungeons & Dragons franchise." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Dungeons_%26_Dragons> ;
+  schema:url <https://store.steampowered.com/tags/en/Dungeons%20%26%20Dragons/> .
+
+steam:Episodic a owl:Class, steam:Other ;
+  rdfs:label "Episodic" ;
+  rdfs:comment "Episodic represents games that are released in parts or episodes, with each episode often featuring a self-contained story that contributes to a larger narrative. This format allows for ongoing storytelling and character development." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Episodic_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Episodic/> .
+
+steam:Experience a owl:Class, steam:Other ;
+  rdfs:label "Experience" ;
+  rdfs:comment "Experience represents games that prioritize creating a unique, immersive experience for the player. These games often focus on atmosphere, aesthetics, and exploration, rather than traditional gameplay mechanics." ;
+  schema:url <https://store.steampowered.com/tags/en/Experience/> .
+
+steam:FeatureFilm a owl:Class, steam:Other ;
+  rdfs:label "Feature Film" ;
+  rdfs:comment "Feature Film represents games that are associated with a feature film. These games often share the same characters, settings, and storylines as the film, providing an interactive extension of the cinematic experience." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Feature_film> ;
+  schema:url <https://store.steampowered.com/tags/en/Feature%20Film/> .
+
+steam:GamesWorkshop a owl:Class, steam:Other ;
+  rdfs:label "Games Workshop" ;
+  rdfs:comment "Games Workshop represents games that are based on franchises created by Games Workshop. These games often feature elements of fantasy or science fiction, including Warhammer 40,000 and Warhammer Fantasy Battles." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Games_Workshop> ;
+  schema:url <https://store.steampowered.com/tags/en/Games%20Workshop/> .
+
+steam:Indie a owl:Class, steam:Other ;
+  rdfs:label "Indie" ;
+  rdfs:comment "Indie represents games that are developed by independent studios. These games often feature innovative gameplay, unique art styles, and personal creative visions, free from the constraints of larger publishers." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Indie_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Indie/> .
+
+steam:LaraCroft a owl:Class, steam:Other ;
+  rdfs:label "Lara Croft" ;
+  rdfs:comment "Lara Croft represents games that feature Lara Croft as the main character. These games are often part of the Tomb Raider franchise, involving themes of adventure, archaeology, and action." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Lara_Croft> ;
+  schema:url <https://store.steampowered.com/tags/en/Lara%20Croft/> .
+
+steam:LEGO a owl:Class, steam:Other ;
+  rdfs:label "LEGO" ;
+  rdfs:comment "LEGO represents games that are based on the LEGO brand. These games often feature LEGO-style graphics, building mechanics, and themes from various LEGO sets and franchises." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Lego> ;
+  schema:url <https://store.steampowered.com/tags/en/LEGO/> .
+
+steam:Mod a owl:Class, steam:Other ;
+  rdfs:label "Mod" ;
+  rdfs:comment "Mod represents games that support or are based on modifications (mods). Mods are player-created content that can alter or add to the original game, often enhancing replayability and community engagement." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Mod_(video_gaming)> ;
+  schema:url <https://store.steampowered.com/tags/en/Mod/> .
+
+steam:Movie a owl:Class, steam:Other ;
+  rdfs:label "Movie" ;
+  rdfs:comment "When games are tagged with movie they often adapted from and share the same characters, settings, and storylines as a movie, providing an interactive extension of the cinematic experience. Alternatively, this may also tag software that is used to play or produce movies." ;
+  schema:url <https://store.steampowered.com/tags/en/Movie/> .
+
+steam:Music a owl:Class, steam:Other ;
+  rdfs:label "Music" ;
+  rdfs:comment "Music represents games that focus on music, either through gameplay mechanics, such as rhythm games, or through a notable musical score. These games often provide a rich auditory experience and may involve musical creativity." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Music_video_game> ;
+  schema:url <https://store.steampowered.com/tags/en/Music/> .
+
+steam:RealTime a owl:Class, steam:Other ;
+  rdfs:label "Real-Time" ;
+  rdfs:comment "Real-Time represents games that occur in real-time, where game events progress continuously according to the game clock. This feature is often found in strategy and simulation games, requiring players to make decisions in the moment." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Turns,_rounds_and_time-keeping_systems_in_games> ;
+  schema:url <https://store.steampowered.com/tags/en/Real-Time/> .
+
+steam:RealTimeWithPause a owl:Class, steam:Other ;
+  rdfs:label "Real-Time with Pause" ;
+  rdfs:comment "Real-Time with Pause represents games that occur in real-time but allow the player to pause the game. This feature is often found in strategy and role-playing games, allowing players to plan actions while the game is paused." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Turns,_rounds_and_time-keeping_systems_in_games> ;
+  schema:url <https://store.steampowered.com/tags/en/Real-Time%20with%20Pause/> .
+
+steam:Remake a owl:Class, steam:Other ;
+  rdfs:label "Remake" ;
+  rdfs:comment "Remake represents games that are remakes of previous games. These games often feature updated graphics, gameplay, and content, while preserving the original game's core experience." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Video_game_remake> ;
+  schema:url <https://store.steampowered.com/tags/en/Remake/> .
+
+steam:Sequel a owl:Class, steam:Other ;
+  rdfs:label "Sequel" ;
+  rdfs:comment "Sequel represents games that are sequels to previous games. These games often continue the story, themes, and gameplay of the original game, while introducing new content and improvements." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Sequel> ;
+  schema:url <https://store.steampowered.com/tags/en/Sequel/> .
+
+steam:Soundtrack a owl:Class, steam:Other ;
+  rdfs:label "Soundtrack" ;
+  rdfs:comment "Soundtrack represents games that are notable for their soundtrack. These games often feature original music that enhances the game's atmosphere, narrative, and emotional impact." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Soundtrack> ;
+  schema:url <https://store.steampowered.com/tags/en/Soundtrack/> .
+
+steam:StarWars a owl:Class, steam:Other ;
+  rdfs:label "Star Wars" ;
+  rdfs:comment "Star Wars represents games that are based on the Star Wars franchise. These games often feature elements of space opera, including epic battles, and themes of good versus evil." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Star_Wars> ;
+  schema:url <https://store.steampowered.com/tags/en/Star%20Wars/> .
+
+steam:TimeAttack a owl:Class, steam:Other ;
+  rdfs:label "Time Attack" ;
+  rdfs:comment "Time Attack represents games that feature a time attack mode, where players aim to complete a level or task in the shortest time possible. This feature is often found in racing and platformer games, promoting speed and skill." ;
+  schema:url <https://store.steampowered.com/tags/en/Time%20Attack/> .
+
+steam:TurnBased a owl:Class, steam:Other ;
+  rdfs:label "Turn-Based" ;
+  rdfs:comment "Turn-Based represents games that are played in turns, where players take turns to perform actions. This feature is often found in strategy and role-playing games, allowing for thoughtful planning and strategy." ;
+  schema:url <https://store.steampowered.com/tags/en/Turn-Based/> .
+
+steam:Warhammer40K a owl:Class, steam:Other ;
+  rdfs:label "Warhammer 40K" ;
+  rdfs:comment "Warhammer 40K represents games that are based on the Warhammer 40,000 franchise. These games often feature elements of science fantasy, including epic battles, complex lore, and a grimdark setting." ;
+  rdfs:seeAlso <http://dbpedia.org/resource/Warhammer_40,000> ;
+  schema:url <https://store.steampowered.com/tags/en/Warhammer%2040K/> .
+
+
