@@ -19,7 +19,7 @@
 (def Action
   "Action games emphasize physical challenges that require hand-eye coordination and motor skill to overcome. They center around the player controlling a character in a world where they must navigate obstacles and fight enemies to succeed."
   {:db/ident :steam/Action,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Action games emphasize physical challenges that require hand-eye coordination and motor skill to overcome. They center around the player controlling a character in a world where they must navigate obstacles and fight enemies to succeed.",
    :rdfs/label "Action",
@@ -50,10 +50,21 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Action%20RPG/"}})
 
+(def ActionRoguelike
+  "Action Roguelike games combine the action genre with roguelike elements, including procedural generation and permadeath."
+  {:db/ident :steam/ActionRoguelike,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Action Roguelike games combine the action genre with roguelike elements, including procedural generation and permadeath.",
+   :rdfs/label "Action Roguelike",
+   :rdfs/subClassOf :steam/Roguelike,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Action%20Roguelike/"}})
+
 (def Adventure
   "Adventure games focus on puzzle solving within a narrative framework, generally with few or no action elements. These games encourage players to explore, interact with different objects, and solve complex puzzles to progress the story."
   {:db/ident :steam/Adventure,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Adventure games focus on puzzle solving within a narrative framework, generally with few or no action elements. These games encourage players to explore, interact with different objects, and solve complex puzzles to progress the story.",
    :rdfs/label "Adventure",
@@ -69,6 +80,18 @@
    :rdfs/label "Arcade",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Arcade_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Arcade/"}})
+
+(def ArenaShooter
+  "Arena Shooter games are shooter games that take place in contained arena environments, often with a focus on multiplayer combat."
+  {:db/ident :steam/ArenaShooter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Arena Shooter games are shooter games that take place in contained arena environments, often with a focus on multiplayer combat.",
+   :rdfs/label "Arena Shooter",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Shooter_game"},
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Arena%20Shooter/"}})
 
 (def Assessments
   "A tag used to categorize the assessments of a game on Steam"
@@ -157,6 +180,17 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Battle%20Royale/"}})
 
+(def BeatEmUp
+  "Beat 'em up games are action games that feature hand-to-hand combat between the protagonist and an improbably large number of opponents."
+  {:db/ident :steam/BeatEmUp,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Beat 'em up games are action games that feature hand-to-hand combat between the protagonist and an improbably large number of opponents.",
+   :rdfs/label "Beat 'em up",
+   :rdfs/subClassOf :steam/Action,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Beat%20'Em%20Up/"}})
+
 (def BoardGame
   "Board Game genre includes games that are digital adaptations of traditional or modern board games. They often involve strategic decision making, and can be played solo or multiplayer."
   {:db/ident :steam/BoardGame,
@@ -193,6 +227,38 @@
    :rdfs/subClassOf :steam/Simulation,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Building/"}})
 
+(def BulletHell
+  "Bullet Hell games are shooting games that feature overwhelming numbers of enemy projectiles, often in visually impressive patterns."
+  {:db/ident :steam/BulletHell,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Bullet Hell games are shooting games that feature overwhelming numbers of enemy projectiles, often in visually impressive patterns.",
+   :rdfs/label "Bullet Hell",
+   :rdfs/subClassOf [:steam/ShootEmUp :steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Bullet%20Hell/"}})
+
+(def CRPG
+  "CRPG (Computer Role-Playing Games) are a type of role-playing video game which are played on a computer and use similar mechanics to traditional tabletop RPGs."
+  {:db/ident :steam/CRPG,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "CRPG (Computer Role-Playing Games) are a type of role-playing video game which are played on a computer and use similar mechanics to traditional tabletop RPGs.",
+   :rdfs/label "CRPG",
+   :rdfs/subClassOf :steam/RPG,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/CRPG/"}})
+
+(def CardBattler
+  "Card Battler games are games that use cards as a primary element to let players strategize and compete against each other."
+  {:db/ident :steam/CardBattler,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Card Battler games are games that use cards as a primary element to let players strategize and compete against each other.",
+   :rdfs/label "Card Battler",
+   :rdfs/subClassOf [:steam/CardGame :steam/Tabletop],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Card%20Battler/"}})
+
 (def CardGame
   "Card games are digital adaptations of traditional or modern card games. They often involve strategic decision making, and can be played solo or multiplayer."
   {:db/ident :steam/CardGame,
@@ -208,7 +274,7 @@
 (def Casual
   "Casual games are designed to be easily picked up and put down again, allowing for potentially short bursts of play. They often have simpler rules, shorter sessions, and less learned skill than hardcore games."
   {:db/ident :steam/Casual,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Casual games are designed to be easily picked up and put down again, allowing for potentially short bursts of play. They often have simpler rules, shorter sessions, and less learned skill than hardcore games.",
    :rdfs/label "Casual",
@@ -238,6 +304,31 @@
    :rdfs/subClassOf [:steam/BoardGame :steam/Tabletop],
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Chess/"}})
 
+(def ChooseYourOwnAdventure
+  "Choose Your Own Adventure games are games that feature interactive stories where the player can make choices that affect the outcome."
+  {:db/ident :steam/ChooseYourOwnAdventure,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Choose Your Own Adventure games are games that feature interactive stories where the player can make choices that affect the outcome.",
+   :rdfs/label "Choose Your Own Adventure",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Gamebook"},
+   :rdfs/subClassOf :steam/Adventure,
+   :schema/url
+   {:rdfa/uri
+    "https://store.steampowered.com/tags/en/Choose%20Your%20Own%20Adventure/"}})
+
+(def CityBuilder
+  "City Builder games are a type of simulation game where players build, expand and manage fictional communities or projects with limited resources."
+  {:db/ident :steam/CityBuilder,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "City Builder games are a type of simulation game where players build, expand and manage fictional communities or projects with limited resources.",
+   :rdfs/label "City Builder",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/City-building_game"},
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/City%20Builder/"}})
+
 (def Clicker
   "Clicker games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades."
   {:db/ident :steam/Clicker,
@@ -250,6 +341,40 @@
    :schema/sameAs :steam/Idler,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Clicker/"}})
 
+(def Collectathon
+  "Collectathon games are games that feature collecting a large number of items as a core mechanic."
+  {:db/ident :steam/Collectathon,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Collectathon games are games that feature collecting a large number of items as a core mechanic.",
+   :rdfs/label "Collectathon",
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Collectathon/"}})
+
+(def ColonySim
+  "Colony Sim games are a type of simulation game where players build, expand and manage a colony or project with limited resources."
+  {:db/ident :steam/ColonySim,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Colony Sim games are a type of simulation game where players build, expand and manage a colony or project with limited resources.",
+   :rdfs/label "Colony Sim",
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Colony%20Sim/"}})
+
+(def CombatRacing
+  "Combat Racing games are racing games that feature combat elements, such as weapons or aggressive driving maneuvers."
+  {:db/ident :steam/CombatRacing,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Combat Racing games are racing games that feature combat elements, such as weapons or aggressive driving maneuvers.",
+   :rdfs/label "Combat Racing",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/List_of_vehicular_combat_games"},
+   :rdfs/subClassOf [:steam/Action :steam/Racing],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Combat%20Racing/"}})
+
 (def Cycling
   "Cycling games simulate the sport of cycling, allowing players to compete in races or explore environments on a bike."
   {:db/ident :steam/Cycling,
@@ -260,6 +385,18 @@
    :rdfs/subClassOf [:steam/Racing :steam/Sports],
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Cycling/"}})
 
+(def DatingSim
+  "Dating Sim games are a type of simulation game where players simulate romantic or sexual relationships. They often involve dialogues and character development."
+  {:db/ident :steam/DatingSim,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Dating Sim games are a type of simulation game where players simulate romantic or sexual relationships. They often involve dialogues and character development.",
+   :rdfs/label "Dating Sim",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Dating_sim"},
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Dating%20Sim/"}})
+
 (def Diplomacy
   "Diplomacy games involve negotiation, strategy, and social interaction. Players often need to form alliances, make deals, or negotiate with other players to achieve their goals."
   {:db/ident :steam/Diplomacy,
@@ -269,6 +406,28 @@
    :rdfs/label "Diplomacy",
    :rdfs/subClassOf :steam/Strategy,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Diplomacy/"}})
+
+(def DungeonCrawler
+  "Dungeon Crawler games are a type of adventure games where players navigate a labyrinth environment, battling various monsters, and looting any treasure they may find."
+  {:db/ident :steam/DungeonCrawler,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Dungeon Crawler games are a type of adventure games where players navigate a labyrinth environment, battling various monsters, and looting any treasure they may find.",
+   :rdfs/label "Dungeon Crawler",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Dungeon_crawl"},
+   :rdfs/subClassOf :steam/Adventure,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Dungeon%20Crawler/"}})
+
+(def Education
+  "Education games are designed to teach people about certain subjects, expand concepts, reinforce development, or assist them in learning a skill as they play."
+  {:db/ident :steam/Education,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Education games are designed to teach people about certain subjects, expand concepts, reinforce development, or assist them in learning a skill as they play.",
+   :rdfs/label "Education",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Educational_game"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Education/"}})
 
 (def Esports
   "Esports games are competitive games that are often played in professional competitions. They often require high levels of skill and strategy, and have large online communities."
@@ -303,6 +462,17 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Exploration/"}})
 
+(def FPS
+  "FPS (First-Person Shooter) games are a type of 3D shooter games played from a first-person perspective, where the player experiences the action through the eyes of the protagonist."
+  {:db/ident :steam/FPS,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "FPS (First-Person Shooter) games are a type of 3D shooter games played from a first-person perspective, where the player experiences the action through the eyes of the protagonist.",
+   :rdfs/label "FPS",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/First-person_shooter"},
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/FPS/"}})
+
 (def FarmingSim
   "Farming Sim games simulate the experience of farming, including the cultivation of crops, raising of livestock, and management of a farm. They often involve elements of strategy and resource management."
   {:db/ident :steam/FarmingSim,
@@ -332,6 +502,17 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Fighting_game"},
    :rdfs/subClassOf :steam/Action,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Fighting/"}})
+
+(def Flight
+  "Flight games are games that involve piloting a vehicle, often an aircraft, through the sky."
+  {:db/ident :steam/Flight,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Flight games are games that involve piloting a vehicle, often an aircraft, through the sky.",
+   :rdfs/label "Flight",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Flight_simulator"},
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Flight/"}})
 
 (def Football
   "Football games simulate the sport of football, allowing players to control a team and compete in matches or seasons. They often focus on realistic gameplay and statistics."
@@ -383,6 +564,31 @@
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Golf/"}})
 
+(def GrandStrategy
+  "Grand Strategy games are a type of strategy game that includes aspects of military, economic, and political development. Players control a nation or faction and make long-term strategic decisions."
+  {:db/ident :steam/GrandStrategy,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Grand Strategy games are a type of strategy game that includes aspects of military, economic, and political development. Players control a nation or faction and make long-term strategic decisions.",
+   :rdfs/label "Grand Strategy",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Grand_strategy_wargame"},
+   :rdfs/subClassOf :steam/Strategy,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Grand%20Strategy/"}})
+
+(def HackAndSlash
+  "Hack and Slash games are a type of action game that emphasizes combat with melee-based weapons."
+  {:db/ident :steam/HackAndSlash,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Hack and Slash games are a type of action game that emphasizes combat with melee-based weapons.",
+   :rdfs/label "Hack and Slash",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Hack_and_slash"},
+   :rdfs/subClassOf :steam/Action,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Hack%20and%20Slash/"}})
+
 (def Hacking
   "Hacking games involve elements of computer hacking. They often require players to solve puzzles, exploit systems, or engage in simulated computer hacking tasks."
   {:db/ident :steam/Hacking,
@@ -400,6 +606,29 @@
    "A tag used to categorize the hardware input of a game on Steam",
    :rdfs/label "Hardware Input",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
+
+(def Heist
+  "Heist games are games that involve a plot to commit a burglary or theft of some kind."
+  {:db/ident :steam/Heist,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Heist games are games that involve a plot to commit a burglary or theft of some kind.",
+   :rdfs/label "Heist",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Heist_film"},
+   :rdfs/subClassOf :steam/Action,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Heist/"}})
+
+(def HeroShooter
+  "Hero Shooter games are a sub-genre of shooter games that assign players into two or more teams, with each player selecting their own unique 'hero' character, each with their own unique abilities or skills."
+  {:db/ident :steam/HeroShooter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Hero Shooter games are a sub-genre of shooter games that assign players into two or more teams, with each player selecting their own unique 'hero' character, each with their own unique abilities or skills.",
+   :rdfs/label "Hero Shooter",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Hero_shooter"},
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Hero%20Shooter/"}})
 
 (def HiddenObject
   "Hidden Object games require players to find specific items from a list that are hidden within a picture or scene."
@@ -423,6 +652,17 @@
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Hockey/"}})
 
+(def Horror
+  "Horror games are games that aim to elicit fear and horror from the player. They often feature dark atmospheres, scary graphics, and chilling audio."
+  {:db/ident :steam/Horror,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Horror games are games that aim to elicit fear and horror from the player. They often feature dark atmospheres, scary graphics, and chilling audio.",
+   :rdfs/label "Horror",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Category:Horror_video_games"},
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Horror/"}})
+
 (def Idler
   "Idler games, also known as incremental or idle games, involve simple gameplay that can often run without player intervention. They often involve clicking or tapping to gain some form of currency, which can be used to purchase upgrades."
   {:db/ident :steam/Idler,
@@ -435,6 +675,18 @@
    :schema/sameAs :steam/Clicker,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Idler/"}})
 
+(def ImmersiveSim
+  "Immersive Sim games are a type of video game that emphasizes player choice. Their key defining features are a blend of multiple gameplay genres, and a highly interactive world."
+  {:db/ident :steam/ImmersiveSim,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Immersive Sim games are a type of video game that emphasizes player choice. Their key defining features are a blend of multiple gameplay genres, and a highly interactive world.",
+   :rdfs/label "Immersive Sim",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Immersive_sim"},
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Immersive%20Sim/"}})
+
 (def InteractiveFiction
   "Interactive Fiction games are games that emphasize narrative and player choice. They often involve complex branching narratives and multiple endings."
   {:db/ident :steam/InteractiveFiction,
@@ -445,6 +697,53 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Interactive_fiction"},
    :schema/url
    {:rdfa/uri "https://store.steampowered.com/tags/en/Interactive%20Fiction/"}})
+
+(def Investigation
+  "Investigation games are games that involve players solving a mystery or crime by gathering clues and evidence."
+  {:db/ident :steam/Investigation,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Investigation games are games that involve players solving a mystery or crime by gathering clues and evidence.",
+   :rdfs/label "Investigation",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Detective_fiction"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Investigation/"}})
+
+(def JRPG
+  "JRPG (Japanese Role-Playing Games) are a type of role-playing video game that originated in Japan and have a distinct art style and narrative structure."
+  {:db/ident :steam/JRPG,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "JRPG (Japanese Role-Playing Games) are a type of role-playing video game that originated in Japan and have a distinct art style and narrative structure.",
+   :rdfs/label "JRPG",
+   :rdfs/seeAlso
+   {:rdfa/uri
+    "http://dbpedia.org/resource/History_of_Eastern_role-playing_video_games"},
+   :rdfs/subClassOf :steam/RPG,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/JRPG/"}})
+
+(def LifeSim
+  "Life Sim games are a type of simulation game where players simulate living or controlling one or more artificial lives."
+  {:db/ident :steam/LifeSim,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Life Sim games are a type of simulation game where players simulate living or controlling one or more artificial lives.",
+   :rdfs/label "Life Sim",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Life_simulation_game"},
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Life%20Sim/"}})
+
+(def LooterShooter
+  "Looter Shooter games are a sub-genre of shooter games that include elements of looting, shooting, and often role-playing."
+  {:db/ident :steam/LooterShooter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Looter Shooter games are a sub-genre of shooter games that include elements of looting, shooting, and often role-playing.",
+   :rdfs/label "Looter Shooter",
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Looter%20Shooter/"}})
 
 (def MMORPG
   "MMORPGs (Massively Multiplayer Online Role-Playing Games) are games that involve large numbers of players interacting in a virtual world. They often involve character development, quests, and multiplayer cooperation or competition."
@@ -515,6 +814,18 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Medical%20Sim/"}})
 
+(def Metroidvania
+  "Metroidvania games are a sub-genre of action-adventure games that includes elements of exploration, backtracking, and item gathering."
+  {:db/ident :steam/Metroidvania,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Metroidvania games are a sub-genre of action-adventure games that includes elements of exploration, backtracking, and item gathering.",
+   :rdfs/label "Metroidvania",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Metroidvania"},
+   :rdfs/subClassOf [:steam/Platformer :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Metroidvania/"}})
+
 (def MiniGolf
   "Mini Golf games simulate the sport of mini golf, allowing players to compete in matches or tournaments. They often focus on realistic physics and gameplay."
   {:db/ident :steam/MiniGolf,
@@ -547,6 +858,30 @@
    :rdfs/subClassOf [:steam/Sports :steam/Racing],
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Motocross/"}})
 
+(def MysteryDungeon
+  "Mystery Dungeon games are a sub-genre of role-playing games that feature randomly generated dungeons and turn-based combat."
+  {:db/ident :steam/MysteryDungeon,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Mystery Dungeon games are a sub-genre of role-playing games that feature randomly generated dungeons and turn-based combat.",
+   :rdfs/label "Mystery Dungeon",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Mystery_Dungeon"},
+   :rdfs/subClassOf {:owl/intersectionOf [:steam/RPG :steam/Roguelike],
+                     :rdf/type :owl/Class},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Mystery%20Dungeon/"}})
+
+(def OnRailsShooter
+  "On-Rails Shooter games are a type of shooter game where the player's movement is automatically guided along a fixed path, or 'on rails'."
+  {:db/ident :steam/OnRailsShooter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "On-Rails Shooter games are a type of shooter game where the player's movement is automatically guided along a fixed path, or 'on rails'.",
+   :rdfs/label "On-Rails Shooter",
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/On-Rails%20Shooter/"}})
+
 (def OpenWorld
   "Open World games provide a large, open environment for players to explore and interact with. They often allow players to choose their own objectives and play at their own pace."
   {:db/ident :steam/OpenWorld,
@@ -557,6 +892,18 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Open_world"},
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Open%20World/"}})
+
+(def OpenWorldSurvivalCraft
+  "Open World Survival Craft games are a type of survival game where players must gather resources, build their own items, and manage their needs, all while exploring an open world."
+  {:db/ident :steam/OpenWorldSurvivalCraft,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Open World Survival Craft games are a type of survival game where players must gather resources, build their own items, and manage their needs, all while exploring an open world.",
+   :rdfs/label "Open World Survival Craft",
+   :rdfs/subClassOf [:steam/OpenWorld :steam/Survival],
+   :schema/url
+   {:rdfa/uri
+    "https://store.steampowered.com/tags/en/Open%20World%20Survival%20Craft/"}})
 
 (def Other
   "A tag used to categorize other aspects of a game on Steam"
@@ -628,10 +975,47 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Point%20&%20Click/"}})
 
+(def PoliticalSim
+  "Political Sim games are a type of simulation game where players simulate the politics and government of a nation or civilization."
+  {:db/ident :steam/PoliticalSim,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Political Sim games are a type of simulation game where players simulate the politics and government of a nation or civilization.",
+   :rdfs/label "Political Sim",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Government_simulation_game"},
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Political%20Sim/"}})
+
+(def PrecisionPlatformer
+  "Precision Platformer games are a sub-genre of platformer games that require precise control and timing."
+  {:db/ident :steam/PrecisionPlatformer,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Precision Platformer games are a sub-genre of platformer games that require precise control and timing.",
+   :rdfs/label "Precision Platformer",
+   :rdfs/subClassOf :steam/Platformer,
+   :schema/url
+   {:rdfa/uri
+    "https://store.steampowered.com/tags/en/Precision%20Platformer/"}})
+
+(def Programming
+  "Programming games are games where the player has limited direct control over the game characters, and completes levels or achieves goals by programming game elements."
+  {:db/ident :steam/Programming,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Programming games are games where the player has limited direct control over the game characters, and completes levels or achieves goals by programming game elements.",
+   :rdfs/label "Programming",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Programming_game"},
+   :rdfs/subClassOf :steam/Simulation,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Programming/"}})
+
 (def Puzzle
   "Puzzle games focus on problem solving and logical thinking. They challenge the player to solve head-scratching puzzles and often offer a slower paced, more relaxing gaming experience."
   {:db/ident :steam/Puzzle,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Puzzle games focus on problem solving and logical thinking. They challenge the player to solve head-scratching puzzles and often offer a slower paced, more relaxing gaming experience.",
    :rdfs/label "Puzzle",
@@ -641,7 +1025,7 @@
 (def RPG
   "Role-playing games (RPGs) often involve story-telling and narrative elements, character development, complexity, as well as replayability and immersion. The player controls a character in a world where they undertake quests and challenges."
   {:db/ident :steam/RPG,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Role-playing games (RPGs) often involve story-telling and narrative elements, character development, complexity, as well as replayability and immersion. The player controls a character in a world where they undertake quests and challenges.",
    :rdfs/label "RPG",
@@ -663,7 +1047,7 @@
 (def Racing
   "Racing games simulate the competition of racing, where the player controls a vehicle or other transport. They often have a time limit, and can include obstacles and competitors to beat."
   {:db/ident :steam/Racing,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Racing games simulate the competition of racing, where the player controls a vehicle or other transport. They often have a time limit, and can include obstacles and competitors to beat.",
    :rdfs/label "Racing",
@@ -677,6 +1061,18 @@
    :rdfs/comment    "A tag used to categorize the ratings of a game on Steam",
    :rdfs/label      "Ratings",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
+
+(def RealTimeTactics
+  "Real Time Tactics games are a type of strategy game that focuses on tactical and operational aspects of warfare, as opposed to strategic or grand strategy."
+  {:db/ident :steam/RealTimeTactics,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Real Time Tactics games are a type of strategy game that focuses on tactical and operational aspects of warfare, as opposed to strategic or grand strategy.",
+   :rdfs/label "Real Time Tactics",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Real-time_tactics"},
+   :rdfs/subClassOf :steam/Strategy,
+   :schema/url
+   {:rdfa/uri "https://store.steampowered.com/tags/en/Real%20Time%20Tactics/"}})
 
 (def Rhythm
   "Rhythm games challenge players to follow the beat or rhythm of music tracks."
@@ -698,6 +1094,40 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Roguelike"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Roguelike/"}})
 
+(def Roguelite
+  "Roguelite games feature procedurally generated levels, permadeath, and other elements of roguelikes. They are characterized by their difficulty and replayability."
+  {:db/ident :steam/Roguelite,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Roguelite games feature procedurally generated levels, permadeath, and other elements of roguelikes. They are characterized by their difficulty and replayability.",
+   :rdfs/label "Roguelite",
+   :rdfs/subClassOf :steam/Rougelike,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Roguelite/"}})
+
+(def Roguevania
+  "Roguevania games are a sub-genre of action-adventure games that combine elements of roguelike and metroidvania games."
+  {:db/ident :steam/Roguevania,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Roguevania games are a sub-genre of action-adventure games that combine elements of roguelike and metroidvania games.",
+   :rdfs/label "Roguevania",
+   :rdfs/subClassOf {:owl/intersectionOf [:steam/Rougelike :steam/Metroidvania],
+                     :rdf/type :owl/Class},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Roguevania/"}})
+
+(def Rougelike {:db/ident :steam/Rougelike})
+
+(def Runner
+  "Runner games are a type of action game where the player character is continuously moving forward and the player must control their actions to avoid obstacles and collect items."
+  {:db/ident :steam/Runner,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Runner games are a type of action game where the player character is continuously moving forward and the player must control their actions to avoid obstacles and collect items.",
+   :rdfs/label "Runner",
+   :rdfs/subClassOf :steam/Action,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Runner/"}})
+
 (def Sandbox
   "Sandbox games allow players to explore, create, and manipulate their environment with few imposed goals or restrictions."
   {:db/ident :steam/Sandbox,
@@ -707,6 +1137,18 @@
    :rdfs/label "Sandbox",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Sandbox_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Sandbox/"}})
+
+(def ShootEmUp
+  "Shoot 'Em Up games are a sub-genre of shooter games where the player controls a character or vehicle and fights large numbers of enemies using shooting."
+  {:db/ident :steam/ShootEmUp,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Shoot 'Em Up games are a sub-genre of shooter games where the player controls a character or vehicle and fights large numbers of enemies using shooting.",
+   :rdfs/label "Shoot 'Em Up",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Shoot_'em_up"},
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Shoot%20'Em%20Up/"}})
 
 (def Shooter
   "Shooter games focus on combat involving projectile weapons, such as guns and missiles."
@@ -719,10 +1161,22 @@
    :rdfs/subClassOf :steam/Action,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Shooter/"}})
 
+(def SideScroller
+  "Side Scroller games are a type of game in which gameplay is viewed from a side-view camera angle, and the characters move from the left side of the screen to the right (or vice versa)."
+  {:db/ident :steam/SideScroller,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Side Scroller games are a type of game in which gameplay is viewed from a side-view camera angle, and the characters move from the left side of the screen to the right (or vice versa).",
+   :rdfs/label "Side Scroller",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Side-scrolling_video_game"},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Side%20Scroller/"}})
+
 (def Simulation
   "Simulation games are designed to accurately simulate real-world activities. They can cover a variety of activities, including driving vehicles, managing a business, or living a life."
   {:db/ident :steam/Simulation,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Simulation games are designed to accurately simulate real-world activities. They can cover a variety of activities, including driving vehicles, managing a business, or living a life.",
    :rdfs/label "Simulation",
@@ -796,6 +1250,44 @@
    :rdfs/label      "Software",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
 
+(def Sokoban
+  "Sokoban games are a type of puzzle game where the player pushes boxes or crates around in a warehouse, trying to get them to storage locations."
+  {:db/ident :steam/Sokoban,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Sokoban games are a type of puzzle game where the player pushes boxes or crates around in a warehouse, trying to get them to storage locations.",
+   :rdfs/label "Sokoban",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Sokoban"},
+   :rdfs/subClassOf :steam/Puzzle,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Sokoban/"}})
+
+(def Solitaire
+  "Solitaire games are a type of card game that can be played by a single player."
+  {:db/ident :steam/Solitaire,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Solitaire games are a type of card game that can be played by a single player.",
+   :rdfs/label "Solitaire",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Solitaire"},
+   :rdfs/subClassOf [{:owl/hasValue   :schema/SinglePlayer,
+                      :owl/onProperty :schema/playMode,
+                      :rdf/type       :owl/Restriction}
+                     :steam/CardGame
+                     :steam/Tabletop],
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Solitaire/"}})
+
+(def SoulsLike
+  "Souls-like games are a sub-genre of action RPGs that include elements of challenging combat, exploration, and character development, inspired by the Dark Souls series."
+  {:db/ident :steam/SoulsLike,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Souls-like games are a sub-genre of action RPGs that include elements of challenging combat, exploration, and character development, inspired by the Dark Souls series.",
+   :rdfs/label "Souls-like",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Souls_(series)"},
+   :rdfs/subClassOf :steam/ActionRPG,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Souls-like/"}})
+
 (def SpaceSim
   "Space Sim games simulate space exploration or combat in a space setting."
   {:db/ident :steam/SpaceSim,
@@ -809,10 +1301,31 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Space%20Sim/"}})
 
+(def SpectacleFighter
+  "Spectacle Fighter games are a sub-genre of action games that feature fast-paced combat with flashy, over-the-top attacks and combos."
+  {:db/ident :steam/SpectacleFighter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Spectacle Fighter games are a sub-genre of action games that feature fast-paced combat with flashy, over-the-top attacks and combos.",
+   :rdfs/label "Spectacle Fighter",
+   :rdfs/subClassOf [:steam/Fighting :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Spectacle%20Fighter/"}})
+
+(def Spelling
+  "Spelling games are a type of educational game that focuses on the correct spelling of words."
+  {:db/ident :steam/Spelling,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Spelling games are a type of educational game that focuses on the correct spelling of words.",
+   :rdfs/label "Spelling",
+   :rdfs/subClassOf :steam/Education,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Spelling/"}})
+
 (def Sports
   "Sports games simulate the practice of traditional physical sports. This can be team sports such as soccer, basketball, or individual activities like golf, fishing, skateboarding."
   {:db/ident :steam/Sports,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Sports games simulate the practice of traditional physical sports. This can be team sports such as soccer, basketball, or individual activities like golf, fishing, skateboarding.",
    :rdfs/label "Sports",
@@ -832,7 +1345,7 @@
 (def Strategy
   "Strategy games require strategic, tactical, and sometimes logistical challenges. Many games also offer economic challenges and exploration."
   {:db/ident :steam/Strategy,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Strategy games require strategic, tactical, and sometimes logistical challenges. Many games also offer economic challenges and exploration.",
    :rdfs/label "Strategy",
@@ -853,11 +1366,11 @@
                 "https://store.steampowered.com/tags/en/Strategy%20RPG/"}})
 
 (def SubGenre
-  "A sub genre used to categorize a game on Steam"
+  "A sub-genre used to categorize a game on Steam"
   {:db/ident        :steam/SubGenre,
    :rdf/type        :owl/Class,
-   :rdfs/comment    "A sub genre used to categorize a game on Steam",
-   :rdfs/label      "Sub Genre",
+   :rdfs/comment    "A sub-genre used to categorize a game on Steam",
+   :rdfs/label      "Sub-Genre",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
 
 (def Survival
@@ -870,15 +1383,42 @@
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Survival_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Survival/"}})
 
+(def SurvivalHorror
+  "Survival Horror games are a sub-genre of horror games that focus on survival of the character and the fear of the unknown."
+  {:db/ident :steam/SurvivalHorror,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Survival Horror games are a sub-genre of horror games that focus on survival of the character and the fear of the unknown.",
+   :rdfs/label "Survival Horror",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Survival_horror"},
+   :rdfs/subClassOf {:owl/intersectionOf [:steam/Horror :steam/Survival],
+                     :rdf/type :owl/Class},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Survival%20Horror/"}})
+
 (def Tabletop
   "Tabletop games are those that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames, tile-based games and role-playing games. In the digital context, these games are often adaptations of traditional tabletop games."
   {:db/ident :steam/Tabletop,
-   :rdf/type [:steam/TopLevelGenre :owl/Class :steam/Tag :schema/Thing],
+   :rdf/type [:steam/TopLevelGenre :owl/Class :schema/Thing :steam/Tag],
    :rdfs/comment
    "Tabletop games are those that are normally played on a table or other flat surface, such as board games, card games, dice games, miniatures wargames, tile-based games and role-playing games. In the digital context, these games are often adaptations of traditional tabletop games.",
    :rdfs/label "Tabletop",
    :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Tabletop_game"},
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Tabletop/"}})
+
+(def TacticalRPG
+  "Tactical RPG games are a sub-genre of role-playing games that focus on tactical and strategic battles, often using turn-based combat."
+  {:db/ident :steam/TacticalRPG,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Tactical RPG games are a sub-genre of role-playing games that focus on tactical and strategic battles, often using turn-based combat.",
+   :rdfs/label "Tactical RPG",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Tactical_role-playing_game"},
+   :rdfs/subClassOf {:owl/intersectionOf [:steam/RPG :steam/Strategy],
+                     :rdf/type :owl/Class},
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Tactical%20RPG/"}})
 
 (def Tag
   "A tag used to categorize a game on Steam"
@@ -908,6 +1448,41 @@
    :rdfs/label "Themes and Moods",
    :rdfs/subClassOf [:steam/Tag :schema/Thing]})
 
+(def ThirdPersonShooter
+  "Third-Person Shooter games are a sub-genre of shooter games where the player views the game from a third-person perspective, usually behind the character they are controlling."
+  {:db/ident :steam/ThirdPersonShooter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Third-Person Shooter games are a sub-genre of shooter games where the player views the game from a third-person perspective, usually behind the character they are controlling.",
+   :rdfs/label "Third-Person Shooter",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Third-person_shooter"},
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url
+   {:rdfa/uri
+    "https://store.steampowered.com/tags/en/Third-Person%20Shooter/"}})
+
+(def TimeManagement
+  "Time Management games are a sub-genre of strategy games that require the player to complete specific tasks within a certain timeframe to succeed."
+  {:db/ident :steam/TimeManagement,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Time Management games are a sub-genre of strategy games that require the player to complete specific tasks within a certain timeframe to succeed.",
+   :rdfs/label "Time Management",
+   :rdfs/subClassOf :steam/Strategy,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Time%20Management/"}})
+
+(def TopDownShooter
+  "Top-Down Shooter games are a sub-genre of shooter games where the player views the game from a top-down perspective, shooting enemies and avoiding obstacles from this viewpoint."
+  {:db/ident :steam/TopDownShooter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Top-Down Shooter games are a sub-genre of shooter games where the player views the game from a top-down perspective, shooting enemies and avoiding obstacles from this viewpoint.",
+   :rdfs/label "Top-Down Shooter",
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/Top-Down%20Shooter/"}})
+
 (def TopLevelGenre
   "A top level genre used to categorize a game on Steam"
   {:db/ident        :steam/TopLevelGenre,
@@ -927,6 +1502,40 @@
    :rdfs/subClassOf :steam/Strategy,
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Tower%20Defense/"}})
+
+(def Trading
+  "Trading games are a type of game that focuses on trading goods and services, often in an economic simulation context."
+  {:db/ident :steam/Trading,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Trading games are a type of game that focuses on trading goods and services, often in an economic simulation context.",
+   :rdfs/label "Trading",
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Trading/"}})
+
+(def TradingCardGame
+  "Trading Card Game games are a type of card game where players use collectible cards to strategize and defeat their opponents."
+  {:db/ident :steam/TradingCardGame,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Trading Card Game games are a type of card game where players use collectible cards to strategize and defeat their opponents.",
+   :rdfs/label "Trading Card Game",
+   :rdfs/seeAlso {:rdfa/uri
+                  "http://dbpedia.org/resource/Collectible_card_game"},
+   :rdfs/subClassOf [:steam/CardGame :steam/Tabletop],
+   :schema/url
+   {:rdfa/uri "https://store.steampowered.com/tags/en/Trading%20Card%20Game/"}})
+
+(def TraditionalRoguelike
+  "Traditional Roguelike games are a sub-genre of roguelike games that adhere closely to the original roguelike design, featuring turn-based combat, grid-based movement, and permadeath."
+  {:db/ident :steam/TraditionalRoguelike,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Traditional Roguelike games are a sub-genre of roguelike games that adhere closely to the original roguelike design, featuring turn-based combat, grid-based movement, and permadeath.",
+   :rdfs/label "Traditional Roguelike",
+   :rdfs/subClassOf :steam/Roguelike,
+   :schema/url
+   {:rdfa/uri
+    "https://store.steampowered.com/tags/en/Traditional%20Roguelike/"}})
 
 (def Trivia
   "Trivia games test players' knowledge of various topics, often in a quiz format."
@@ -950,6 +1559,40 @@
    :rdfs/subClassOf :steam/Strategy,
    :schema/url
    {:rdfa/uri "https://store.steampowered.com/tags/en/Turn-Based%20Strategy/"}})
+
+(def TurnBasedTactics
+  "Turn-Based Tactics games are a type of strategy game that features tactical combat in which players take turns to command their units."
+  {:db/ident :steam/TurnBasedTactics,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Turn-Based Tactics games are a type of strategy game that features tactical combat in which players take turns to command their units.",
+   :rdfs/label "Turn-Based Tactics",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Turn-based_tactics"},
+   :rdfs/subClassOf [:steam/TurnBasedStrategy :steam/Strategy],
+   :schema/url
+   {:rdfa/uri "https://store.steampowered.com/tags/en/Turn-Based%20Tactics/"}})
+
+(def TwinStickShooter
+  "Twin Stick Shooter games are a sub-genre of shooter games that use a dual-stick control scheme, where one stick controls movement and the other controls the direction of shooting."
+  {:db/ident :steam/TwinStickShooter,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Twin Stick Shooter games are a sub-genre of shooter games that use a dual-stick control scheme, where one stick controls movement and the other controls the direction of shooting.",
+   :rdfs/label "Twin Stick Shooter",
+   :rdfs/subClassOf [:steam/Shooter :steam/Action],
+   :schema/url
+   {:rdfa/uri
+    "https://store.steampowered.com/tags/en/Twin%20Stick%20Shooter/"}})
+
+(def Typing
+  "Typing games are a type of educational game that focuses on typing skills. Players are often tasked with typing words or phrases correctly and quickly to achieve goals in the game."
+  {:db/ident :steam/Typing,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Typing games are a type of educational game that focuses on typing skills. Players are often tasked with typing words or phrases correctly and quickly to achieve goals in the game.",
+   :rdfs/label "Typing",
+   :rdfs/subClassOf :steam/Education,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Typing/"}})
 
 (def VisualNovel
   "Visual Novels are a narrative genre of game, featuring mostly static graphics, most often using anime-style art or occasionally live-action stills."
@@ -982,6 +1625,17 @@
    :schema/url {:rdfa/uri
                 "https://store.steampowered.com/tags/en/Walking%20Simulator/"}})
 
+(def Wargame
+  "Wargame games are a type of strategy game that simulates warfare. They often focus on realistic tactical and strategic battles, and can cover various periods of history."
+  {:db/ident :steam/Wargame,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "Wargame games are a type of strategy game that simulates warfare. They often focus on realistic tactical and strategic battles, and can cover various periods of history.",
+   :rdfs/label "Wargame",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/Computer_wargame"},
+   :rdfs/subClassOf :steam/Strategy,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Wargame/"}})
+
 (def WordGame
   "Word games involve the creation or solving of words, often in a puzzle format."
   {:db/ident :steam/WordGame,
@@ -1005,3 +1659,58 @@
                   "http://dbpedia.org/resource/Professional_wrestling"},
    :rdfs/subClassOf :steam/Sports,
    :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/Wrestling/"}})
+
+(def |2DFighter|
+  "2D Fighter games are fighting games with a gameplay in a two-dimensional environment."
+  {:db/ident :steam/|2DFighter|,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "2D Fighter games are fighting games with a gameplay in a two-dimensional environment.",
+   :rdfs/label "2D Fighter",
+   :rdfs/subClassOf [:steam/Fighting :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/2D%20Fighter/"}})
+
+(def |2DPlatformer|
+  "2D Platformer games are platform games with a gameplay in a two-dimensional environment."
+  {:db/ident :steam/|2DPlatformer|,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "2D Platformer games are platform games with a gameplay in a two-dimensional environment.",
+   :rdfs/label "2D Platformer",
+   :rdfs/subClassOf :steam/Platformer,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/2D%20Platformer/"}})
+
+(def |3DFighter|
+  "3D Fighter games are fighting games with a gameplay in a three-dimensional environment."
+  {:db/ident :steam/|3DFighter|,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "3D Fighter games are fighting games with a gameplay in a three-dimensional environment.",
+   :rdfs/label "3D Fighter",
+   :rdfs/subClassOf [:steam/Fighting :steam/Action],
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/3D%20Fighter/"}})
+
+(def |3DPlatformer|
+  "3D Platformer games are platform games with a gameplay in a three-dimensional environment."
+  {:db/ident :steam/|3DPlatformer|,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "3D Platformer games are platform games with a gameplay in a three-dimensional environment.",
+   :rdfs/label "3D Platformer",
+   :rdfs/subClassOf :steam/Platformer,
+   :schema/url {:rdfa/uri
+                "https://store.steampowered.com/tags/en/3D%20Platformer/"}})
+
+(def |4X|
+  "4X games are a genre of strategy video game in which players control an empire and 'eXplore, eXpand, eXploit, and eXterminate'."
+  {:db/ident :steam/|4X|,
+   :rdf/type [:steam/SubGenre :owl/Class :schema/Thing :steam/Tag],
+   :rdfs/comment
+   "4X games are a genre of strategy video game in which players control an empire and 'eXplore, eXpand, eXploit, and eXterminate'.",
+   :rdfs/label "4X",
+   :rdfs/seeAlso {:rdfa/uri "http://dbpedia.org/resource/4X"},
+   :rdfs/subClassOf :steam/Strategy,
+   :schema/url {:rdfa/uri "https://store.steampowered.com/tags/en/4X/"}})
